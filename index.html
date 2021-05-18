@@ -1,12 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>index</title>
-</head>
-<body>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>index</title>
+  <link rel="stylesheet" type="text/css" href="css/index_css.css">
+  <link rel="stylesheet" type="text/css" href="css/barside.css">
+  <link rel="stylesheet" type="text/css" href="css/index_contant.css">
+  <style>
     
+
+  </style>
+
+<script>
+  function w3_open() {
+    document.getElementById("sidebar").style.display = "block";
+  }
+
+  function w3_close() {
+    document.getElementById("sidebar").style.display = "none";
+  }
+</script>
+
+</head>
+
+<body>
+  <header>
+    <div class="head">
+      <div class="head_icon"> <img src="img/booksicon.png" alt="icon"> </div>
+      <div class="head_slogn">SLOGN</div>
+      <div class="head_search"><input type="text" value="Search" /></div>
+      <div class="head_decoration">
+        <div> <img src="img/JK2.jpg" alt=""> </div>
+        <div> <img src="img/JK02.jpg" alt=""> </div>
+        <div> <img src="img/yang2.jpg" alt=""> </div>
+      </div>
+    </div>
+  </header>
+  
+<section>
+  <div class="side_button">
+  <button onclick="w3_open()">☰</button>
+</div>
+
+<div class="manu" style="display:none" id="sidebar">
+  <button onclick="w3_close()" class="barline">Close &times;</button>
+  <ul>
+    <li><a href="#">商店介紹</a></li>
+    <li><a href="#">商品</a>
+      <ul>
+        <li><a href="#">ALL</a></li>
+        <li><a href="#">TOP 10</a></li>
+        <li><a href="#">Business</a></li>
+        <li><a href="#">IT</a></li>
+      </ul>
+    </li>
+    <li><a href="#">認識我們</a></li>
+    <li><a href="#">購物須知</a></li>
+    <li><a href="#">留言板</a></li>
+  </ul>
+</div>
+</section>
+
+<section>
+  <div class="index_contant">
+    <p>商店介紹：</p>
+    <p>起源：</p>
+
+    <div class="slider_container">
+      <div>
+        <img src="img/yang02.jpg" alt="pure css3 slider" />
+        <span class="info">Image Description 1</span>
+      </div>
+      <div>
+        <img src="img/allansu.jpg" alt="pure css3 slider" />
+        <span class="info">Image Description 2</span>
+      </div>
+      <div>
+        <img src="img/booksicon.png" alt="pure css3 slider" />
+        <span class="info">Image Description 3</span>
+      </div>
+      <div>
+        <img src="img/yang2.jpg" alt="pure css3 slider" />
+        <span class="info">Image Description 4</span>
+      </div>
+      <div>
+        <img src="img/JK2.jpg" alt="pure css3 slider" />
+        <span class="info">Image Description 5</span>
+      </div>
+    </div>
+
+
+
+
+  </div>
+</section>
+ 
 </body>
+
 </html>
