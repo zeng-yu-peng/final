@@ -1,3 +1,5 @@
+
+/* 頁首的設定 */
 * {
   margin: 0;
   padding: 0;
@@ -57,4 +59,29 @@
   max-height: 100px;
   max-width: 100px;
   border-radius: 50%;
+}
+
+/* 頁尾的設定 */
+
+.footer {
+  height: 235px;
+  max-width: 1100px;
+  margin: auto;
+  padding: 15px 50px;
+  background-color: #E6F1D8;
+  position: relative;
+}
+
+.footer_wrap {
+  display: flex;
+  justify-content: space-around;
+  line-height: 2;
+}
+
+.footer_copyright {
+  position: absolute;
+  bottom: 0;
+  left: 70px;
+  color: #fff;
+  background-color: #000000;
 }

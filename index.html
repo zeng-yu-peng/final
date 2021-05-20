@@ -15,13 +15,23 @@
   </style>
 
 <script>
-  function w3_open() {
+  // 彈跳式清單
+  function button_open() {
     document.getElementById("sidebar").style.display = "block";
   }
 
-  function w3_close() {
+  function button_close() {
     document.getElementById("sidebar").style.display = "none";
   }
+
+  //搜尋欄位
+  var input = document.getElementById("myInput");
+  input.addEventListener("keyup", function(event) {
+  if (event.keyCode === 13) {
+  event.preventDefault();
+  document.getElementById("myBtn").click();
+  }
+  });
 </script>
 
 </head>
@@ -31,7 +41,10 @@
     <div class="head">
       <div class="head_icon"> <img src="img/booksicon.png" alt="icon"> </div>
       <div class="head_slogn">SLOGN</div>
-      <div class="head_search"><input type="text" value="Search" /></div>
+      <div class="head_search">
+        <input id="myInput" value="Search" />
+        <button id="myBtn" >搜尋</button>
+      </div>
       <div class="head_decoration">
         <div> <a href="login.html"><img src="img/login.jpg" alt="login"> </a></div>
         <div> <img src="img/wishlist.png" alt="My wishlist"> </div>
@@ -42,11 +55,11 @@
   
 <section>
   <div class="side_button">
-  <button onclick="w3_open()">☰</button>
+  <button onclick="button_open()">☰</button>
 </div>
 
 <div class="manu" style="display:none" id="sidebar">
-  <button onclick="w3_close()" class="barline">Close &times;</button>
+  <button onclick="button_close()" class="barline">Close &times;</button>
   <ul>
     <li><a href="#">商店介紹</a></li>
     <li><a href="#">商品</a>
@@ -66,7 +79,23 @@
 
 <section>
   <div class="index_contant">
-    <p>商店介紹：</p>
+    <p>商店介紹：我是耶和華你的神、曾將你從埃及地為奴之家領出來。<br>
+      除了我以外、你不可有別的神。<br>
+      不可為自己雕刻偶像、也不可作什麼形像、彷彿上天、下地、和地下、水中的百物。<br>
+      不可跪拜那些像、也不可事奉他、因為我耶和華你的　神是忌邪的　神、恨我的、我必追討他的罪、自父及子、直到三四代。<br>
+      愛我守我誡命的、我必向他們發慈愛、直到千代。<br>
+      不可妄稱耶和華——你們神的名、因為妄稱耶和華名的、耶和華必不以他為無罪。<br>
+      當記念安息日、守為聖日。<br>
+      六日要勞碌作你一切的工，<br>
+      但第七日是向耶和華你　神當守的安息日．這一日你和你的兒女、僕婢、牲畜、和你城市裡寄居的客旅、無論如何都不可工作。<br>
+      因為六日之內、耶和華造天、地、海、和其中的萬物、第七日便安息．所以耶和華賜福與安息日、定為聖日。<br>
+      當尊敬父母、使你的日子在耶和華你　神所賜你的地上、得以長久。<br>
+      不可謀殺。<br>
+      不可姦淫。<br>
+      不可偷盜。<br>
+      不可陷害人。<br>
+      不可貪戀人的房屋、也不可貪戀人的妻子、僕婢、牛驢、並他一切所有的。</p>
+
     <p>起源：</p>
 
     <div class="slider_container">
@@ -91,13 +120,53 @@
         <span class="info">Image Description 5</span>
       </div>
     </div>
-
-
-
-
   </div>
 </section>
- 
+
+<section>
+  <div class="footer">
+    <div class="footer_wrap">
+      <div>
+        <h4>關於誠品</h4>
+        <ul>
+          <li><a href="">企業理念</a></li>
+          <li><a href="">創辦人故事</a></li>
+          <li><a href="">經營內容</a></li>
+          <li><a href="">發展歷程</a></li>
+          <li><a href="">得獎事蹟</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>關於誠品</h4>
+        <ul>
+          <li><a href="">企業理念</a></li>
+          <li><a href="">創辦人故事</a></li>
+          <li><a href="">經營內容</a></li>
+          <li><a href="">發展歷程</a></li>
+          <li><a href="">得獎事蹟</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>關於誠品</h4>
+        <ul>
+          <li><a href="">企業理念</a></li>
+          <li><a href="">創辦人故事</a></li>
+          <li><a href="">經營內容</a></li>
+          <li><a href="">發展歷程</a></li>
+          <li><a href="">得獎事蹟</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="footer_copyright">
+      <p>誠品線上eslite.com - powered by 誠品生活 / 誠品書店 / 誠品物流 | 誠品生活股份有限公司 | 台灣台北市信義區松德路204號B1
+        服務電話：+886-2-8789-8921<br>
+        本網站已依台灣網站內容分級規定處理｜建議使用瀏覽器版本：Google Chrome版本60以上 / Firefox版本48以上 / Safari 版本11以上</p>
+    </div>
+  </div>
+  
+</section>
 </body>
 
 </html>
+
