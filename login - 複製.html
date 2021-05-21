@@ -132,64 +132,8 @@ input[type=submit]:hover {
   }
 }
 </style>
-
-
 </head>
 <body>
-
-  <script>
-    window.fbAsyncInit = function() {
-      FB.init({
-        appId      : '{521059275934486}',
-        cookie     : true,
-        xfbml      : true,
-        version    : '{v10.0}'
-      });
-        
-      FB.AppEvents.logPageView();   
-        
-    };
-    var token = "";
-                var userId = "";
-
-                FB.getLoginStatus(function(response) {  // Get Login Status
-
-                    if (response && response.authResponse) { // Check if User is Logged In
-
-                        var token = response.authResponse.accessToken; // Get Token
-                        var userId = response.authResponse.userID;     // Get User ID
-
-                    } else {
-                        //  alert("Not Auhtenticated");
-                        FB.login(function(response) { // Promot User to Authenticate App
-                            if (response && response.authResponse) {
-                                var token = response.authResponse.accessToken;
-                                var userId = response.authResponse.userID;
-                            }
-                        }, {scope: 'user_likes,friends_likes,publish_stream,read_friendlists,offline_access'}); // Scopes Example...
-                    }
-                });
-            };
-
-            //Load asynchronously
-            (function(d, s, id) {
-                var js, fjs = d.getElementsByTagName(s)[0];
-                if (d.getElementById(id)) return;
-                js = d.createElement(s); js.id = id;
-                js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=xxxxxxxxxxx";
-                fjs.parentNode.insertBefore(js, fjs);
-            }(document, 'script', 'facebook-jssdk'));
-
-  </script>
-
-
-
-
-
-
-<div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v10.0&appId=228732085264152&autoLogAppEvents=1" nonce="EnhhuBm8"></script>
-
 
 <div class="container">
   <form action="/action_page.php">
@@ -201,16 +145,8 @@ input[type=submit]:hover {
 
       <div class="col">
         <a href="#" class="fb btn">
-          <fb:login-button  scope="public_profile,email"   onlogin="checkLoginState();">   </fb:login-button>
-          <div class="fb-login-button" data-width="" data-size="medium" data-button-type="login_with" data-layout="default" data-auto-logout-link="false" data-use-continue-as="true"></div>
-         <script>
-         function checkLoginState() {
-          FB.getLoginStatus(function(response) {
-            statusChangeCallback(response);
-          });
-        }</script>
-        </a>
-        
+          <i class="fa fa-facebook fa-fw"></i> Login with Facebook
+         </a>
         <a href="#" class="twitter btn">
           <i class="fa fa-twitter fa-fw"></i> Login with Twitter
         </a>

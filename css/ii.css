@@ -67,14 +67,15 @@ body{
     top:115%;
     left:15%;
     width:500px;
+    
 
 }    
 .detail{  
     position: absolute;
-    top:144%;
+    top:145%;
     left:15%;
     width:500px;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .publication{
@@ -106,6 +107,7 @@ body{
     top:102%;
     border: 1px solid black;
     width:650px;
+    
 }
 .terms{
     position: absolute;
@@ -118,6 +120,13 @@ body{
     position: absolute;
     left:1%;
     top:160%;
+    width:650px;
+}
+
+.reviews{
+    position: absolute;
+    left:1%;
+    top:185%;
     width:650px;
 }
     
