@@ -1,0 +1,124 @@
+body{
+    width:90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.header{
+    height: 15%;
+    width:100%;
+
+}
+
+
+.icon{
+    align-items: left;
+
+    height: 10%;
+    width: 10%;
+}
+
+.topnav{
+    align-items: center;
+    position: absolute;
+    left: 40%;
+    top:5%;
+   
+}
+
+  .topnav .search-container {
+    align-items: center;
+    left: 50%;
+    height: 10%;
+    
+  }
+  
+  .topnav input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: 1px solid black;
+  }
+  
+  .topnav .search-container button {
+    float: center;
+    padding: 6px 10px;
+    margin-top:2%;
+    background: #ddd;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .topnav .search-container button:hover {
+    background: #ccc;
+  }
+  
+.bookimg{
+    position: absolute;
+    left:15%;
+    top:35%;
+    border: 1px solid black;
+    padding:5%;
+}
+
+.description{
+    position: absolute;
+    top:115%;
+    left:15%;
+    width:500px;
+
+}    
+.detail{  
+    position: absolute;
+    top:144%;
+    left:15%;
+    width:500px;
+    font-size: 20px;
+}
+
+.publication{
+    background-color: rgb(233, 232, 232);
+}
+
+
+.language{
+    background-color: rgb(233, 232, 232);
+}
+
+
+.date{
+    background-color: rgb(233, 232, 232);
+}
+
+.bookcontent{
+    position: absolute;
+    left:52%;
+    top:35%;
+}
+.price{
+    text-decoration: line-through;
+}
+
+.payment{
+    position: absolute;
+    left:1%;
+    top:102%;
+    border: 1px solid black;
+    width:650px;
+}
+.terms{
+    position: absolute;
+    left:1%;
+    top:135%;
+    width:650px;
+}
+
+.re{
+    position: absolute;
+    left:1%;
+    top:160%;
+    width:650px;
+}
+    
+
