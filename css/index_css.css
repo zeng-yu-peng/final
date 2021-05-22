@@ -4,13 +4,15 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  text-decoration: none;
+  font-family: "微軟正黑體";
 }
 
 .head {
   height: 200px;
   max-width: 1200px;
   margin: auto;
-  background-color: #E6F1D8;
+  background-color: #ebebeb;
   position: relative;
 }
 

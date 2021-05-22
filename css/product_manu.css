@@ -35,3 +35,45 @@
   .product_manu img{
     height: 220px;width: 200px;
   }
+
+
+  /* 購買圖片的特效 */
+  .text
+    {
+    width: 100%;
+    position: relative;
+    margin-bottom: 10px;
+    font-weight: 500;
+  }
+
+  .textcontant {
+    font-weight: 900;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ECECEC;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+  }
+
+  .textcontant p {
+    font-size: 22px;
+    font-weight: bold;
+    color: #8B0016;
+  }
+
+
+  .textcontant:hover
+
+  /*首頁的圖片特效*/
+    {
+
+    opacity: 1;
+    transition: 0.8s;
+    transition: 1s;
+  }
