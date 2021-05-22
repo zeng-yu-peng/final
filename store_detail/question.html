@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>夢想藍圖|關於我們</title>
+  <link rel="stylesheet" type="text/css" href="../css/index_css.css">
+  <link rel="stylesheet" type="text/css" href="../css/barside.css">
+  <link rel="stylesheet" type="text/css" href="../css/product_manu.css">
+  <style>
+  .question_wrap{
+    position: relative;
+    max-width: 1200px;;
+    height: auto;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+  .question_wrap img{
+    height: 400px; width: 550px;
+    margin: 50px;
+    border-radius: 10%;
+    position: relative;
+    left: 5%;
+  }
+  .question_outborder{
+    display: flex;
+  }
+  .question_contant{
+    padding: 35px;
+    text-align: center;
+    font-size: 28px;
+    height: 300px;
+    width: 800px;
+    background-color: rgba(105, 136, 209, 0.75);
+    color: #ffffff;
+    position: relative;  top: 70px; left: -60px;
+  }
+  .question_contant p{
+    text-align: left;
+  }
+  .question_contant h2::before, .question_contant  h2::after {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 200px;
+  background-color: #ffffff;
+  margin: auto;
+  }
+    
+  </style>
+
+<script>
+  // 彈跳式清單
+  function button_open() {
+    document.getElementById("sidebar").style.display = "block";
+  }
+
+  function button_close() {
+    document.getElementById("sidebar").style.display = "none";
+  }
+
+  //搜尋欄位
+  var input = document.getElementById("myInput");
+  input.addEventListener("keyup", function(event) {
+  if (event.keyCode === 13) {
+  event.preventDefault();
+  document.getElementById("myBtn").click();
+  }
+  });
+</script>
+
+</head>
+
+<body>
+
+  
+  <header>
+    <div class="head">
+      <div class="head_icon"> <img src="../img/booksicon.png" alt="icon"> </div>
+      <div class="head_slogn">夢想藍圖</div>
+      <div class="head_search">
+        <input id="myInput" value="Search" />
+        <button id="myBtn" >搜尋</button>
+      </div>
+      <div class="head_decoration">
+        <div> <a href="../login.html"><img src="../img/login.jpg" alt="login"> </a></div>
+        <div> <img src="../img/wishlist.png" alt="My wishlist"> </div>
+        <div> <img src="../img/cart.jpg" alt="My Cart"> </div>
+      </div>
+    </div>
+  </header>
+  <!-- 伸縮manu -->
+<section>
+  <div class="side_button">
+    <button onclick="button_open()">☰</button>
+  </div>
+
+  <div class="manu" style="display:none" id="sidebar">
+    <button onclick="button_close()" class="barline">Close &times;</button>
+    <ul>
+      <li><a href="../index.html">商店介紹</a></li>
+      <li><a href="../manu/product.html">全部商品</a>
+        <ul>
+          <li><a href="#">TOP 10</a></li>
+          <li><a href="../manu/product_magazine.html">Magazine</a></li>
+          <li><a href="../manu/product_ebook.html">電子書</a></li>
+        </ul>
+      </li>
+      <li><a href="aboutus.html">認識我們</a></li>
+      <li><a href="question.html">購物須知</a></li>
+      <li><a href="#">留言板</a></li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div class="question_wrap">
+    <div class="question_outborder">
+      <div><img src="../img/store_detail/question1.jpg" alt=""></div>
+    <div class="question_contant">
+      <h2>宅配通路</h2><br>
+      <p>目前提供店到店、中華郵政及到店取貨<br>
+        (貨到付款)，以上三種方式。<br>
+        正在積極開發更多個通路方式，近請期待！
+      </p>
+    </div>
+    </div>
+    <div class="question_outborder">
+      <div><img src="../img/store_detail/question2.jpg" alt=""></div>
+      <div class="question_contant">
+        <h2>付款方式</h2><br>
+        <p>
+          1.信用卡付款：目前商城僅接受台灣地區發行的VISA、MASTERCARD、JCB、聯合信用卡。<br>
+          2.ATM付款<br>
+          3.超商ibon付款
+        </p>
+      </div>
+    </div>
+    <div class="question_outborder">
+      <div><img src="../img/store_detail/question3.jpg" alt=""></div>
+      <div class="question_contant">
+        <h2>退換貨須知</h2><br>
+        <p>一、退貨權益說明：您收到商品有瑕疵，可以主張換貨或退貨。<br>
+            二、依照消費者保護法規定，消費者均享有產品到貨7天猶豫期之權益，但提醒您，商品退貨時必須回復原狀，亦即必須回復至您收到商品時的原始狀態。
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section>
+  <div class="footer">
+    <div class="footer_wrap">
+      <div>
+        <h4>關於誠品</h4>
+        <ul>
+          <li><a href="">企業理念</a></li>
+          <li><a href="">創辦人故事</a></li>
+          <li><a href="">經營內容</a></li>
+          <li><a href="">發展歷程</a></li>
+          <li><a href="">得獎事蹟</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>關於誠品</h4>
+        <ul>
+          <li><a href="">企業理念</a></li>
+          <li><a href="">創辦人故事</a></li>
+          <li><a href="">經營內容</a></li>
+          <li><a href="">發展歷程</a></li>
+          <li><a href="">得獎事蹟</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>關於誠品</h4>
+        <ul>
+          <li><a href="">企業理念</a></li>
+          <li><a href="">創辦人故事</a></li>
+          <li><a href="">經營內容</a></li>
+          <li><a href="">發展歷程</a></li>
+          <li><a href="">得獎事蹟</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="footer_copyright">
+      <p>誠品線上eslite.com - powered by 誠品生活 / 誠品書店 / 誠品物流 | 誠品生活股份有限公司 | 台灣台北市信義區松德路204號B1
+        服務電話：+886-2-8789-8921<br>
+        本網站已依台灣網站內容分級規定處理｜建議使用瀏覽器版本：Google Chrome版本60以上 / Firefox版本48以上 / Safari 版本11以上</p>
+    </div>
+  </div>
+  
+</section>
+</body>
+
+</html>
+
