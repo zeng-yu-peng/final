@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>夢想藍圖|Ebook </title>
+  <link rel="stylesheet" type="text/css" href="../css/index_css.css">
+  <link rel="stylesheet" type="text/css" href="../css/barside.css">
+  <link rel="stylesheet" type="text/css" href="../css/index_contant.css">
+  <link rel="stylesheet" type="text/css" href="../css/product_manu.css">
+  
+  <style>
+  </style>
+
+<script>
+  // 彈跳式清單
+  function button_open() {
+    document.getElementById("sidebar").style.display = "block";
+  }
+
+  function button_close() {
+    document.getElementById("sidebar").style.display = "none";
+  }
+
+  //搜尋欄位
+  var input = document.getElementById("myInput");
+  input.addEventListener("keyup", function(event) {
+  if (event.keyCode === 13) {
+  event.preventDefault();
+  document.getElementById("myBtn").click();
+  }
+  });
+</script>
+
+</head>
+
+<body>
+  <header>
+    <div class="head">
+      <div class="head_icon"> <img src="../img/booksicon.png" alt="icon"> </div>
+      <div class="head_slogn">夢想藍圖</div>
+      <div class="head_search">
+        <input id="myInput" value="Search" />
+        <button id="myBtn" >搜尋</button>
+      </div>
+      <div class="head_decoration">
+        <div> <a href="../login.html"><img src="../img/login.jpg" alt="login"> </a></div>
+        <div> <img src="../img/wishlist.png" alt="My wishlist"> </div>
+        <div> <img src="../img/cart.jpg" alt="My Cart"> </div>
+      </div>
+    </div>
+  </header>
+  <!-- 伸縮manu -->
+<section>
+  <div class="side_button">
+    <button onclick="button_open()">☰</button>
+  </div>
+
+  <div class="manu" style="display:none" id="sidebar">
+    <button onclick="button_close()" class="barline">Close &times;</button>
+    <ul>
+      <li><a href="../index.html">商店介紹</a></li>
+      <li><a href="product.html">全部商品</a>
+        <ul>
+          <li><a href="#">TOP 10</a></li>
+          <li><a href="product_magazine.html">Magazine</a></li>
+          <li><a href="product_ebook.html">電子書</a></li>
+        </ul>
+      </li>
+      <li><a href="../store_detail/aboutus.html">認識我們</a></li>
+    <li><a href="../store_detail/question.html">購物須知</a></li>
+      <li><a href="#">留言板</a></li>
+    </ul>
+  </div>
+</section>
+
+
+<a name="ebook"></a>
+<!-- 電子書  -->
+<section>
+  <div class="product_manu">
+    <div class="product_manu_title">
+      <h2>電子書</h2>
+    </div>
+    <!-- 《空間雜誌》 -->
+    <table>
+      <div class="product_manu_caption">空間雜誌</div>
+      <tr>
+        <td>
+          <div class="text">
+            <img src="../img/books/core/coreinterio13 .jpg" alt=" icon">
+            <div class="textcontant">
+              <a href="../core1.html">
+                <p>商品詳情</p>
+              </a>
+            </div>
+          </div>
+          <span>
+            《CORE INTERIOR空間》<br>
+            1月號/2019第13期 (電子雜誌)<br>
+            刊  別 ： 季刊<br>
+            出版地區 ： 台灣<br>
+            語  言 ： 繁體中文<br>
+            出   版  社  :  圓祥大眾傳播<br>
+            出版日期   :  2019/01/25<br>
+          </span>
+        </td>
+        <td>
+          <div class="text">
+            <img src="../img/books/core/coreinterio14.jpg" alt=" icon">
+            <div class="textcontant">
+              <a href="../core2.html">
+                <p>商品詳情</p>
+              </a>
+            </div>
+          </div>
+          <span>
+            《CORE INTERIOR空間》<br>
+            1月號/2019第13期 (電子雜誌)<br>
+            刊  別 ： 季刊<br>
+            出版地區 ： 台灣<br>
+            語  言 ： 繁體中文<br>
+            出   版  社  :  圓祥大眾傳播<br>
+            出版日期   :  2019/01/25<br>
+          </span>
+        </td>
+      </tr>
+    </table>
+    <!-- 《iLook電影》  -->
+    <table>
+      <div class="product_manu_caption">iLook電影</div>
+      <tr>
+        <td>
+          <div class="text">
+            <img src="../img/books/ilook/ilook1.png" alt=" icon">
+            <div class="textcontant">
+              <a href="../ilook1.html">
+                <p>商品詳情</p>
+              </a>
+            </div>
+          </div>
+          <span>
+            《iLook電影》<br>
+            1月號/2021第159期 (電子雜誌)<br>
+            刊  別 ： 月刊<br>
+            出版地區 ： 台灣<br>
+            語  言 ： 繁體中文<br>
+            出   版  社  :  我愛電影<br>
+            出版日期   :  2021/01/01<br>
+          </span>
+        </td>
+        <td>
+          <div class="text">
+            <img src="../img/books/ilook/ilook3.png" alt=" icon">
+            <div class="textcontant">
+              <a href="../ilook3.html">
+                <p>商品詳情</p>
+              </a>
+            </div>
+          </div>
+          <span>
+            《iLook電影》<br>
+            3月號/2021第161期 (電子雜誌)<br>
+            刊  別 ： 月刊<br>
+            出版地區 ： 台灣<br>
+            語  言 ： 繁體中文<br>
+            出   版  社  :  我愛電影<br>
+            出版日期   :  2021/03/01<br>
+          </span>
+        </td>
+        <td>
+          <div class="text">
+            <img src="../img/books/ilook/ilook4.png" alt=" icon">
+            <div class="textcontant">
+              <a href="../ilook4.html">
+                <p>商品詳情</p>
+              </a>
+            </div>
+          </div>
+          <span>
+            《iLook電影》<br>
+            4月號/2021第162期 (電子雜誌)<br>
+            刊  別 ： 月刊<br>
+            出版地區 ： 台灣<br>
+            語  言 ： 繁體中文<br>
+            出   版  社  :  我愛電影<br>
+            出版日期   :  2021/04/01<br>
+          </span>
+        </td>
+        <td>
+          <div class="text">
+            <img src="../img/books/ilook/ilook5.jpg" alt=" icon">
+            <div class="textcontant">
+              <a href="../ilook5.html">
+                <p>商品詳情</p>
+              </a>
+            </div>
+          </div>
+          <span>
+            《iLook電影》<br>
+            5月號/2021第163期 (電子雜誌)<br>
+            刊  別 ： 月刊<br>
+            出版地區 ： 台灣<br>
+            語  言 ： 繁體中文<br>
+            出   版  社  :  我愛電影<br>
+            出版日期   :  2021/05/01<br>
+          </span>
+        </td>
+      </tr>
+    </table>
+    <!-- 《世界電影》  -->
+    <table>
+      <div class="product_manu_caption">世界電影</div>
+      <tr>
+        <td>
+          <div class="text">
+            <img src="../img/books/movie/movie1.png" alt=" icon">
+            <div class="textcontant">
+              <a href="../world_movie1.html">
+                <p>商品詳情</p>
+              </a>
+            </div>
+          </div>
+          <span>
+            《世界電影》<br>
+            2021年1月號第624期 (電子雜誌)<br>
+            刊  別 ： 月刊<br>
+            出版地區 ： 台灣<br>
+            語  言 ： 繁體中文<br>
+            出   版  社  :  世界電影<br>
+            出版日期   :  2021/01/04<br>
+          </span>
+        </td>
+        <td>
+          <div class="text">
+            <img src="../img/books/movie/movie2.png" alt=" icon">
+            <div class="textcontant">
+              <a href="../world_movie2.html">
+                <p>商品詳情</p>
+              </a>
+            </div>
+          </div>
+          <span>
+            《世界電影》<br>
+            2021年2月號第625期 (電子雜誌)<br>
+            刊  別 ： 月刊<br>
+            出版地區 ： 台灣<br>
+            語  言 ： 繁體中文<br>
+            出   版  社  :  世界電影<br>
+            出版日期   :  2021/02/01<br>
+          </span>
+        </td>
+        <td>
+          <div class="text">
+            <img src="../img/books/movie/movie4.jpg" alt=" icon">
+            <div class="textcontant">
+              <a href="../world_movie4.html">
+                <p>商品詳情</p>
+              </a>
+            </div>
+          </div>
+          <span>
+            《世界電影》<br>
+            2021年4月號第627期 (電子雜誌)<br>
+            刊  別 ： 月刊<br>
+            出版地區 ： 台灣<br>
+            語  言 ： 繁體中文<br>
+            出   版  社  :  世界電影<br>
+            出版日期   :  2021/04/06<br>
+          </span>
+        </td>
+        <td>
+          <div class="text">
+            <img src="../img/books/movie/movie5.jpg" alt=" icon">
+            <div class="textcontant">
+              <a href="../world_movie5.html">
+                <p>商品詳情</p>
+              </a>
+            </div>
+          </div>
+          <span>
+            《世界電影》<br>
+            2021年5月號第628期 (電子雜誌)<br>
+            刊  別 ： 月刊<br>
+            出版地區 ： 台灣<br>
+            語  言 ： 繁體中文<br>
+            出   版  社  :  世界電影<br>
+            出版日期   :  2021/05/10<br>
+          </span>
+        </td>
+      </tr>
+    </table>
+  </div>
+</section>
+
+
+
+<section>
+  <div class="footer">
+    <div class="footer_wrap">
+      <div>
+        <h4>關於誠品</h4>
+        <ul>
+          <li><a href="">企業理念</a></li>
+          <li><a href="">創辦人故事</a></li>
+          <li><a href="">經營內容</a></li>
+          <li><a href="">發展歷程</a></li>
+          <li><a href="">得獎事蹟</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>關於誠品</h4>
+        <ul>
+          <li><a href="">企業理念</a></li>
+          <li><a href="">創辦人故事</a></li>
+          <li><a href="">經營內容</a></li>
+          <li><a href="">發展歷程</a></li>
+          <li><a href="">得獎事蹟</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>關於誠品</h4>
+        <ul>
+          <li><a href="">企業理念</a></li>
+          <li><a href="">創辦人故事</a></li>
+          <li><a href="">經營內容</a></li>
+          <li><a href="">發展歷程</a></li>
+          <li><a href="">得獎事蹟</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="footer_copyright">
+      <p>誠品線上eslite.com - powered by 誠品生活 / 誠品書店 / 誠品物流 | 誠品生活股份有限公司 | 台灣台北市信義區松德路204號B1
+        服務電話：+886-2-8789-8921<br>
+        本網站已依台灣網站內容分級規定處理｜建議使用瀏覽器版本：Google Chrome版本60以上 / Firefox版本48以上 / Safari 版本11以上</p>
+    </div>
+  </div>
+  
+</section>
+</body>
+
+</html>
+

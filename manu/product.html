@@ -5,14 +5,15 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>夢想藍圖</title>
-  <link rel="stylesheet" type="text/css" href="css/index_css.css">
-  <link rel="stylesheet" type="text/css" href="css/barside.css">
-  <link rel="stylesheet" type="text/css" href="css/index_contant.css">
-  <link rel="stylesheet" href="css/product_manu.css">
+  <title>夢想藍圖|全部商品</title>
+  <link rel="stylesheet" type="text/css" href="../css/index_css.css">
+  <link rel="stylesheet" type="text/css" href="../css/barside.css">
+  <link rel="stylesheet" type="text/css" href="../css/index_contant.css">
+  <link rel="stylesheet" type="text/css" href="../css/product_manu.css">
+  
   <style>
+   
     
-
   </style>
 
 <script>
@@ -40,122 +41,58 @@
 <body>
   <header>
     <div class="head">
-      <div class="head_icon"> <img src="img/booksicon.png" alt="icon"> </div>
-      <div class="header_list">
-      <a href="#head_contant"><span>商店介紹</span></a>
-      <a href="#head_hot"><span>熱銷排行</span></a>
-      <a href="#head_new"><span>新書上市</span> </a>
-      </div>
+      <div class="head_icon"> <img src="../img/booksicon.png" alt="icon"> </div>
       <div class="head_slogn">夢想藍圖</div>
       <div class="head_search">
         <input id="myInput" value="Search" />
         <button id="myBtn" >搜尋</button>
       </div>
       <div class="head_decoration">
-        <div> <a href="login.html"><img src="img/login.jpg" alt="login"> </a></div>
-        <div> <img src="img/wishlist.png" alt="My wishlist"> </div>
-        <div> <img src="img/cart.jpg" alt="My Cart"> </div>
+        <div> <a href="../login.html"><img src="../img/login.jpg" alt="login"> </a></div>
+        <div> <img src="../img/wishlist.png" alt="My wishlist"> </div>
+        <div> <img src="../img/cart.jpg" alt="My Cart"> </div>
       </div>
     </div>
   </header>
-<!-- 彈跳清單 -->
+  <!-- 伸縮manu -->
 <section>
   <div class="side_button">
-  <button onclick="button_open()">☰</button>
-</div>
+    <button onclick="button_open()">☰</button>
+  </div>
 
-<div class="manu" style="display:none" id="sidebar">
-  <button onclick="button_close()" class="barline">Close &times;</button>
-  <ul>
-    <li><a href="index.html">商店介紹</a></li>
-    <li><a href="manu/product.html">全部商品</a>
-      <ul>
-        <li><a href="#">TOP 10</a></li>
-        <li><a href="manu/product_magazine.html">Magazine</a></li>
-        <li><a href="manu/product_ebook.html">電子書</a></li>
-      </ul>
-    </li>
-    <li><a href="store_detail/aboutus.html">認識我們</a></li>
-    <li><a href="store_detail/question.html">購物須知</a></li>
-    <li><a href="#">留言板</a></li>
-  </ul>
-</div>
-</section>
-
-
-<!-- 內容介紹 -->
-<a href="#" name="head_contant"></a>
-<section>
-  <div class="index_contant">
-    <div class="product_manu_title">
-      <h2>商店起源</h2>
-    </div>
-<!-- contant -->
-      <div class="product_contant">
-        <p>耶和華你的神、曾將你從埃及地為奴之家領出來。<br>
-          除了我以外、你不可有別的神。<br>
-          不可為自己雕刻偶像、也不可作什麼形像、彷彿上天、下地、和地下、水中的百物。<br>
-          不可跪拜那些像、也不可事奉他、因為我耶和華你的　神是忌邪的　神、恨我的、我必追討他的罪、自父及子、直到三四代。<br>
-          愛我守我誡命的、我必向他們發慈愛、直到千代。<br>
-          不可妄稱耶和華——你們神的名、因為妄稱耶和華名的、耶和華必不以他為無罪。<br>
-          當記念安息日、守為聖日。<br>
-          六日要勞碌作你一切的工，<br>
-          但第七日是向耶和華你　神當守的安息日．這一日你和你的兒女、僕婢、牲畜、和你城市裡寄居的客旅、無論如何都不可工作。<br>
-          因為六日之內、耶和華造天、地、海、和其中的萬物、第七日便安息．所以耶和華賜福與安息日、定為聖日。<br>
-          當尊敬父母、使你的日子在耶和華你　神所賜你的地上、得以長久。<br>
-          不可謀殺。<br>
-          不可姦淫。<br>
-          不可偷盜。<br>
-          不可陷害人。<br>
-          不可貪戀人的房屋、也不可貪戀人的妻子、僕婢、牛驢、並他一切所有的。</p>
-
-        <p>起源：</p>
-        <!-- 轉燈片 -->
-        <div class="slider_container">
-          <div>
-            <img src="img/yang02.jpg" alt="pure css3 slider" />
-            <span class="info">Image Description 1</span>
-          </div>
-          <div>
-            <img src="img/allansu.jpg" alt="pure css3 slider" />
-            <span class="info">Image Description 2</span>
-          </div>
-          <div>
-            <img src="img/booksicon.png" alt="pure css3 slider" />
-            <span class="info">Image Description 3</span>
-          </div>
-          <div>
-            <img src="img/yang2.jpg" alt="pure css3 slider" />
-            <span class="info">Image Description 4</span>
-          </div>
-          <div>
-            <img src="img/JK2.jpg" alt="pure css3 slider" />
-            <span class="info">Image Description 5</span>
-          </div>
-        </div>
-      </div>
-    
+  <div class="manu" style="display:none" id="sidebar">
+    <button onclick="button_close()" class="barline">Close &times;</button>
+    <ul>
+      <li><a href="../index.html">商店介紹</a></li>
+      <li><a href="product.html">全部商品</a>
+        <ul>
+          <li><a href="#">TOP 10</a></li>
+          <li><a href="#magazine">Magazine</a></li>
+          <li><a href="#ebook">電子書</a></li>
+        </ul>
+      </li>
+      <li><a href="../store_detail/aboutus.html">認識我們</a></li>
+    <li><a href="../store_detail/question.html">購物須知</a></li>
+      <li><a href="#">留言板</a></li>
+    </ul>
   </div>
 </section>
-
-
-<!-- 熱銷排行 -->
-<a href="#" name="head_hot"></a>
+  <a name="magazine"></a>
+<!-- Magazine  -->
 <section>
   <div class="product_manu">
     <div class="product_manu_title">
-      <h2>熱銷排行</h2>
+      <h2>雜誌</h2>
     </div>
-    <table>
+    <!-- 《漂亮家居》 -->
+    <table> 
       <div class="product_manu_caption">漂亮家居</div>
       <tr>
         <td>
           <div class="text">
-            <img src="img/books/beauty/beauty1.png" alt="icon">
+            <img src="../img/books/beauty/beauty1.png" alt="icon">
             <div class="textcontant">
-              <a href="beauty1.html">
-                <p>商品詳情</p>
-              </a>
+               <a href="../beauty1.html"><p>商品詳情</p> </a>
             </div>
           </div>
           <br>
@@ -171,16 +108,14 @@
         </td>
         <td>
           <div class="text">
-            <img src="img/books/beauty/beauty2.png" alt="icon">
+            <img src="../img/books/beauty/beauty2.png" alt="icon">
             <div class="textcontant">
-              <a href="beauty2.html">
-                <p>商品詳情</p>
-              </a>
+              <a href="../beauty2.html"><p>商品詳情</p></a>
             </div>
           </div>
           <span>
-            《漂亮家居》<br>
-            2月號/2021 第240期<br>
+           《漂亮家居》<br>
+           2月號/2021 第240期<br>
             刊  別 ： 月刊<br>
             出版地區 ： 台灣<br>
             語  言 ： 繁體中文<br>
@@ -190,9 +125,9 @@
         </td>
         <td>
           <div class="text">
-            <img src="img/books/beauty/beauty3.png" alt="icon">
+            <img src="../img/books/beauty/beauty3.png" alt="icon">
             <div class="textcontant">
-              <a href="beauty3.html">
+              <a href="../beauty3.html">
                 <p>商品詳情</p>
               </a>
             </div>
@@ -209,9 +144,9 @@
         </td>
         <td>
           <div class="text">
-            <img src="img/books/beauty/beauty4.png" alt="icon">
+            <img src="../img/books/beauty/beauty4.png" alt="icon">
             <div class="textcontant">
-              <a href="beauty4.html">
+              <a href="../beauty4.html">
                 <p>商品詳情</p>
               </a>
             </div>
@@ -234,9 +169,9 @@
       <tr>
         <td>
           <div class="text">
-            <img src="img/books/interior/interior2.png" alt="icon">
+            <img src="../img/books/interior/interior2.png" alt="icon">
             <div class="textcontant">
-              <a href="interior2.html">
+              <a href="../interior2.html">
                 <p>商品詳情</p>
               </a>
             </div>
@@ -253,9 +188,9 @@
         </td>
         <td>
           <div class="text">
-            <img src="img/books/interior/interior3.png" alt="icon">
+            <img src="../img/books/interior/interior3.png" alt="icon">
             <div class="textcontant">
-              <a href="interior3.html">
+              <a href="../interior3.html">
                 <p>商品詳情</p>
               </a>
             </div>
@@ -272,9 +207,9 @@
         </td>
         <td>
           <div class="text">
-            <img src="img/books/interior/interior5.jpg" alt="icon">
+            <img src="../img/books/interior/interior5.jpg" alt="icon">
             <div class="textcontant">
-              <a href="interior5.html">
+              <a href="../interior5.html">
                 <p>商品詳情</p>
               </a>
             </div>
@@ -289,171 +224,232 @@
             出版日期   :  2021/03/05<br>
           </span>
         </td>
-
+        
       </tr>
     </table>
   </div>
 </section>
 
-
-<!-- 新書上市 -->
-<a href="#" name="head_new"></a>
+<a name="ebook"></a>
+<!-- 電子書  -->
 <section>
   <div class="product_manu">
     <div class="product_manu_title">
-      <h2>新書上市</h2>
+      <h2>電子書</h2>
     </div>
+    <!-- 《空間雜誌》 -->
     <table>
-      <div class="product_manu_caption">漂亮家居</div>
+      <div class="product_manu_caption">空間雜誌</div>
       <tr>
         <td>
           <div class="text">
-            <img src="img/books/beauty/beauty1.png" alt="icon">
+            <img src="../img/books/core/coreinterio13 .jpg" alt=" icon">
             <div class="textcontant">
-              <a href="beauty1.html">
+              <a href="../core1.html">
                 <p>商品詳情</p>
               </a>
             </div>
           </div>
-          <br>
           <span>
-            《漂亮家居》<br>
-            1月號/2021 第239期<br>
-            刊  別 ： 月刊<br>
+            《CORE INTERIOR空間》<br>
+            1月號/2019第13期 (電子雜誌)<br>
+            刊  別 ： 季刊<br>
             出版地區 ： 台灣<br>
             語  言 ： 繁體中文<br>
-            出   版  社  :  麥浩斯<br>
-            出版日期   :  2021/01/06<br>
+            出   版  社  :  圓祥大眾傳播<br>
+            出版日期   :  2019/01/25<br>
           </span>
         </td>
         <td>
           <div class="text">
-            <img src="img/books/beauty/beauty2.png" alt="icon">
+            <img src="../img/books/core/coreinterio14.jpg" alt=" icon">
             <div class="textcontant">
-              <a href="beauty2.html">
+              <a href="../core2.html">
                 <p>商品詳情</p>
               </a>
             </div>
           </div>
           <span>
-            《漂亮家居》<br>
-            2月號/2021 第240期<br>
-            刊  別 ： 月刊<br>
+            《CORE INTERIOR空間》<br>
+            1月號/2019第13期 (電子雜誌)<br>
+            刊  別 ： 季刊<br>
             出版地區 ： 台灣<br>
             語  言 ： 繁體中文<br>
-            出   版  社  :  麥浩斯<br>
-            出版日期   :  2021/02/04<br>
-          </span>
-        </td>
-        <td>
-          <div class="text">
-            <img src="img/books/beauty/beauty3.png" alt="icon">
-            <div class="textcontant">
-              <a href="beauty3.html">
-                <p>商品詳情</p>
-              </a>
-            </div>
-          </div>
-          <span>
-            《漂亮家居》<br>
-            3月號/2021 第241期<br>
-            刊  別 ： 月刊<br>
-            出版地區 ： 台灣<br>
-            語  言 ： 繁體中文<br>
-            出   版  社  :  麥浩斯<br>
-            出版日期   :  2021/03/05<br>
-          </span>
-        </td>
-        <td>
-          <div class="text">
-            <img src="img/books/beauty/beauty4.png" alt="icon">
-            <div class="textcontant">
-              <a href="beauty4.html">
-                <p>商品詳情</p>
-              </a>
-            </div>
-          </div>
-          <span>
-            《漂亮家居》<br>
-            4月號/2021 第242期<br>
-            刊  別 ： 月刊<br>
-            出版地區 ： 台灣<br>
-            語  言 ： 繁體中文<br>
-            出   版  社  :  麥浩斯<br>
-            出版日期   :  2021/04/07<br>
+            出   版  社  :  圓祥大眾傳播<br>
+            出版日期   :  2019/01/25<br>
           </span>
         </td>
       </tr>
     </table>
-    <!-- 《室內interior》  -->
+    <!-- 《iLook電影》  -->
     <table>
-      <div class="product_manu_caption">室內雜誌</div>
+      <div class="product_manu_caption">iLook電影</div>
       <tr>
         <td>
           <div class="text">
-            <img src="img/books/interior/interior2.png" alt="icon">
+            <img src="../img/books/ilook/ilook1.png" alt=" icon">
             <div class="textcontant">
-              <a href="interior2.html">
+              <a href="../ilook1.html">
                 <p>商品詳情</p>
               </a>
             </div>
           </div>
           <span>
-            《室內interior》<br>
-            2月號/2021 第329期<br>
-            刊  別 ： 季刊<br>
+            《iLook電影》<br>
+            1月號/2021第159期 (電子雜誌)<br>
+            刊  別 ： 月刊<br>
             出版地區 ： 台灣<br>
             語  言 ： 繁體中文<br>
-            出   版  社  :  美兆文化<br>
-            出版日期   :  2021/02/03<br>
+            出   版  社  :  我愛電影<br>
+            出版日期   :  2021/01/01<br>
           </span>
         </td>
         <td>
           <div class="text">
-            <img src="img/books/interior/interior3.png" alt="icon">
+            <img src="../img/books/ilook/ilook3.png" alt=" icon">
             <div class="textcontant">
-              <a href="interior3.html">
+              <a href="../ilook3.html">
                 <p>商品詳情</p>
               </a>
             </div>
           </div>
           <span>
-            《室內interior》<br>
-            2月號/2021 第329期<br>
-            刊  別 ： 季刊<br>
+            《iLook電影》<br>
+            3月號/2021第161期 (電子雜誌)<br>
+            刊  別 ： 月刊<br>
             出版地區 ： 台灣<br>
             語  言 ： 繁體中文<br>
-            出   版  社  :  美兆文化<br>
-            出版日期   :  2021/02/03<br>
+            出   版  社  :  我愛電影<br>
+            出版日期   :  2021/03/01<br>
           </span>
         </td>
         <td>
           <div class="text">
-            <img src="img/books/interior/interior5.jpg" alt="icon">
+            <img src="../img/books/ilook/ilook4.png" alt=" icon">
             <div class="textcontant">
-              <a href="interior5.html">
+              <a href="../ilook4.html">
                 <p>商品詳情</p>
               </a>
             </div>
           </div>
           <span>
-            《室內interior》<br>
-            3月號/2021 第330期<br>
-            刊  別 ： 季刊<br>
+            《iLook電影》<br>
+            4月號/2021第162期 (電子雜誌)<br>
+            刊  別 ： 月刊<br>
             出版地區 ： 台灣<br>
             語  言 ： 繁體中文<br>
-            出   版  社  :  美兆文化<br>
-            出版日期   :  2021/03/05<br>
+            出   版  社  :  我愛電影<br>
+            出版日期   :  2021/04/01<br>
           </span>
         </td>
-
+        <td>
+          <div class="text">
+            <img src="../img/books/ilook/ilook5.jpg" alt=" icon">
+            <div class="textcontant">
+              <a href="../ilook5.html">
+                <p>商品詳情</p>
+              </a>
+            </div>
+          </div>
+          <span>
+            《iLook電影》<br>
+            5月號/2021第163期 (電子雜誌)<br>
+            刊  別 ： 月刊<br>
+            出版地區 ： 台灣<br>
+            語  言 ： 繁體中文<br>
+            出   版  社  :  我愛電影<br>
+            出版日期   :  2021/05/01<br>
+          </span>
+        </td>
+      </tr>
+    </table>
+    <!-- 《世界電影》  -->
+    <table>
+      <div class="product_manu_caption">世界電影</div>
+      <tr>
+        <td>
+          <div class="text">
+            <img src="../img/books/movie/movie1.png" alt=" icon">
+            <div class="textcontant">
+              <a href="../world_movie1.html">
+                <p>商品詳情</p>
+              </a>
+            </div>
+          </div>
+          <span>
+            《世界電影》<br>
+            2021年1月號第624期 (電子雜誌)<br>
+            刊  別 ： 月刊<br>
+            出版地區 ： 台灣<br>
+            語  言 ： 繁體中文<br>
+            出   版  社  :  世界電影<br>
+            出版日期   :  2021/01/04<br>
+          </span>
+        </td>
+        <td>
+          <div class="text">
+            <img src="../img/books/movie/movie2.png" alt=" icon">
+            <div class="textcontant">
+              <a href="../world_movie2.html">
+                <p>商品詳情</p>
+              </a>
+            </div>
+          </div>
+          <span>
+            《世界電影》<br>
+            2021年2月號第625期 (電子雜誌)<br>
+            刊  別 ： 月刊<br>
+            出版地區 ： 台灣<br>
+            語  言 ： 繁體中文<br>
+            出   版  社  :  世界電影<br>
+            出版日期   :  2021/02/01<br>
+          </span>
+        </td>
+        <td>
+          <div class="text">
+            <img src="../img/books/movie/movie4.jpg" alt=" icon">
+            <div class="textcontant">
+              <a href="../world_movie4.html">
+                <p>商品詳情</p>
+              </a>
+            </div>
+          </div>
+          <span>
+            《世界電影》<br>
+            2021年4月號第627期 (電子雜誌)<br>
+            刊  別 ： 月刊<br>
+            出版地區 ： 台灣<br>
+            語  言 ： 繁體中文<br>
+            出   版  社  :  世界電影<br>
+            出版日期   :  2021/04/06<br>
+          </span>
+        </td>
+        <td>
+          <div class="text">
+            <img src="../img/books/movie/movie5.jpg" alt=" icon">
+            <div class="textcontant">
+              <a href="../world_movie5.html">
+                <p>商品詳情</p>
+              </a>
+            </div>
+          </div>
+          <span>
+            《世界電影》<br>
+            2021年5月號第628期 (電子雜誌)<br>
+            刊  別 ： 月刊<br>
+            出版地區 ： 台灣<br>
+            語  言 ： 繁體中文<br>
+            出   版  社  :  世界電影<br>
+            出版日期   :  2021/05/10<br>
+          </span>
+        </td>
       </tr>
     </table>
   </div>
 </section>
 
 
-<!-- footer -->
+
 <section>
   <div class="footer">
     <div class="footer_wrap">
