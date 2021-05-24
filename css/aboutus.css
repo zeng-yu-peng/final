@@ -25,6 +25,7 @@
       font-size: 80px;
       border-bottom: 1px solid #333;
       font-weight: 900;
+      animation: word1 1s cubic-bezier(.79, .09, .13, .9) forwards;
     }
     .banner-txt h1 small{
       display: block;
@@ -36,8 +37,37 @@
     .banner-txt h2{
       font-size: 35px;
       font-weight: 700;
+      animation: word2 1.6s ;
     }
     .banner-txt p{
       font-size: 30px;
       font-weight: 300;
+      animation: word3 1.8s;
     }
+
+    @keyframes word1{
+      100%{
+       transform: translateX(0px);
+      }
+      0%{
+        transform: translateX(2000px);
+      }
+    }
+     @keyframes word2 {
+       100% {
+         transform: translateX(0px);
+       }
+
+       0% {
+         transform: translateX(-2000px);
+       }
+     }
+     @keyframes word3 {
+       100% {
+         transform: translateY(0px);
+       }
+
+       0% {
+         transform: translateY(2000px);
+       }
+     }
