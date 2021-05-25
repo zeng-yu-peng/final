@@ -11,13 +11,112 @@
     width: 800px;
     background-color: #00676B;
     color: #ffffff;
+    font-weight: bolder;
     position: absolute;
     left: 100px; top: -5px;
   }
+/* 這邊是(新)總商品的設定 */
+.newbook_wrap{
+  background-color: #00676B;
+  height: 400px;
+  width: 800px;
+  margin: 60px auto;
+  transform: translateX(0px);
+  animation: move-1 0.8s cubic-bezier(.79, .09, .13, .9) forwards;
+}
+
+
+@keyframes move-1{ 
+    0% {
+      transform: translateX(1000px);
+    }
+}
+@keyframes move-2{
+  0% {
+    transform: translateX(1000px);
+  }
+}
+
+.newbook_wrap h2{
+  color: #ffffff;
+  position: absolute;
+  left: 80%;
+  margin-top: 180px;
+}
+.newbook_wrap img{
+  width: 600px;
+  height: 400px;
+  float: left;
+}
+.newbook_contant{
+  position: relative;
+}
+
+
+
+  /* 這是首頁的開頭那邊的設定 */
   .product_contant{
-    margin-top: 30px;
+    margin-top: 50px;
+    position: relative;
+    
   }
 
+  .product_contant img{
+    max-width: 500px;
+    max-height: 333px;
+    float: left;
+    animation: word1 1s;
+  }
+  @keyframes word1 {
+    100% {
+      transform: translateX(0px);
+    }
+
+    0% {
+      transform: translateX(-2000px);
+    }
+  }
+/* 這是新品那邊的設定 */
+  .product_contant_text {
+    height: 350px;
+    position: absolute;
+    left: 520px;    
+  }
+  .product_contant_text h2 {
+    color: #778899 ;
+    font-size: 35px;
+    margin-bottom: 20px;
+    font-weight: 800;
+    animation: word2 1.2s;
+  }
+  @keyframes word2 {
+    100% {
+      transform: translateY(0px);
+    }
+
+    0% {
+      transform: translateY(5000px);
+    }
+  }
+
+  .product_contant_text p {
+    color: #898989;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 1.8;
+    animation: word3 1.5s;
+  }
+  @keyframes word3 {
+    100% {
+      transform: translateX(0px);
+    }
+
+    0% {
+      transform: translateX(2000px);
+    }
+  }
+
+  /* 這邊是商品內容的設定 */
   .product_manu_caption{
     font-size: 28px;
     font-weight: bold;

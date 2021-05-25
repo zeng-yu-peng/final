@@ -1,18 +1,32 @@
 /* 廣告及內容介紹 */
 .index_contant{
-      height: 850px;
+      height: 450px;
       max-width: 1100px;
       margin: auto;
       margin-top: 30px;
       margin-bottom: 30px;
       padding: 20px  50px;
-      background-color: #E6F1D8;
+      background-color:#f5f5f5;
       position: relative;
     }
 
+/* 新品上市 */
+.index_news {
+  height: 450px;
+  max-width: 1100px;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 20px 50px;
+  background-color: #E6F1D8;
+  position: relative;
+}
+
     .slider_container {
-    margin: 30px auto;
-    width: 1000px;
+    /* margin: 30px auto; */
+    float: left;
+    margin: 30px 0 30px 70px;
+    width: 400px;
     height: 300px;
     position: relative; 
     border: 20px solid #fff;
@@ -24,7 +38,7 @@
       /* position: absolute;
       left: 300px; */
       height: 300px;
-      width: 1000px;
+      width: 400px;
     }
 
     .slider_container div {
@@ -80,7 +94,8 @@
     color: #000;
     background: #fff;
     position: absolute;
-    left: 300px;
+    left: 0;
+    /* left: 300px; */
     top: 300px;
     width: 400px;
     height: 100px;
