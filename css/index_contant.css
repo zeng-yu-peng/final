@@ -25,7 +25,8 @@
     .slider_container {
     /* margin: 30px auto; */
     float: left;
-    margin: 30px 0 30px 70px;
+    /* margin: 30px 0 30px 70px; */
+    margin-left: 70px;
     width: 400px;
     height: 300px;
     position: relative; 
@@ -113,4 +114,47 @@
     -webkit-transform:scaleY(1);
     -ms-transform:scaleY(1);
     transform:scaleY(1);
+    }
+
+
+    /* 新東東 */
+    .tablink {
+      background-color: #555;
+      color: white;
+      float: left;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 2%;
+      font-size: 22px;
+      width: 33.3333333333333%;
+    }
+
+    .tablink:hover {
+      background-color: #777;
+    }
+    .button_content {
+      color: white;
+      height: 550px;
+      padding: 100px 50px 50px 50px;
+    }
+
+    .all {
+      height: 550px;
+      max-width: 1200px;
+      margin: 30px auto;
+    }
+    .sup{
+      height: 50px;
+      background-color: #fff;
+    }
+    #Introduction {
+      background-color: #FDE2CA;
+    }
+    #vedio {
+      background-color:#819582 ;
+    }
+/* shop */
+    #news {
+      background-color: #a19f89;
     }

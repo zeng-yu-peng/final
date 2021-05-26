@@ -413,7 +413,7 @@ to {opacity: 1;}
   #myBtn:hover {
     background-color: #dabfa5;
   }
-
+  
 .w3-dropdown-click,.w3-dropdown-hover{position:relative;display:inline-block;cursor:pointer}
 .w3-dropdown-hover:hover .w3-dropdown-content{display:block}
 .w3-dropdown-hover:first-child,.w3-dropdown-click:hover{background-color:#ccc;color:#000}

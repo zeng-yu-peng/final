@@ -37,14 +37,15 @@
 .head_slogn {
   position: absolute;
   top: 20%;
-  left: 32%;
+  left: 35%;
   height: 80px;
-  width: 30%;
+  width: 25%;
   font-size: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #006241;
+  color: #fff;
 }
 
 .head_search {
@@ -77,7 +78,7 @@
 .footer {
   height: 235px;
   max-width: 1100px;
-  margin: auto;
+  margin:auto;
   padding: 15px 50px;
   background-color: #a9a9a9;
   position: relative;

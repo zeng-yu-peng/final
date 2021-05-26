@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>夢想藍圖</title>
+  <title>博客來</title>
   <link rel="stylesheet" type="text/css" href="css/index_css.css">
   <link rel="stylesheet" type="text/css" href="css/barside.css">
   <link rel="stylesheet" type="text/css" href="css/index_contant.css">
@@ -43,12 +43,12 @@
   <header>
     <div class="head">
       <div class="head_icon"> <img src="img/booksicon.png" alt="icon"> </div>
-      <div class="header_list">
+      <!-- <div class="header_list">
       <a href="#head_contant"><span>商店介紹</span></a>
       <a href="#head_hot"><span>熱銷排行</span></a>
       <a href="#head_new"><span>新書上市</span> </a>
-      </div>
-      <div class="head_slogn">夢想藍圖</div>
+      </div> -->
+      <div class="head_slogn">博客來</div>
       <div class="head_search">
         <input id="myInput" value="Search" />
         <button id="myBtn" >搜尋</button>
@@ -85,15 +85,23 @@
 </section>
 
 
-<!-- 內容介紹 -->
-<a href="#" name="head_contant"></a>
 
+
+
+
+
+
+<!-- 新東東 -->
 <section>
-  <div class="index_contant">
-    <div class="product_manu_title">
-      <h2>商店起源</h2>
-    </div>
-<!-- contant -->
+  <div class="all">
+
+  <button class="tablink" onclick="openPage('Introduction',this,'gray')" id="firstopen">Introduction</button>
+  <button class="tablink" onclick="openPage('vedio',this,'gray')">HOT</button>
+  <button class="tablink" onclick="openPage('news',this,'gray')">NEWS</button>
+
+  <div id="Introduction" class="button_content">
+    <section>
+      <!-- contant -->
       <div class="product_contant">
         <img src="img/index/dream.jpg" alt="">
         <div class="product_contant_text">
@@ -107,248 +115,99 @@
           </p>
         </div>
       </div>
+    </section>
   </div>
+
+  <div id="vedio" class="button_content">
+      <iframe class="hot_vedio" width="560" height="315" src="https://www.youtube.com/embed/Oa4BRX5Fa-U"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+  </div>
+
+  <div id="news" class="button_content">
+    <section>
+      
+        <!-- 轉燈片1 -->
+        <div class="slider_container">
+          <div>
+            <img src="img/books/core/coreinterio13 .jpg" alt="" />
+            <span class="info">《CORE INTERIOR空間》</span>
+          </div>
+          <div>
+            <img src="img/books/ilook/ilook1.png" alt="" />
+            <span class="info">《iLook電影》</span>
+          </div>
+          <div>
+            <img src="img/books/ilook/ilook3.png" alt="" />
+            <span class="info">《iLook電影》</span>
+          </div>
+          <div>
+            <img src="img/books/movie/movie1.png" alt="" />
+            <span class="info">《世界電影》</span>
+          </div>
+          <div>
+            <img src="img/books/movie/movie2.png" alt="" />
+            <span class="info">《世界電影》</span>
+          </div>
+        </div>
+        <!-- 轉燈片2 -->
+        <div class="slider_container">
+          <div>
+            <img src="img/books/beauty/beauty1.png" alt="" />
+            <span class="info">《漂亮家居》</span>
+          </div>
+          <div>
+            <img src="img/books/beauty/beauty2.png" alt="" />
+            <span class="info">《漂亮家居》</span>
+          </div>
+          <div>
+            <img src="img/books/interior/interior2.png" alt="" />
+            <span class="info">《室內interior》</span>
+          </div>
+          <div>
+            <img src="img/books/interior/interior3.png" alt="" />
+            <span class="info">《室內interior》</span>
+          </div>
+          <div>
+            <img src="img/books/interior/interior5.jpg" alt="" />
+            <span class="info">《室內interior》</span>
+          </div>
+        </div>
+    </section>
+  </div>
+</div>
 </section>
 
-
-<!-- 熱銷排行 -->
-<a href="#" name="head_hot"></a>
-<section>
-  <div class="product_manu">
-    <div class="product_manu_title">
-      <h2>熱銷排行</h2>
-    </div>
-    <table>
-      <div class="product_manu_caption">EBOOK</div>
-      <tr>
-        <td>
-          <div class="text">
-            <img src="img/books/core/coreinterio13 .jpg" alt=" icon">
-            <div class="textcontant">
-              <a href="core/core1.html">
-                <p>商品詳情</p>
-              </a>
-            </div>
-          </div>
-          <span>
-            《CORE INTERIOR空間》<br>
-            1月號/2019第13期 (電子雜誌)<br>
-            刊  別 ： 季刊<br>
-            出版地區 ： 台灣<br>
-            語  言 ： 繁體中文<br>
-            出   版  社  :  圓祥大眾傳播<br>
-            出版日期   :  2019/01/25<br>
-          </span>
-        </td>
-        <td>
-          <div class="text">
-            <img src="img/books/core/coreinterio14.jpg" alt=" icon">
-            <div class="textcontant">
-              <a href="core/core2.html">
-                <p>商品詳情</p>
-              </a>
-            </div>
-          </div>
-          <span>
-            《CORE INTERIOR空間》<br>
-            1月號/2019第13期 (電子雜誌)<br>
-            刊  別 ： 季刊<br>
-            出版地區 ： 台灣<br>
-            語  言 ： 繁體中文<br>
-            出   版  社  :  圓祥大眾傳播<br>
-            出版日期   :  2019/01/25<br>
-          </span>
-        </td>
-        <td>
-          <div class="text">
-            <img src="img/books/ilook/ilook3.png" alt=" icon">
-            <div class="textcontant">
-              <a href="ilook/ilook3.html">
-                <p>商品詳情</p>
-              </a>
-            </div>
-          </div>
-          <span>
-            《iLook電影》<br>
-            3月號/2021第161期 (電子雜誌)<br>
-            刊  別 ： 月刊<br>
-            出版地區 ： 台灣<br>
-            語  言 ： 繁體中文<br>
-            出   版  社  :  我愛電影<br>
-            出版日期   :  2021/03/01<br>
-          </span>
-        </td>
-        <td>
-          <div class="text">
-            <img src="img/books/movie/movie1.png" alt=" icon">
-            <div class="textcontant">
-              <a href="movie/world_movie1.html">
-                <p>商品詳情</p>
-              </a>
-            </div>
-          </div>
-          <span>
-            《世界電影》<br>
-            2021年1月號第624期 (電子雜誌)<br>
-            刊  別 ： 月刊<br>
-            出版地區 ： 台灣<br>
-            語  言 ： 繁體中文<br>
-            出   版  社  :  世界電影<br>
-            出版日期   :  2021/01/04<br>
-          </span>
-        </td>
-      </tr>
-    </table>
-    <!-- Magazine -->
-    <table>
-      <div class="product_manu_caption">雜誌</div>
-      <tr>
-         <td>
-           <div class="text">
-             <img src="img/books/beauty/beauty1.png" alt="icon">
-             <div class="textcontant">
-               <a href="beauty/beauty1.html">
-                 <p>商品詳情</p>
-               </a>
-             </div>
-           </div>
-           <br>
-           <span>
-             《漂亮家居》<br>
-             1月號/2021 第239期<br>
-             刊  別 ： 月刊<br>
-             出版地區 ： 台灣<br>
-             語  言 ： 繁體中文<br>
-             出   版  社  :  麥浩斯<br>
-             出版日期   :  2021/01/06<br>
-           </span>
-         </td>
-         <td>
-           <div class="text">
-             <img src="img/books/beauty/beauty2.png" alt="icon">
-             <div class="textcontant">
-               <a href="beauty/beauty2.html">
-                 <p>商品詳情</p>
-               </a>
-             </div>
-           </div>
-           <span>
-             《漂亮家居》<br>
-             2月號/2021 第240期<br>
-             刊  別 ： 月刊<br>
-             出版地區 ： 台灣<br>
-             語  言 ： 繁體中文<br>
-             出   版  社  :  麥浩斯<br>
-             出版日期   :  2021/02/04<br>
-           </span>
-         </td>
-         <td>
-           <div class="text">
-             <img src="img/books/interior/interior2.png" alt="icon">
-             <div class="textcontant">
-               <a href="interior/interior2.html">
-                 <p>商品詳情</p>
-               </a>
-             </div>
-           </div>
-           <span>
-             《室內interior》<br>
-             2月號/2021 第329期<br>
-             刊  別 ： 季刊<br>
-             出版地區 ： 台灣<br>
-             語  言 ： 繁體中文<br>
-             出   版  社  :  美兆文化<br>
-             出版日期   :  2021/02/03<br>
-           </span>
-         </td>
-         <td>
-           <div class="text">
-             <img src="img/books/interior/interior3.png" alt="icon">
-             <div class="textcontant">
-               <a href="interior/interior3.html">
-                 <p>商品詳情</p>
-               </a>
-             </div>
-           </div>
-           <span>
-             《室內interior》<br>
-             2月號/2021 第329期<br>
-             刊  別 ： 季刊<br>
-             出版地區 ： 台灣<br>
-             語  言 ： 繁體中文<br>
-             出   版  社  :  美兆文化<br>
-             出版日期   :  2021/02/03<br>
-           </span>
-         </td>
-      </tr>
-    </table>
-  </div>
-</section>
+<script>
+  function openPage(pageName, elmnt, color) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("button_content");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].style.backgroundColor = "";
+    }
+    document.getElementById(pageName).style.display = "block";
+    elmnt.style.backgroundColor = color;
+  } // Get the element with id="defaultOpen" and click on it
+  document.getElementById("firstopen").click();
+</script>
 
 
-<!-- 新書上市 -->
-<a href="#" name="head_new"></a>
-<section>
-  <div class="index_news">
-    <div class="product_manu_title">
-      <h2>新書上市</h2>
-    </div>
-   <!-- 轉燈片1 -->
-   <div class="slider_container">
-     <div>
-      <img src="img/books/core/coreinterio13 .jpg" alt="" />
-       <span class="info">《CORE INTERIOR空間》</span>
-     </div>
-     <div>
-       <img src="img/books/ilook/ilook1.png" alt="" />
-       <span class="info">《iLook電影》</span>
-     </div>
-     <div>
-       <img src="img/books/ilook/ilook3.png" alt="" />
-       <span class="info">《iLook電影》</span>
-     </div>
-     <div>
-       <img src="img/books/movie/movie1.png" alt="" />
-       <span class="info">《世界電影》</span>
-     </div>
-     <div>
-       <img src="img/books/movie/movie2.png" alt="" />
-       <span class="info">《世界電影》</span>
-     </div>
-   </div>
-   <!-- 轉燈片2 -->
-   <div class="slider_container">
-     <div>
-       <img src="img/books/beauty/beauty1.png" alt="" />
-       <span class="info">《漂亮家居》</span>
-     </div>
-     <div>
-       <img src="img/books/beauty/beauty2.png" alt="" />
-       <span class="info">《漂亮家居》</span>
-     </div>
-     <div>
-       <img src="img/books/interior/interior2.png" alt="" />
-       <span class="info">《室內interior》</span>
-     </div>
-     <div>
-       <img src="img/books/interior/interior3.png" alt="" />
-       <span class="info">《室內interior》</span>
-     </div>
-     <div>
-       <img src="img/books/interior/interior5.jpg" alt="" />
-       <span class="info">《室內interior》</span>
-     </div>
-   </div>
-  </div>
-</section>
 
+
+<div class="sup"></div>
 
 <!-- footer -->
 <section>
   <div class="footer">
     <div class="footer_wrap">
       <div>
-        <h4>關於夢想藍圖</h4>
+        <h4>關於博客來</h4>
+
         <ul>
           <li><a href="">服務時間：週一至週五A.M. 8:00 ~ P.M. 6:00</a></li>
           <li><a href="">電話 : (02)2502-8314</a></li>

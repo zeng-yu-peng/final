@@ -76,6 +76,12 @@
       transform: translateX(-2000px);
     }
   }
+
+.hot_vedio{
+  /* margin: 50px 0 30px 260px; */
+  margin: 40px 250px;
+  outline: 20px solid #ffffff;
+}
 /* 這是新品那邊的設定 */
   .product_contant_text {
     height: 350px;
