@@ -24,7 +24,14 @@
   transform: translateX(0px);
   animation: move-1 0.8s cubic-bezier(.79, .09, .13, .9) forwards;
 }
-
+.top_wrap {
+  background-color: #A095C4;
+  height: 400px;
+  width: 800px;
+  margin: 60px auto;
+  transform: translateX(0px);
+  animation: move-1 0.8s cubic-bezier(.79, .09, .13, .9) forwards;
+}
 
 @keyframes move-1{ 
     0% {
@@ -43,7 +50,18 @@
   left: 80%;
   margin-top: 180px;
 }
+.top_wrap h2 {
+  color: #ffffff;
+  position: absolute;
+  left: 80%;
+  margin-top: 180px;
+}
 .newbook_wrap img{
+  width: 600px;
+  height: 400px;
+  float: left;
+}
+.top_wrap img {
   width: 600px;
   height: 400px;
   float: left;
@@ -76,6 +94,12 @@
       transform: translateX(-2000px);
     }
   }
+
+.hot_vedio{
+  /* margin: 50px 0 30px 260px; */
+  margin: 40px 250px;
+  outline: 20px solid #ffffff;
+}
 /* 這是新品那邊的設定 */
   .product_contant_text {
     height: 350px;

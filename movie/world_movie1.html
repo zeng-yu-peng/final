@@ -24,22 +24,105 @@
         margin-top: 1%;
         padding-bottom: 1%;
         /* 隱藏註解文字區塊, 請加入自訂 CSS 效果 */
+
+
         }
+
+        .manu {
+      padding: 20px;
+      position: fixed;
+      top: 0; left: 0;
+      background-color: #FEEBD0;
+      z-index: 99;
+      width: 200px; height: 100%;
+      min-width: 180px;
+    }
+
+    .manu li{
+      line-height: 3.5;
+    }
+
+    .manu li a{
+      color: #00676B;
+      text-decoration: none;
+    }
+
+
+    .barline{
+      width:100%;
+      display:block;
+      padding:8px 16px;
+      text-align:left;
+      border:none;
+      white-space:normal;
+      float:none;
+      outline:0;
+      text-align:center;
+      font-size:18px!important
+    }
+    .side_button{
+      position: fixed;
+      left: 0; top: 50%;
+      font-size:24px!important
+      }
+    .side_button button{
+      position: absolute;top: 40%;
+      height: 30px; width: 30px;
+      color:#B7B7B7!important;
+      background-color:#976D00!important
+    }
         </style>
         <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js'></script>
+        <script>
+            
+       // 彈跳式清單
+          function button_open() {
+           document.getElementById("sidebar").style.display = "block";
+          }
+
+        function button_close() {
+          document.getElementById("sidebar").style.display = "none";
+           }
+        </script>
 
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
-
+ 
     <title>《世界電影》 1月號</title>
 </head>
 <body>
+
+    <!-- 彈跳清單 -->
+<section>
+    <div class="side_button">
+    <button onclick="button_open()">☰</button>
+  </div>
+  
+  <div class="manu" style="display:none" id="sidebar">
+    <button onclick="button_close()" class="barline">Close &times;</button>
+    <ul>
+      <li><a href="index.html">商店介紹</a></li>
+      <li><a href="manu/newbook.html">全部商品</a>
+        <ul>
+          <li><a href="manu/top.html">熱銷排行</a></li>
+          <li><a href="manu/magazine.html">Magazine</a></li>
+          <li><a href="manu/ebook.html">電子書</a></li>
+        </ul>
+      </li>
+      <li><a href="store_detail/aboutus.html">認識我們</a></li>
+      <li><a href="store_detail/question.html">購物須知</a></li>
+      <li><a href="#">留言板</a></li>
+    </ul>
+  </div>
+  </section>
+
+
     <hr>
     <div class=header>
         <div class="icon">
-            <img src="../img/booksicon.png" width="100px">
+            <a href="../index.html"><img src="../img/booksicon.png" width="100px"></a>
         </div>
         <div class="topnav">
             <div class="search-container">
@@ -56,11 +139,11 @@
     <div class="w3-container">
     <div class="w3-dropdown-hover">
         <button class="button">
-          <a href="../locate.html"> <img src="../img/login.jpg" width="25px"> My Account</a>
+          <a href=""> <img src="../img/login.jpg" width="25px"> My Account</a>
         </button>
         <div class="w3-dropdown-content w3-bar-block w3-border">
-          <a href="#" class="w3-bar-item w3-button">Login</a>
-          <a href="#" class="w3-bar-item w3-button">Register</a>
+          <a href="../login .html" class="w3-bar-item w3-button">Login</a>
+          <a href="../register.html" class="w3-bar-item w3-button">Register</a>
         </div>
       </div>
     </div>
@@ -73,7 +156,7 @@
         </div>
         <div class="path">
            <h6>
-               <a href="../index.html">Home</a> > <a href="../magazine.html">Magazine</a>  > <a href="../ebook.html">eBook</a> ><a href="../idol.html">影視偶像 </a> ><a href="../world movie.html">世界電影 </a>>《世界電影》 2021年1月號第624期 (電子雜誌)
+               <a href="../index.html">Home</a> > <a href="../manu/newbook.html">Magazine</a>  > <a href="../manu/ebook.html">eBook</a> >影視偶像 </a> >世界電影 </a>>《世界電影》 2021年1月號第624期 (電子雜誌)
            </h6>
         </div>
 
@@ -174,7 +257,6 @@
             </div>
         </div>
         
-
         <!--<div class="detail"><hr>
             <h3>Product Details</h3>
             <p>
@@ -259,7 +341,8 @@
         <div class="reviews"><hr>
             <h3>Reviews</h3>
             
-            <div id="cc" class="tabcontent">
+            <div id="cc" class="button_content"
+>
                 <div class="pic" style="margin-top:20px;text-align:left">					
                     <div class="apple">
                     <h1 >4.8/5</h1>
@@ -383,6 +466,11 @@
 		   setTotal();
 	      })
         });
+
+
+        
+
+  
             </script>
         </div>
 
@@ -398,55 +486,12 @@
 <!-- 展開收合 end -->
 
 
-<!--footer -->
-<!--
-    <div class="footer">
-      <div class="footer_wrap">
-        <div>
-          <h4>關於誠品</h4>
-          <ul>
-            <li><a href="">企業理念</a></li>
-            <li><a href="">創辦人故事</a></li>
-            <li><a href="">經營內容</a></li>
-            <li><a href="">發展歷程</a></li>
-            <li><a href="">得獎事蹟</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4>關於誠品</h4>
-          <ul>
-            <li><a href="">企業理念</a></li>
-            <li><a href="">創辦人故事</a></li>
-            <li><a href="">經營內容</a></li>
-            <li><a href="">發展歷程</a></li>
-            <li><a href="">得獎事蹟</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4>關於誠品</h4>
-          <ul>
-            <li><a href="">企業理念</a></li>
-            <li><a href="">創辦人故事</a></li>
-            <li><a href="">經營內容</a></li>
-            <li><a href="">發展歷程</a></li>
-            <li><a href="">得獎事蹟</a></li>
-          </ul>
-        </div>
-      </div>
-      
-  
-  
-      <div class="footer_copyright">
-        <p>誠品線上eslite.com - powered by 誠品生活 / 誠品書店 / 誠品物流 | 誠品生活股份有限公司 | 台灣台北市信義區松德路204號B1
-          服務電話：+886-2-8789-8921<br>
-          本網站已依台灣網站內容分級規定處理｜建議使用瀏覽器版本：Google Chrome版本60以上 / Firefox版本48以上 / Safari 版本11以上</p>
-      </div>
-    </div>
+
+    
     <button onclick="topFunction()" id="myBtn">Top</button>
--->    
 
 
-<div class="co">copyright&copy;Group21 2021</div> 
+
 <script>
     function shopping(){
         alert("已成功加入購物車清單");

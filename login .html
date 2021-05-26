@@ -10,14 +10,18 @@ body {
 
 * {
   box-sizing: border-box;
+  
 }
 
 /* style the container */
 .container {
   position: relative;
   border-radius: 5px;
-  background-color: #f2f2f2;
+  background-color: #e47fcb69;
   padding: 20px 0 30px 0;
+  width: 70%;
+  margin-left: 200px;
+  margin-top:50px;
 } 
 
 /* style inputs and link buttons */
@@ -58,13 +62,13 @@ input:hover,
 
 /* style the submit button */
 input[type=submit] {
-  background-color: #04AA6D;
+  background-color: #a33e82;
   color: white;
   cursor: pointer;
 }
 
 input[type=submit]:hover {
-  background-color: #45a049;
+  background-color: #810d68;
 }
 
 /* Two-column layout */
@@ -138,10 +142,27 @@ input[type=submit]:hover {
 <div class="container">
   <form action="/action_page.php">
     <div class="row">
-      <h2 style="text-align:center">Login with Social Media or Manually</h2>
+      <h2 style="text-align:center">LOGIN</h2>
       <div class="vl">
         <span class="vl-innertext">or</span>
       </div>
+
+
+      <div class="col">
+        <div class="hide-md-lg">
+          <p>Or sign in manually:</p>
+        </div>
+
+        <input type="text" name="username" placeholder="Username" required>
+        <input type="password" name="password" placeholder="Password" required><br>
+        <div>
+          <label><input type="checkbox" checked="checked" name="remember">記得我</label>
+        
+        <span class="psw"><a href="../FINAL/register.html">註冊</a>/<a href="../FINAL/forgot password.html">忘記密碼?</a></span>
+      </div>
+        <input type="submit" value="Login">
+      </div>
+
 
       <div class="col">
         <a href="#" class="fb btn">
@@ -155,30 +176,13 @@ input[type=submit]:hover {
         </a>
       </div>
 
-      <div class="col">
-        <div class="hide-md-lg">
-          <p>Or sign in manually:</p>
-        </div>
-
-        <input type="text" name="username" placeholder="Username" required>
-        <input type="password" name="password" placeholder="Password" required>
-        <input type="submit" value="Login">
-      </div>
+     
       
     </div>
   </form>
 </div>
 
-<div class="bottom-container">
-  <div class="row">
-    <div class="col">
-      <a href="register.html" style="color:white" class="btn">Sign up</a>
-    </div>
-    <div class="col">
-      <a href="forgot password.html" style="color:white" class="btn">Forgot password?</a>
-    </div>
-  </div>
-</div>
+
 
 </body>
 </html>
