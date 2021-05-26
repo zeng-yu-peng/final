@@ -139,7 +139,7 @@
       padding: 100px 50px 50px 50px;
     }
 
-    .all {
+    .bigcontant {
       height: 550px;
       max-width: 1200px;
       margin: 30px auto;
@@ -154,7 +154,6 @@
     #vedio {
       background-color:#819582 ;
     }
-/* shop */
     #news {
       background-color: #a19f89;
     }
