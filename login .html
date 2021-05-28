@@ -6,16 +6,20 @@
 <style>
 body {
   font-family: Arial, Helvetica, sans-serif;
+  background-image: url(img/back.jpeg);
 }
 
 * {
   box-sizing: border-box;
-  
+  text-decoration: none;
+  color: #f1f1f1;
+
 }
 
 /* style the container */
 .container {
   position: relative;
+  top: 170px;
   border-radius: 5px;
   background-color: #e47fcb69;
   padding: 20px 0 30px 0;
@@ -73,6 +77,7 @@ input[type=submit]:hover {
 
 /* Two-column layout */
 .col {
+  position: relative;
   float: left;
   width: 50%;
   margin: auto;
@@ -135,6 +140,13 @@ input[type=submit]:hover {
     text-align: center;
   }
 }
+#strange{
+position: absolute;
+left: -220px;
+}
+.input_button{
+  color: #000000;
+}
 </style>
 </head>
 <body>
@@ -153,13 +165,13 @@ input[type=submit]:hover {
           <p>Or sign in manually:</p>
         </div>
 
-        <input type="text" name="username" placeholder="Username" required>
-        <input type="password" name="password" placeholder="Password" required><br>
-        <div>
-          <label><input type="checkbox" checked="checked" name="remember">記得我</label>
-        
+        <input class="input_button" type="text" name="username" placeholder="Username" required>
+        <input class="input_button"  type="password" name="password" placeholder="Password" required><br>
+     
+          
+       &emsp; 記得我<input id="strange" type="checkbox" checked="checked" name="remember">
         <span class="psw"><a href="../FINAL/register.html">註冊</a>/<a href="../FINAL/forgot password.html">忘記密碼?</a></span>
-      </div>
+        
         <input type="submit" value="Login">
       </div>
 
