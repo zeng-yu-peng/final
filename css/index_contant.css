@@ -127,7 +127,7 @@
       cursor: pointer;
       padding: 2%;
       font-size: 22px;
-      width: 33.3333333333333%;
+      width: 25%;
     }
 
     .tablink:hover {
@@ -152,8 +152,14 @@
       background-color: #FDE2CA;
     }
     #vedio {
-      background-color:#819582 ;
+      background-color:#a19f89;
     }
     #news {
+      background-color:#819582 ;
+    }
+    #process {
       background-color: #a19f89;
+    }
+    #process_img{
+    margin-left: 195px;    
     }
