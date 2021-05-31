@@ -7,16 +7,17 @@
       list-style: none;
   }
   body{
-    width:90%;
+    width:100%;
     margin-left: 10%;
     margin-right: 10%;
     padding-left: 5%;
+    padding-right: 5%;
 }
 
-.header{
+header{
     height: 10%;
     width:100%;
-
+    background-color: #374663;
 }
 
 
@@ -25,12 +26,13 @@
 
     height: 10%;
     width: 10%;
+    padding-left: 3%;
 }
 
 .button{
     border: white;
-    background-color: white;
-    
+    background-color: #374663;    
+    text-decoration: cornsilk;
 
 }
 .login{
@@ -38,9 +40,28 @@
     right:10%;
     top:8%;
     align-items: right;
-    height: 10%;
+    height: 15%;
     width:20%;
 }
+
+.wishlist{
+  position: absolute;
+  right:3%;
+  top:5%;
+  align-items: right;
+  height: 15%;
+  width:20%;
+}
+
+.cartt{
+  position: absolute;
+  right:-6%;
+  top:5%;
+  align-items: right;
+  height: 15%;
+  width:20%;
+}
+
 .topnav{
     align-items: center;
     position: absolute;
@@ -51,7 +72,7 @@
 
   .topnav .search-container {
     align-items: center;
-    left: 50%;
+    left: 40%;
     height: 10%;
     
   }
@@ -65,16 +86,16 @@
   
   .topnav .search-container button {
     float: center;
-    padding: 6px 10px;
-    margin-top:2%;
-    background: #ddd;
+    padding: 4px 10px;
+    margin-top:7%;
+    background-color: #374663;
     font-size: 12px;
     border: none;
     cursor: pointer;
   }
   
   .topnav .search-container button:hover {
-    background: #ccc;
+    background-color: #576a91;
   }
 
 
@@ -83,7 +104,7 @@
 }
 
 .s2{
-  height: 1800px;
+  height: 2000px;
 }
 .bookimg{
     position: absolute;
@@ -100,6 +121,14 @@
     width:500px;
 
 }  
+
+.acc{
+    position: relative;
+    top:124%;
+    left:-7%;
+    width:500px;
+    height: auto;
+}
 .cover{
     font-family:Permanent Marker;
     font-size: 22px;
@@ -109,7 +138,7 @@
 .watch{
     font-family: ZCOOL KuaiLe;
     font-size: 42px;
-    align-items: center;
+    align-items: left;
     padding-top: 3%;
    
 }
@@ -153,11 +182,64 @@
 .bookcontent{
     position: absolute;
     left:52%;
-    top:42%;
+    top:48%;
 }
+
+button.buy1{
+	height:40px;
+	width: 40px;
+  position: absolute;
+  left:30%;
+	margin-bottom:20px;
+	margin-top:40px;
+	margin-left:1%;
+	background-color:#ff000070;
+	border:none;
+	border-radius:0.5rem;
+	padding: 0px;
+	font-size:15px;
+	outline:none;
+  transition:0.3s;
+  cursor: pointer;
+}
+button.buy1:focus{
+	outline:0;
+}
+button.buy1:hover{
+	background-color: #ec475d;
+	color:#FFFFFF;
+	font-weight:bolder;
+}
+
 .price{
     text-decoration: line-through;
 }
+
+button.buy{
+	height:50px;
+	width: 100px;
+	margin-bottom:15px;
+	margin-top:45px;
+	margin-left:1%;
+	background-color:#374363a1;
+	border:none;
+	border-radius:0.5rem;
+	padding: 0px;
+	font-size:15px;
+	outline:none;
+  transition:0.3s;
+  cursor: pointer;
+}
+button.buy:focus{
+	outline:0;
+}
+button.buy:hover{
+	background-color: #374363;
+	color:#FFFFFF;
+	font-weight:bolder;
+}
+
+
 
 .payment{
     position: absolute;
@@ -191,7 +273,7 @@
 .reviews{
     position: absolute;
     left:52%;
-    top:220%;
+    top:200%;
     width:650px;
 }
 .tabcontent {
@@ -209,6 +291,33 @@
 	margin-right:auto;
 	overflow:hidden;
 }
+.reviwe{
+  display:inline;
+  float:right;
+  height:50px;
+  width:100px;
+  margin-right:80px;
+  margin-top:-30px;
+  font-size:22px;
+  background-color:#d49a89;
+  border:0;
+  box-shadow: 0 6px #FFFFFF;
+  border-radius:10px;
+  color:#FFFFFF;
+  cursor: pointer;
+}
+.reviwe:active {
+    background-color:#FAE4C0;
+    box-shadow: 0 5px #514D3E;
+    transform: translateY(4px);
+}
+.reviwe:hover{
+  background-color:#eeb355;
+  font-weight:bolder;
+}
+.reviwe:focus{
+  outline:none;
+}
 
 .write{
   width:30px;
@@ -216,28 +325,7 @@
   margin-top:18px;
   margin-left:5px;
 }
-.apple{
-  display:inline-block;
-  position:relative;
-  top:-65px;
-  margin-left:350px;
-  margin-right:30px;
-}
-.starul{
-  margin-bottom: 3%;
-  display:inline-block;
-  list-style-type:none;
-  font-size:22px;
-  border-left:1px #AAA solid;
-  padding:0;
-  padding-left:15px;
-  }
-.starul li{
-  letter-spacing:8px;
-  color:#FFA007;
-}
-.starul b
-{	color:black;}
+
 .rewpic{
   width:70px;
   height:70px;
@@ -252,6 +340,8 @@
   padding-left:20px;
   padding-top:20px;
 }
+
+
 .rew{
   margin: 1% 0%;
   border-bottom:1px solid #AAA;
@@ -283,17 +373,16 @@
   display:inline-block; 
   color:#999; 
   font-size:25px;
-
   cursor:pointer
   
   }
 #star{
-  
   list-style-type:none;
   display:inline-block;
   position:relative;
   padding:0;
-      }
+}
+
 #star_word{
   display:none; 
   width:60px; 
@@ -302,6 +391,7 @@
   color:#d49a89;
 }
 #star .act{color:#FFA007}
+
 form label{
   font-size:20px;
   font-weight:bolder;
@@ -310,13 +400,14 @@ form label{
   margin-right:5px;
 }
 .show {display: block;}
+
 .rewpost{
   display:inline-block;
   width:150px;
   height:50px;
   position:relative;
-  top:-20px;
-  left:80px;
+  top:0px;
+  left:180px;
   border-radius:10px;
   background-color:#d49a89;
   color:#FFFFFF;
@@ -374,33 +465,44 @@ to {opacity: 1;}
 }
 
 /* 頁尾的設定 */
-
 .footer {
-    position:relative;  
-    bottom: 0%;
-    height: 300px;
-    margin: 0;
-    justify-content:space-between;
-    width: 90%;
-    margin-left: 5%;
-    margin-right: 5%;
-    background-color: #E6F1D8;
-  }
+  height: 300px;
+  max-width: 1100px;
+  margin:auto;
+  padding: 15px 50px;
+  background-color: #4e9647bb;
+  position: relative;
+}
+.footer h4{
+  font-size: 25px;
+  font-weight: 900;
+  color: #fff;
+}
+.footer a {
+  font-size: 20 px;
+  font-weight: 500;
+  color: #fff;
+}
+/* 
+.footer_wrap {
   
-  .footer_wrap {
-    display: flex;
-    justify-content: space-around;
-    line-height: 2;
-  }
-  
-  .footer_copyright {
-    position: relative;
-    bottom: 0;
-    margin-left:5%;
-    width: 100%;
-    color: #fff;
-    background-color: #000000;
-  }
+  line-height: 2;
+} */
+
+.footer_wrap{
+  display: flex;
+  justify-content: start;
+  margin-left: 10%;
+  line-height: 2;
+}
+
+.footer_copyright {
+  position: absolute;
+  bottom: 0; 
+  left: 120px;
+  color: #fff;
+  background-color: #000000;
+}
   #myBtn {
 
     position: fixed;
@@ -410,7 +512,7 @@ to {opacity: 1;}
     font-size: 18px;
     border: none;
     outline: none;
-    background-color:#bfccd0;
+    background-color:#44a2bea4;
     color: white;
     cursor: pointer;
     padding: 15px;
@@ -418,7 +520,29 @@ to {opacity: 1;}
 }
   
 #myBtn:hover {
-    background-color: #dabfa5;
+    background-color: #a5a6dae3;
 }
   
+#min{
+  width: 40px;
+  background-color: burlywood;
+}
 
+#min:hover {
+  background-color: #dabfa5;
+}
+
+#add{
+  width: 40px;
+  background-color: burlywood;
+
+}
+
+#add:hover {
+  background-color: #dabfa5;
+}
+
+#num{
+  width:120px;
+  text-align: center;
+}
