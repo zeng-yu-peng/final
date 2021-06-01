@@ -8,6 +8,7 @@
   }
   body{
     width:100%;
+    height: 200%;
     margin-left: 10%;
     margin-right: 10%;
     padding-left: 5%;
@@ -104,7 +105,17 @@ header{
 }
 
 .s2{
+  height: 1900px;
+}
+
+.s3{
   height: 2000px;
+  margin-bottom: 280px;
+}
+
+.s4{
+  height: 1500px;
+  margin-bottom: 280px;
 }
 .bookimg{
     position: absolute;
@@ -117,7 +128,7 @@ header{
 .description{
     position: absolute;
     top:127%;
-    left:15%;
+    left:13%;
     width:500px;
 
 }  
@@ -439,6 +450,73 @@ from {opacity: 0;}
 to {opacity: 1;}
 }
 
+    /* 展開收合效果 */
+    .slide_toggle {
+      text-align: center;
+      cursor: pointer;
+      font-weight: bold;
+     
+      /* 收合提示字串區塊, 還可加入自訂 CSS 效果 */
+      line-height: 170%;
+      background-color: #eed;
+      border-radius: 7px;
+     
+      
+      }
+      .slide_toggle + div {
+      display: none;
+      margin-top: 1%;
+      padding-bottom: 1%;
+      
+      /* 隱藏註解文字區塊, 請加入自訂 CSS 效果 */
+  
+  
+      }
+  
+      .manu {
+      padding: 20px;
+      position: fixed;
+      top: 0; left: 0;
+      background-color: #FEEBD0;
+      z-index: 99;
+      width: 200px; height: 100%;
+      min-width: 180px;
+  }
+  
+      .manu li{
+      line-height: 3.5;
+  }
+  
+      .manu li a{
+      color: #00676B;
+      text-decoration: none;
+  }
+  
+  
+     .barline{
+      width:100%;
+      display:block;
+      padding:8px 16px;
+      text-align:left;
+      border:none;
+      white-space:normal;
+      float:none;
+      outline:0;
+      text-align:center;
+      font-size:18px!important
+  }
+      .side_button{
+       position: fixed;
+       left: 0; top: 50%;
+       font-size:24px!important
+    }
+      .side_button button{
+       position: absolute;top: 40%;
+       height: 30px; width: 30px;
+       color:#B7B7B7!important;
+       background-color:#976D00!important
+  }
+
 
 
 
@@ -471,7 +549,10 @@ to {opacity: 1;}
   margin:auto;
   padding: 15px 50px;
   background-color: #4e9647bb;
-  position: relative;
+  position: relative ;
+  bottom: 0;
+  margin-top: 5%;
+  
 }
 .footer h4{
   font-size: 25px;
@@ -526,6 +607,8 @@ to {opacity: 1;}
 #min{
   width: 40px;
   background-color: burlywood;
+  cursor:pointer;
+
 }
 
 #min:hover {
@@ -535,6 +618,7 @@ to {opacity: 1;}
 #add{
   width: 40px;
   background-color: burlywood;
+  cursor:pointer;
 
 }
 
