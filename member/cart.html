@@ -2,18 +2,18 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>博客來|全部商品</title>
-  <link rel="stylesheet" type="text/css" href="../css/index_css.css">
-  <link rel="stylesheet" type="text/css" href="../css/barside.css">
-  <link rel="stylesheet" type="text/css" href="../css/index_contant.css">
-  <link rel="stylesheet" type="text/css" href="../css/product_manu.css">
-  
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>博客來|購物車</title>
+<link rel="stylesheet" type="text/css" href="../css/index_css.css">
+<link rel="stylesheet" type="text/css" href="../css/barside.css">
+<link rel="shortcut icon" href="../../img/favicon (1).ico" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="../css/member.css">
+
   <style>
-   
     
+
   </style>
 
 <script>
@@ -42,6 +42,11 @@
   <header>
     <div class="head">
       <div class="head_icon"> <img src="../img/shop.png" alt="icon"> </div>
+      <!-- <div class="header_list">
+      <a href="#head_contant"><span>商店介紹</span></a>
+      <a href="#head_hot"><span>熱銷排行</span></a>
+      <a href="#head_new"><span>新書上市</span> </a>
+      </div> -->
       <div class="head_slogn">博客來</div>
       <div class="head_search">
         <input id="myInput" value="Search" />
@@ -49,48 +54,49 @@
       </div>
       <div class="head_decoration">
         <div> <a href="../login .html"><img src="../img/login.jpg" alt="login"> </a></div>
-        <div> <a href="../member/wish_list.html"><img src="../img/wishlist.png" alt="My wishlist"></a> </div>
-        <div> <a href="../member/cart.html"><img src="../img/cart.jpg" alt="My Cart"></a> </div>
+        <div> <a href="wish_list.html"><img src="../img/wishlist.png" alt="My wishlist"></a>  </div>
+        <div> <a href="cart.html"><img src="../img/cart.jpg" alt="My Cart"></a>  </div>
       </div>
     </div>
   </header>
-  <!-- 伸縮manu -->
+<!-- 彈跳清單 -->
 <section>
   <div class="side_button">
-    <button onclick="button_open()">☰</button>
-  </div>
+  <button onclick="button_open()">☰</button>
+</div>
 
-  <div class="manu" style="display:none" id="sidebar">
-    <button onclick="button_close()" class="barline">Close &times;</button>
-    <ul>
-      <li><a href="../index.html">商店介紹</a></li>
-      <li><a href="newbook.html">全部商品</a>
-        <ul>
-          <li><a href="top.html">熱銷排行</a></li>
-          <li><a href="magazine.html">Magazine</a></li>
-          <li><a href="ebook.html">電子書</a></li> 
-        </ul>
-      </li>
-      <li><a href="../store_detail/aboutus.html">認識我們</a></li>
+<div class="manu" style="display:none" id="sidebar">
+  <button onclick="button_close()" class="barline">Close &times;</button>
+  <ul>
+    <li><a href="../index.html">商店介紹</a></li>
+    <li><a href="../manu/newbook.html">全部商品</a>
+      <ul>
+        <li><a href="../manu/top.html">熱銷排行</a></li>
+        <li><a href="../manu/magazine.html">Magazine</a></li>
+        <li><a href="../manu/ebook.html">電子書</a></li>
+      </ul>
+    </li>
+    <li><a href="../store_detail/aboutus.html">認識我們</a></li>
     <li><a href="../store_detail/question.html">購物須知</a></li>
-      <li><a href="#">留言板</a></li>
-    </ul>
+    <li><a href="#">留言板</a></li>
+  </ul>
+</div>
+</section>
+
+<section>
+  <div class="wish_list_wrap">
+    <h1>交易記錄</h1>
+    <p>您的商品</p>
+    <hr>
+    <div class="wish_list_contant">
+
+    </div>
+    <hr>
   </div>
 </section>
 
-<!-- 選單 -->
-<div class="newbook_wrap">
-  <div class="newbook_contant">
-    <a href="../manu/magazine.html"><img src="../img/manu/manu_magazine.jpg" alt=""></a>
-    <h2>Magazine</h2>
-  </div>
-</div>
-<div class="newbook_wrap">
-  <div class="newbook_contant">
-    <a href="../manu/ebook.html"><img src="../img/manu/manu_ebook.jpg" alt=""></a>
-    <h2>Ebook</h2>
-  </div>
-</div>
+
+<div class="sup"></div>
 
 <!-- footer -->
 <section>
@@ -109,7 +115,7 @@
     </div>
     
 
-    
+
     <div class="footer_copyright">
       <p>※若消費者為限制行為能力人或無行為能力人，應於消費者之法定代理人閱讀、瞭解並同意本契約之所有內容後，方得使用本網站下單。<br>
         ※如為未滿20歲之未成年使用者，需經由家長同意方可購買與使用商城服務。<br>
