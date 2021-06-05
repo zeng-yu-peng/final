@@ -7,9 +7,7 @@
     border: none;
     perspective: 1000px;
     position: relative;
-    margin-left: 20%;
-    margin-bottom: 25%;
-    margin-top: 3%;
+    
   }
 
   .flip-box-back h3{
@@ -49,9 +47,8 @@
   .flip-box-back {
     transform: rotateY(180deg);
     color: white;
-    border-radius: 10%;
     width: 600px;
-    height:4000px;
+    height:400px;
     background-color: #CA8EFF;
     transform: rotateY(180deg);
     font-size:18px;
@@ -98,4 +95,15 @@
   .flip-img img{
     width: 30px;
 
+  }
+  .flip_name{
+    width: 200px;
+    height: 400px;
+    position: absolute;
+    right: 0px;top: 0px;
+  }
+  .flip_name h2{
+   margin-right: 50px;
+   position: relative;
+   left: 65px;
   }
