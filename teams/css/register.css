@@ -1,0 +1,117 @@
+
+
+
+* {
+    box-sizing: border-box;
+  }
+  .button{
+    border: white;
+    background-color: #ffffff00;    
+    text-decoration: cornsilk;
+
+}
+
+  .login{
+    position: absolute;
+    right:80%;
+    top:8%;
+    align-items: right;
+    height: 25%;
+    width:20%;
+}
+
+.wishlist{
+    position: absolute;
+    right:3%;
+    top:18%;
+    align-items: right;
+    height: 15%;
+    width:20%;
+  }
+  
+  .cartt{
+    position: absolute;
+    right:-6%;
+    top:18%;
+    align-items: right;
+    height: 15%;
+    width:20%;
+  }
+  
+  body {
+     background-image:url(../FINAL/img/background-5.jpg);
+     background-repeat: no-repeat;
+     background-position: center;
+     
+   
+  }
+  
+  #regForm {
+    background-color: #fdfdff6b;
+    margin: 50px auto;
+    font-family: Raleway;
+    padding: 50px;
+    width: 40%;
+    min-width: 200px;
+  }
+  
+  h1 {
+    text-align: center;  
+  }
+  
+  input {
+    padding: 15px;
+    width: 100%;
+    font-size: 17px;
+    font-family: Raleway;
+    border: 1px solid #aaaaaa;
+  }
+  
+  /* Mark input boxes that gets an error on validation: */
+  input.invalid {
+    background-color: #ffdddd;
+  }
+  
+  /* Hide all steps by default: */
+  .tab {
+    display: none;
+  }
+  
+  button {
+    background-color: #04AA6D;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 17px;
+    font-family: Raleway;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  #prevBtn {
+    background-color: #bbbbbb;
+  }
+  
+  /* Make circles that indicate the steps of the form: */
+  .step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;  
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+  }
+  
+  .step.active {
+    opacity: 1;
+  }
+  
+  /* Mark the steps that are finished and valid: */
+  .step.finish {
+    background-color: #04AA6D;
+  }

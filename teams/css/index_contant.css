@@ -1,0 +1,165 @@
+/* 廣告及內容介紹 */
+.index_contant{
+      height: 450px;
+      max-width: 1100px;
+      margin: auto;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      padding: 20px  50px;
+      background-color:#f5f5f5;
+      position: relative;
+    }
+
+/* 新品上市 */
+.index_news {
+  height: 450px;
+  max-width: 1100px;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 20px 50px;
+  background-color: #E6F1D8;
+  position: relative;
+}
+
+    .slider_container {
+    /* margin: 30px auto; */
+    float: left;
+    /* margin: 30px 0 30px 70px; */
+    margin-left: 70px;
+    width: 400px;
+    height: 300px;
+    position: relative; 
+    border: 20px solid #fff;
+    border-bottom-width: 100px;
+    background-color: #f5f5f5;
+    }
+
+    .slider_container img{
+      /* position: absolute;
+      left: 300px; */
+      height: 300px;
+      width: 400px;
+    }
+
+    .slider_container div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    animation: round 25s linear infinite;
+    }
+
+    
+    @keyframes round {
+      10% {
+        opacity: 1;
+        /* 0 - 1秒 淡入*/
+      }
+
+      20% {
+        opacity: 1;
+        /* 1- 5秒靜止*/
+      }
+
+      24% {
+        opacity: 0;
+        /* 5-6秒淡出*/
+      }
+    }
+    .slider_container div:nth-child(1) {
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+    }
+
+    .slider_container div:nth-child(2) {
+    -webkit-animation-delay: 5s;
+    animation-delay: 5s;
+    }
+
+    .slider_container div:nth-child(3) {
+    -webkit-animation-delay: 10s;
+    animation-delay: 10s;
+    }
+
+    .slider_container div:nth-child(4) {
+    -webkit-animation-delay: 15s;
+    animation-delay: 15s;
+    }
+
+    .slider_container div:nth-child(5) {
+    -webkit-animation-delay: 20s;
+    animation-delay: 20s;
+    }
+    .slider_container span {
+    color: #000;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    /* left: 300px; */
+    top: 300px;
+    width: 400px;
+    height: 100px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 100px;
+    -webkit-transform:scaleY(0);
+    -ms-transform:scaleY(0);
+    transform:scaleY(0);
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    }
+
+    .slider_container:hover span {
+    -webkit-transform:scaleY(1);
+    -ms-transform:scaleY(1);
+    transform:scaleY(1);
+    }
+
+
+    /* 新東東 */
+    .tablink {
+      background-color: #555;
+      color: white;
+      float: left;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 2%;
+      font-size: 22px;
+      width: 25%;
+    }
+
+    .tablink:hover {
+      background-color: #777;
+    }
+    .button_content {
+      color: white;
+      height: 550px;
+      padding: 100px 50px 50px 50px;
+    }
+
+    .bigcontant {
+      height: 550px;
+      max-width: 1200px;
+      margin: 30px auto;
+    }
+    .sup{
+      height: 50px;
+      background-color: #fff;
+    }
+    #Introduction {
+      background-color: #FDE2CA;
+    }
+    #vedio {
+      background-color:#a19f89;
+    }
+    #news {
+      background-color:#819582 ;
+    }
+    #process {
+      background-color: #a19f89;
+    }
+    #process_img{
+    margin-left: 195px;    
+    }
