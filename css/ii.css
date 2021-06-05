@@ -38,7 +38,7 @@ header{
 }
 .login{
     position: absolute;
-    right:100%;
+    right:10%;
     top:8%;
     align-items: right;
     height: 15%;
@@ -47,7 +47,7 @@ header{
 
 .wishlist{
   position: absolute;
-  right:50%;
+  right:3%;
   top:5%;
   align-items: right;
   height: 15%;
@@ -56,7 +56,7 @@ header{
 
 .cartt{
   position: absolute;
-  right:30%;
+  right:-6%;
   top:5%;
   align-items: right;
   height: 15%;
