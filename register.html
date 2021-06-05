@@ -8,7 +8,6 @@
   <title>會員中心</title>
    <link rel="stylesheet" type="text/css" href="css/barside.css">
   <link rel="stylesheet" type="text/css" href="css/index_css.css">
-  <link rel="stylesheet" type="text/css" href="css/barside.css">
   <link rel="stylesheet" type="text/css" href="css/register.css">
 
   <link rel="shortcut icon" href="../img/favicon (1).ico" type="image/x-icon">
@@ -24,9 +23,58 @@
      background-image:url(../FINAL/img/background-5.jpg);
      background-repeat: no-repeat;
      background-position: center;
-     
-   
   }
+
+  header{
+    width: 80%;
+    margin-left: 12%;
+  }
+  /* 彈跳式清單.. */
+  .manu {
+      padding: 20px;
+      position: fixed;
+      top: 0; left: 0;
+      background-color: #afd0df;
+      z-index: 99;
+      width: 200px; height: 100%;
+      min-width: 180px;
+    }
+
+    .manu li{
+      line-height: 3.5;
+    }
+
+    .manu li a{
+      color: #25006b;
+      text-decoration: none;
+    }
+
+
+    .barline{
+      width:100%;
+      display:block;
+      padding:8px 16px;
+      text-align:left;
+      border:none;
+      white-space:normal;
+      float:none;
+      outline:0;
+      text-align:center;
+      background-color: #25006b;
+      font-size:18px!important
+      
+    }
+    .side_button{
+      position: fixed;
+      left: 0; top: 50%;
+      font-size:24px!important
+      }
+    .side_button button{
+      position: absolute;top:40%;
+      height: 45px; width: 30px;
+      color:#B7B7B7!important;
+      background-color:#4e0097a9!important
+    }
   </style>
 
 <script>
@@ -54,7 +102,8 @@
 <body>
   <header>
     <div class="head">
-      <div class="head_icon" > <img src="img/shop-removebg-preview.png" alt="icon"> </div>
+      <div class="head_icon" >
+        <a href="index.html"> <img src="img/shop-removebg-preview.png" alt="icon"> </a></div>
 
       <div class="head_slogn">BK.</div>
       <div class="wishlist">
@@ -70,7 +119,7 @@
           <div class="w3-container">
               <div class="w3-dropdown-hover">
                   <button class="button">
-                      <a href=""> <img src="img/profile.png" width="150px"  style="background-color: NONE;"> </a>
+                      <a href=""> <img src="img/profile.png" width="150px" > </a>
                   </button>
                    <div class="w3-dropdown-content w3-bar-block w3-border">
                        <a href="login .html" class="w3-bar-item w3-button">Login</a>
@@ -107,10 +156,11 @@
   </ul>
 </div>
 </section>
+
 <section>
   
-</section>
-<br><br>
+
+<br><br><br><br><br>
 <form id="regForm" action="member.html">
   <h1>Register:</h1>
   <div class="tab">Name:
