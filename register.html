@@ -5,103 +5,29 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>註冊</title>
+  <title>會員中心</title>
+   <link rel="stylesheet" type="text/css" href="css/barside.css">
   <link rel="stylesheet" type="text/css" href="css/index_css.css">
   <link rel="stylesheet" type="text/css" href="css/barside.css">
-  <link rel="stylesheet" type="text/css" href="css/index_contant.css">
-  <link rel="stylesheet" href="css/product_manu.css">
-  <link rel="shortcut icon" href="../img/favicon (1).ico" type="image/x-icon">
-  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/register.css">
 
+  <link rel="shortcut icon" href="../img/favicon (1).ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
+  <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js'></script>
 
   <style>
- 
-
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-   background-image:url(../FINAL/img/background-5.jpg);
-   background-repeat: no-repeat;
-   background-position: center;
+    body {
+     background-image:url(../FINAL/img/background-5.jpg);
+     background-repeat: no-repeat;
+     background-position: center;
+     
    
- 
-}
-
-#regForm {
-  background-color: #fdfdff6b;
-  margin: 50px auto;
-  font-family: Raleway;
-  padding: 50px;
-  width: 40%;
-  min-width: 200px;
-}
-
-h1 {
-  text-align: center;  
-}
-
-input {
-  padding: 15px;
-  width: 100%;
-  font-size: 17px;
-  font-family: Raleway;
-  border: 1px solid #aaaaaa;
-}
-
-/* Mark input boxes that gets an error on validation: */
-input.invalid {
-  background-color: #ffdddd;
-}
-
-/* Hide all steps by default: */
-.tab {
-  display: none;
-}
-
-button {
-  background-color: #04AA6D;
-  color: #ffffff;
-  border: none;
-  padding: 10px 20px;
-  font-size: 17px;
-  font-family: Raleway;
-  cursor: pointer;
-}
-
-button:hover {
-  opacity: 0.8;
-}
-
-#prevBtn {
-  background-color: #bbbbbb;
-}
-
-/* Make circles that indicate the steps of the form: */
-.step {
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbbbbb;
-  border: none;  
-  border-radius: 50%;
-  display: inline-block;
-  opacity: 0.5;
-}
-
-.step.active {
-  opacity: 1;
-}
-
-/* Mark the steps that are finished and valid: */
-.step.finish {
-  background-color: #04AA6D;
-}
-</style>
-
-  
+  }
+  </style>
 
 <script>
   // 彈跳式清單
@@ -128,23 +54,35 @@ button:hover {
 <body>
   <header>
     <div class="head">
-      <div class="head_icon"> <img src="img/booksicon.png" alt="icon"> </div>
-      <!-- <div class="header_list">
-      <a href="#head_contant"><span>商店介紹</span></a>
-      <a href="#head_hot"><span>熱銷排行</span></a>
-      <a href="#head_new"><span>新書上市</span> </a>
-      </div> -->
-      <div class="head_slogn">博客來</div>
-      <div class="head_search">
-        <input id="myInput" value="Search" />
-        <button id="myBtn" >搜尋</button>
-      </div>
-      <div class="head_decoration">
-        <div> <a href="login.html"><img src="img/login.jpg" alt="login"> </a></div>
-        <div> <img src="img/wishlist.png" alt="My wishlist"> </div>
-        <div> <img src="img/cart.jpg" alt="My Cart"  width="100px"> </div>
-      </div>
+      <div class="head_icon" > <img src="img/shop-removebg-preview.png" alt="icon"> </div>
+
+      <div class="head_slogn">BK.</div>
+      <div class="wishlist">
+        <a href="member/wish_list.html"><img src="img/wishlist-12.png" width="100px"></a>
     </div>
+    
+    <div class="cartt">
+        <a href="member/cart.html"><img src="img/carttt.png" width="100px"></a>
+    </div>
+     
+      <div class="head_decoration">
+        <div class="login">
+          <div class="w3-container">
+              <div class="w3-dropdown-hover">
+                  <button class="button">
+                      <a href=""> <img src="img/profile.png" width="150px"  style="background-color: NONE;"> </a>
+                  </button>
+                   <div class="w3-dropdown-content w3-bar-block w3-border">
+                       <a href="login .html" class="w3-bar-item w3-button">Login</a>
+                       <a href="register.html" class="w3-bar-item w3-button">Register</a>
+                       <a href="member.html" class="w3-bar-item w3-button">My Info.</a>
+                   </div>
+              </div>
+          </div>
+       </div>
+      
+      </div>
+    
   </header>
 <!-- 彈跳清單 -->
 <section>
@@ -173,9 +111,8 @@ button:hover {
   
 </section>
 <br><br>
-<form id="regForm" action="/action_page.php">
+<form id="regForm" action="member.html">
   <h1>Register:</h1>
-  <!-- One "tab" for each step in the form: -->
   <div class="tab">Name:
     <p><input placeholder="First name..." oninput="this.className = ''" name="fname"></p><br>
     <p><input placeholder="Last name..." oninput="this.className = ''" name="lname"></p>
@@ -200,7 +137,6 @@ button:hover {
       <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
     </div>
   </div>
-  <!-- Circles which indicates the steps of the form: -->
   <div style="text-align:center;margin-top:40px;">
     <span class="step"></span>
     <span class="step"></span>
@@ -284,12 +220,6 @@ function fixStepIndicator(n) {
 }
 </script>
 
-
-
-
-
-
-
 <script>
   function openPage(pageName, elmnt, color) {
     var i, tabcontent, tablinks;
@@ -308,7 +238,7 @@ function fixStepIndicator(n) {
 </script>
 
 
-
+<br><br><br>
 
 <div class="sup"></div>
 
