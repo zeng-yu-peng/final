@@ -62,6 +62,26 @@
             })
         });
 
+         //搜尋欄位
+    var input = document.getElementById("myInput");
+    input.addEventListener("keyup", function(event) {
+    if (event.keyCode === 13) {
+    event.preventDefault();
+    document.getElementById("myBtn").click();
+    }
+    });
+  
+    function openSearch() {
+      document.getElementById("myOverlay").style.display = "block";
+    }
+    
+    function closeSearch() {
+      document.getElementById("myOverlay").style.display = "none";
+    }
+    function closeForm() {
+  document.getElementById("myOverlay").style.display = "none";
+  }
+
     </script>
     <script> 
         
@@ -158,28 +178,40 @@
 <!-- 彈跳清單 -->
 <section>
     <div class="side_button">
-         <button onclick="button_open()">☰</button>
+    <button onclick="button_open()">☰</button>
+  </div>
+  <div id="myOverlay" class="overlay" style="background: url(../img/back.jpeg); background-repeat: no-repeat; background-size: cover;">
+    <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+        <div class="overlay-content">
+            <form  class="form-container" action="">
+                <h2 style="text-decoration: black;"><b>想跟 BK. 說的話:</b></h2 >
+                <textarea placeholder= " 喝咖啡聊是非 快留下想對我們說的話吧:" name="msg" required></textarea>
+                <div class="btnbtw">
+                <button type="submit" class="btn">Send</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                </div>
+            </form>
         </div>
+  </div>
   
-        <div class="manu" style="display:none" id="sidebar">
-            <button onclick="button_close()" class="barline">Close &times;</button>
+   
+  <div class="manu" style="display:none" id="sidebar">
+    <button onclick="button_close()" class="barline">Close &times;</button>
+    <ul>
+      <li><a href="index.html">商店介紹</a></li>
+      <li><a href="../manu/newbook.html">全部商品</a>
         <ul>
-           <li><a href="../index.html">商店介紹</a></li>
-           <li><a href="../manu/newbook.html">全部商品</a>
-        <ul>
-           <li><a href="../manu/top.html">熱銷排行</a></li>
-           <li><a href="../manu/magazine.html">Magazine</a></li>
-           <li><a href="../manu/ebook.html">電子書</a></li>
+          <li><a href="../manu/top.html">熱銷排行</a></li>
+          <li><a href="../manu/magazine.html">Magazine</a></li>
+          <li><a href="../manu/ebook.html">電子書</a></li>
         </ul>
       </li>
-          <li><a href="../store_detail/aboutus.html">認識我們</a></li>
-          <li><a href="..store_detail/question.html">購物須知</a></li>
-          <li><a href="#">留言板</a></li>
-        </ul>
-    </div>
-</section>
-
-
+      <li><a href="../store_detail/aboutus.html">認識我們</a></li>
+      <li><a href="../store_detail/question.html">購物須知</a></li>
+      <li><button class="openBtn" onclick="openSearch()">留言板</button></li>
+    </ul>
+  </div>
+  </section>
 <header>
     <hr>
     <div class="icon">
@@ -409,16 +441,17 @@
         </div>
     </div> 
 </div>           
-        <div class="terms"> <hr>
+<div class="terms"> <hr>
            
-            <h3>Delivery & Returns</h3>
-            <p>To see our available delivery options please <a href="../index.html">Click here</a></p>
-       </div>
+    <h3>Delivery & Returns</h3>
+    <p>To see our available delivery options please <a href="../store_detail/question.html">Click here</a></p>
+</div>
 
-        <div class="re"> <hr>
-            <h3>If I'm not completely happy with my item?</h3>
-            <p>Please see our <a href="../index.html"> Returns Policy.</a></p>
-        </div>
+<div class="re"> <hr>
+    <h3>If I'm not completely happy with my item?</h3>
+    <p>Please see our <a href="../store_detail/question.html"> Returns Policy.</a></p>
+</div>
+</div>
 
        <div class="detail"><hr>
             <h3>Product Details</h3>

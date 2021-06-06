@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BK. 全員介紹</title>
+  <link rel="stylesheet" type="text/css" href="css/index_css.css">
+  <link rel="stylesheet" type="text/css" href="css/barside.css">
+  <link rel="stylesheet" type="text/css" href="css/index_contant.css">
+  <link rel="stylesheet" type="text/css" href="css/product_manu.css">
+  <link rel="stylesheet" type="text/css" href="css/teams.css">
+  
+  <link rel="shortcut icon" href="img/favicon (1).ico" type="image/x-icon">
+
+
+<script>
+  // 彈跳式清單
+  function button_open() {
+    document.getElementById("sidebar").style.display = "block";
+  }
+
+  function button_close() {
+    document.getElementById("sidebar").style.display = "none";
+  }
+
+  //搜尋欄位
+  var input = document.getElementById("myInput");
+  input.addEventListener("keyup", function(event) {
+  if (event.keyCode === 13) {
+  event.preventDefault();
+  document.getElementById("myBtn").click();
+  }
+  });
+</script>
+
+</head>
+
+<body>
+  <header>
+    <div class="head">
+      <div class="head_icon"> <img src="img/shop-removebg-preview.png" alt="icon"> </div>
+      <div class="head_slogn">TEAMS</div>
+      <div class="head_search">
+        <input id="myInput" value="Search" />
+        <button id="myBtn" >搜尋</button>
+      </div>
+      <div class="head_decoration">
+        <div> <a href="login .html"><img src="img/profile.png" alt="login"> </a></div>
+        <div> <a href="member/wish_list.html"><img src="img/wishlist-12.png" alt="My wishlist"></a> </div>
+        <div> <a href="member/cart.html"><img src="img/carttt.png" alt="My Cart"></a> </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- 伸縮manu -->
+
+<section>
+  <div class="side_button">
+    <button onclick="button_open()">☰</button>
+  </div>
+
+  <div class="manu" style="display:none" id="sidebar">
+    <button onclick="button_close()" class="barline">Close &times;</button>
+    <ul>
+      <li><a href="index.html">商店介紹</a></li>
+      <li><a href="newbook.html">全部商品</a>
+        <ul>
+          <li><a href="top.html">熱銷排行</a></li>
+          <li><a href="magazine.html">Magazine</a></li>
+          <li><a href="ebook.html">電子書</a></li> 
+        </ul>
+      </li>
+      <li><a href="store_detail/aboutus.html">認識我們</a></li>
+    <li><a href="store_detail/question.html">購物須知</a></li>
+      <li><a href="#">留言板</a></li>
+    </ul>
+  </div>
+</section>
+
+<!-- 選單 -->
+<div class="newbook_wrap">
+  <div class="flip-box">
+    <div class="flip-box-inner">
+      <div class="flip-box-front">
+        <img src="img/teams/chieh.jpg" alt="" > <br>
+      </div>
+       <div class="flip-box-back">
+            <p style="font-size: 24px;"><b>關於多媒專題ㄉ心得:</b></p>
+               <p style="text-align: left;">
+                 嗨~ 我是資管二乙的陳品緁！<br>
+                 這次和我的前端partner一起完成了前端的網頁設計！<br><br>
+                 比起第一次作其中專題的茫然無措，這一次的我雖不到游刃有餘，但是至少不再像之前那麼手忙腳亂了，
+               對於各種排版阿、顏色搭配.....等，我覺得比第一此好太多了，果然每一次的挑戰，都是一種學習，
+               或許成果沒有自己像得那麼完美，但是至少在每一次的不完美中都有學到不一樣的事，也感覺自己有越來越好了！<br><br>
+               最後我要謝謝我的partner們，不管前後端的你們真的都很carry～<br>
+               也謝謝老師助教這學期的指導，大家辛苦了！                     
+            </p>
+            <p>
+              "There's only one corner of the universe you can be sure of improving, and that's your own self."
+            </p>
+       </div>
+      </div>  
+         <div class="name">
+         <h2>陳品緁 </h2>
+         
+        </div>
+    </div>
+  
+
+<div class="newbook_wrap">
+  <div class="flip-box">
+    <div class="flip-box-inner">
+      <div class="flip-box-front">
+        <img src="img/teams/cy.jpg" alt="" > <br>
+      </div>
+       <div class="flip-box-back2">
+            <p style="font-size: 24px;"><b>關於多媒專題ㄉ心得:</b></p>
+               <p style="text-align: left;">
+                嗨～我是會計二甲的楊珺堯！<br>
+                這次和我的前端partner一起完成了前端的網頁設計！<br><br>
+                
+                經歷過期中專案的手足無措，不知道要幹嘛，到現在雖不是駕輕就熟，但也成熟穩重不少，
+                不管是position的應用，又或是flex的用法，甚至是可以開始用css做一些互動的網頁，
+                這都是透過一點一滴逐步耕耘出來的，雖然都還不盡完美，但也是在失敗挫折的過程中逐漸成長，
+                將失敗化為自己成長的基石，這學期真的是受益良多，不管是網站或是身心靈都是！<br><br>
+                
+                最後我要謝謝我的partners，不管前端後端得大家都很棒！<br>
+                當然最屑屑的還是老師還有這學期助教們的指導，大家辛苦了！
+                
+            </p>
+            <p>
+              Do not, for one repulse, give up the purpose that you resolved to effect.----William Shakespeare                 
+
+            </p>
+       </div>
+    </div>
+  </div>  
+  <div class="name">
+    <h2>楊珺堯</h2>
+  </div>
+  
+</div>
+
+<div class="newbook_wrap"> <div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <img src="img/teams/chieh.jpg" alt="" > <br>
+    </div>
+     <div class="flip-box-back3">
+          <p style="font-size: 24px;"><b>關於多媒專題ㄉ心得:</b></p>
+             <p style="text-align: left;">
+              
+              嗨～我是資管二甲陳依廷！<br>
+              這次和我的後端partner一起完成了後端的資料庫設計！<br><br>
+              這學期我們進行了後台的實作，能夠感受到，相對於上學期的前台設計能夠隨時隨地在網頁上看到所做的程式結果，
+              後台只能先依照邏輯寫入程式及資料庫，再透過tomcat運作實際run一次看是否有成功連結，
+              著實是件不容易的事，很感謝夥伴的協助，讓我們能夠完成這次的網站設計！ <br><br>               
+          </p>
+          <p>
+
+          </p>
+     </div>
+  </div>
+</div>  
+  <div class="name">
+    <h2>陳依廷</h2>
+  </div>
+  
+</div>
+
+<div class="newbook_wrap">
+  <div class="flip-box">
+    <div class="flip-box-inner">
+      <div class="flip-box-front">
+        <img src="img/teams/chieh.jpg" alt="" > <br>
+      </div>
+       <div class="flip-box-back4">
+            <p style="font-size: 24px;"><b>關於多媒專題ㄉ心得:</b></p>
+               <p style="text-align: left;">
+                嗨～我是資管二甲曾雨芃！<br>
+                這次和我的後端partner一起完成了後端的資料庫設計！<br><br>
+
+                上學期做前端的時候，一直不知道原來後端也這麼麻煩，這次自己做後端，做資料庫，結果連結漣一連忘記連到哪裡，又要一個檔案一個檔案的找，
+                後來我學聰明了，我用註解標註我這個檔案是在寫什麼?經過這一年的多媒及網程，了解到了前端與後端的不同，同樣是寫程式碼，卻因為功能不同，
+                後端會專注於資料庫的寫入，前端更專注於排版及美觀。<br><br>
+                謝謝我的夥伴妳還願意跟我一組沒有拋下我，雖然我每次都在犯傻，耗盡妳很多心力。<br><br> 
+                                 
+            </p>
+            <p>
+
+            </p>
+       </div>
+    </div>
+  </div>  
+  <div class="name">
+    <h2>曾雨芃</h2>
+  </div>
+  
+</div>
+
+
+<!-- footer -->
+<section>
+  <div class="footer">
+    <div class="footer_wrap">
+      <div>
+        <h4>關於我們</h4>
+
+        <ul>
+          <li><a href="">服務時間：週一至週五A.M. 8:00 ~ P.M. 6:00</a></li>
+          <li><a href="">電話 : (02)2502-8314</a></li>
+          <li><a href="">地址：320桃園市中壢區中北路200號</a></li>
+          <li><a href="">No. 200, Zhongbei Road, Zhongli District, Taoyuan City 320</a></li>
+        </ul>
+      </div>
+    </div>
+    
+
+    
+    <div class="footer_copyright">
+      <p>※若消費者為限制行為能力人或無行為能力人，應於消費者之法定代理人閱讀、瞭解並同意本契約之所有內容後，方得使用本網站下單。<br>
+        ※如為未滿20歲之未成年使用者，需經由家長同意方可購買與使用商城服務。<br>
+        本網站已依台灣網站內容分級規定處理｜建議使用瀏覽器版本：Google Chrome版本60以上 / Firefox版本48以上 / Safari 版本11以上</p>
+    </div>
+  </div>
+  
+</section>
+
+</body>
+</html>
+

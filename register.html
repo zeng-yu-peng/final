@@ -9,8 +9,9 @@
    <link rel="stylesheet" type="text/css" href="css/barside.css">
   <link rel="stylesheet" type="text/css" href="css/index_css.css">
   <link rel="stylesheet" type="text/css" href="css/register.css">
+  <link rel="stylesheet" type="text/css" href="css/ii.css">
 
-  <link rel="shortcut icon" href="../img/favicon (1).ico" type="image/x-icon">
+  <link rel="shortcut icon" href="img/favicon (1).ico" type="image/x-icon">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
@@ -95,49 +96,58 @@
   document.getElementById("myBtn").click();
   }
   });
+
+  function openSearch() {
+    document.getElementById("myOverlay").style.display = "block";
+  }
+  
+  function closeSearch() {
+    document.getElementById("myOverlay").style.display = "none";
+  }
+  function closeForm() {
+document.getElementById("myOverlay").style.display = "none";
+}
 </script>
+
+
 
 </head>
 
 <body>
   <header>
     <div class="head">
-      <div class="head_icon" >
-        <a href="index.html"> <img src="img/shop-removebg-preview.png" alt="icon"> </a></div>
-
-      <div class="head_slogn">BK.</div>
-      <div class="wishlist">
-        <a href="member/wish_list.html"><img src="img/wishlist-12.png" width="100px"></a>
-    </div>
-    
-    <div class="cartt">
-        <a href="member/cart.html"><img src="img/carttt.png" width="100px"></a>
-    </div>
-     
-         
-
-    <div class="login">
-      <div class="w3-container">
-          <div class="w3-dropdown-hover">
-              <button class="button">
-                  <a href=""> <img src="../img/profile.png" width="55px"> </a>
-              </button>
-               <div class="w3-dropdown-content w3-bar-block w3-border">
-                   <a href="../login.html" class="w3-bar-item w3-button">Login</a>
-                   <a href="../register.html" class="w3-bar-item w3-button">Register</a>
-                   <a href="../member.html" class="w3-bar-item w3-button">My Info.</a>
-               </div>
-          </div>
+      <div class="head_icon"> <img src="img/shop-removebg-preview.png" alt="icon"> </div>
+      <div class="head_slogn">TEAMS</div>
+      <div class="head_search">
+        <input id="myInput" value="Search" />
+        <button class="bb" id="myBtn" onclick="javascript:alert('NOT FOUND')"></button>
       </div>
-   </div>
-      
+      <div class="head_decoration">
+        <div> <a href="login.html"><img src="img/profile.png" alt="login"> </a></div>
+        <div> <a href="member/wish_list.html"><img src="img/wishlist-12.png" alt="My wishlist"></a> </div>
+        <div> <a href="member/cart.html"><img src="img/carttt.png" alt="My Cart"></a> </div>
       </div>
-    
+    </div>
   </header>
+
+
 <!-- 彈跳清單 -->
 <section>
   <div class="side_button">
   <button onclick="button_open()">☰</button>
+</div>
+<div id="myOverlay" class="overlay" style="background: url(img/back.jpeg); background-repeat: no-repeat; background-size: cover;">
+  <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+      <div class="overlay-content">
+          <form  class="form-container" action="">
+              <h2 style="text-decoration: black;"><b>想跟 BK. 說的話:</b></h2 >
+              <textarea placeholder= " 喝咖啡聊是非 快留下想對我們說的話吧:" name="msg" required></textarea>
+              <div class="btnbtw">
+              <button type="submit" class="btn">Send</button>
+              <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+              </div>
+          </form>
+      </div>
 </div>
 
 <div class="manu" style="display:none" id="sidebar">
@@ -153,7 +163,7 @@
     </li>
     <li><a href="store_detail/aboutus.html">認識我們</a></li>
     <li><a href="store_detail/question.html">購物須知</a></li>
-    <li><a href="#">留言板</a></li>
+    <li><button class="openBtn1" onclick="openSearch()">留言板</button></li>
   </ul>
 </div>
 </section>
