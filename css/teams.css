@@ -131,3 +131,96 @@
     top:5%;
   }
   
+
+  
+
+.form-container {
+  width: 40%;
+  padding: 10px;
+  background-color:  #cccccca8;
+}
+.form-container textarea {
+  width: 80%;
+  padding: 5%;
+  margin: 5%;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+}
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+.form-container .btn {
+  background-color:  #557571;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 40%;
+  margin-bottom:10px; 
+}
+.form-container .cancel {
+  background-color: #d49a89 ;
+}
+.btnbtw{
+    display: flex;
+    justify-content: space-evenly;
+}
+.openBtn {
+  border: none;
+  outline: none;
+  background-color: inherit;
+  align-items: left;
+  color: #00676B;
+  
+  position: absolute;
+  left:9%;
+  top:60%;
+} 
+
+.openBtn1 {
+  border: none;
+  outline: none;
+  background-color: inherit;
+  align-items: left;
+  color: #25006b;
+  
+  position: absolute;
+  left:1%;
+  top:58%;
+} 
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0; 
+}
+.overlay-content {
+  display: flex;
+  justify-content: center;
+  margin-top: 12%;
+  width: 100%;
+  text-align: center;
+}
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  cursor: pointer;
+  color: white;
+}
+.overlay .closebtn:hover {
+  color: #ccc;
+}
+.form-container h1{
+  margin-top: 2%;
+  font-size: 60px;
+}
+
