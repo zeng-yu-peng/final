@@ -14,6 +14,8 @@
   <link rel="stylesheet" type="text/css" href="css/index_contant.css">
   <link rel="stylesheet" href="css/product_manu.css">
   <link rel="stylesheet" href="css/MEMBERS.css">
+  <link rel="stylesheet" type="text/css" href="css/teams.css">
+
   <link rel="shortcut icon" href="img/favicon (1).ico" type="image/x-icon">
 <style>
     .head {
@@ -58,6 +60,17 @@
     document.getElementById(pageName).style.display = "block";
     elmnt.style.backgroundColor = color;
   }
+
+  function openSearch() {
+      document.getElementById("myOverlay").style.display = "block";
+    }
+    
+    function closeSearch() {
+      document.getElementById("myOverlay").style.display = "none";
+    }
+    function closeForm() {
+  document.getElementById("myOverlay").style.display = "none";
+  }
   
   // Get the element with id="defaultOpen" and click on it
   document.getElementById("defaultOpen").click();
@@ -69,7 +82,7 @@
 <body>
   <header>
     <div class="head">
-      <div class="head_icon"> <img src="img/shop-removebg-preview.png" alt="icon"> </div>
+      <div class="head_icon"> <a href="index.html"><img src="img/shop-removebg-preview.png" alt="icon"></a> </div>
 
       <div class="head_slogn">center</div>
       <div class="head_search">
@@ -83,10 +96,23 @@
       </div>
     </div>
   </header>
-<!-- 彈跳清單 -->
-<section>
+ <!-- 彈跳清單 -->
+ <section>
   <div class="side_button">
   <button onclick="button_open()">☰</button>
+</div>
+<div id="myOverlay" class="overlay" style="background: url(img/back.jpeg); background-repeat: no-repeat; background-size: cover;">
+  <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+      <div class="overlay-content">
+          <form  class="form-container" action="">
+              <h2 style="text-decoration: black;"><b>想跟 BK. 說的話:</b></h2 >
+              <textarea placeholder= " 喝咖啡聊是非 快留下想對我們說的話吧:" name="msg" required></textarea>
+              <div class="btnbtw">
+              <button type="submit" class="btn">Send</button>
+              <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+              </div>
+          </form>
+      </div>
 </div>
 
 <div class="manu" style="display:none" id="sidebar">
@@ -102,7 +128,7 @@
     </li>
     <li><a href="store_detail/aboutus.html">認識我們</a></li>
     <li><a href="store_detail/question.html">購物須知</a></li>
-    <li><a href="#">留言板</a></li>
+    <li><button class="openBtn" onclick="openSearch()" style="font-size: 16px;">留言板</button></li>
   </ul>
 </div>
 </section>
@@ -305,7 +331,26 @@
       </div>
     </div>
     
+    <button onclick="topFunction()" id="myBtn"> Top </button>
 
+    <script>
+     var mybutton = document.getElementById("myBtn");
+
+     window.onscroll = function() {scrollFunction()};
+     
+     function scrollFunction() {
+       if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+         mybutton.style.display = "block";
+       } else {
+         mybutton.style.display = "none";
+       }
+     }
+     
+     function topFunction() {
+       document.body.scrollTop = 0;
+       document.documentElement.scrollTop = 0;
+     }
+ </script> 
 
     <div class="footer_copyright">
       <p>※若消費者為限制行為能力人或無行為能力人，應於消費者之法定代理人閱讀、瞭解並同意本契約之所有內容後，方得使用本網站下單。<br>

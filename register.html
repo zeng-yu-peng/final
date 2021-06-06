@@ -120,7 +120,7 @@ document.getElementById("myOverlay").style.display = "none";
       <div class="head_slogn">TEAMS</div>
       <div class="head_search">
         <input id="myInput" value="Search" />
-        <button class="bb" id="myBtn" onclick="javascript:alert('NOT FOUND')"></button>
+      <!--  <button class="bb" id="myBtn" onclick="javascript:alert('NOT FOUND')"></button>-->
       </div>
       <div class="head_decoration">
         <div> <a href="login.html"><img src="img/profile.png" alt="login"> </a></div>
@@ -171,7 +171,7 @@ document.getElementById("myOverlay").style.display = "none";
 <section>
   
 
-<br><br><br><br><br>
+<br><br><br><br><br><br><br>
 <form id="regForm" action="member.html">
   <h1>Register:</h1>
   <div class="tab">Name:
@@ -298,8 +298,7 @@ function fixStepIndicator(n) {
   document.getElementById("firstopen").click();
 </script>
 
-
-<br><br><br>
+<br>
 
 <div class="sup"></div>
 
@@ -319,7 +318,26 @@ function fixStepIndicator(n) {
       </div>
     </div>
     
+    <button onclick="topFunction()" id="myBtn11"> Top </button>
 
+    <script>
+     var mybutton = document.getElementById("myBtn11");
+
+     window.onscroll = function() {scrollFunction()};
+     
+     function scrollFunction() {
+       if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+         mybutton.style.display = "block";
+       } else {
+         mybutton.style.display = "none";
+       }
+     }
+     
+     function topFunction() {
+       document.body.scrollTop = 0;
+       document.documentElement.scrollTop = 0;
+     }
+ </script> 
 
     <div class="footer_copyright">
       <p>※若消費者為限制行為能力人或無行為能力人，應於消費者之法定代理人閱讀、瞭解並同意本契約之所有內容後，方得使用本網站下單。<br>
