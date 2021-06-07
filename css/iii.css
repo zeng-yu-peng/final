@@ -99,45 +99,31 @@ header{
     background-color: #576a91;
   }
 
-
-.s1{
-  height: 500px;
-}
-/* ilook , core, movie*/
-.s2{
-  height: 1900px;
-}
-/* beauty*/
-.s3{
-  height: 2000px;
-  margin-bottom: 280px;
-}
-/* interior*/
-.s4{
-  height: 1500px;
-  margin-bottom: 280px;
+.bookimg img{
+  border: 1px #000 solid;
+  padding: 50px;
+  
 }
 
 .bookimg{
-    position: absolute;
-    left:15%;
-    top:50%;
-    border: 1px solid black;
-    padding:5%;
+    margin:150px 0 0 150px;
+    
 }
 
 .description{
-    position: absolute;
-    top:127%;
-    left:13%;
+ 
     width:500px;
 
 }  
-
+.ooxx{
+  margin: auto;
+  margin-top: 100px;
+  display: flex;
+  width:80%;
+  height: auto;  
+}
 .acc{
-    position: relative;
-    top:124%;
-    left:-7%;
+  
     width:500px;
     height: auto;
 }
@@ -348,38 +334,28 @@ button.buy:hover{
 
 
 .payment{
-    position: absolute;
-    left:1%;
-    top:102%;
+    
     border: 1px solid black;
     width:650px;
     
 }
 .terms{
-    position: absolute;
-    left:52%;
-    top:127%;
+   
     width:650px;
 }
 
 .re{
-    position: absolute;
-    left:52%;
-    top:148%;
+    
     width:650px;
 }
 
 .detail{  
-    position: absolute;
-    top:170%;
-    left:52%;
+   
     width:650px;
     font-size: 18px;
 }
 .reviews{
-    position: absolute;
-    left:52%;
-    top:200%;
+   
     width:650px;
 }
 .tabcontent {
@@ -724,4 +700,75 @@ to {opacity: 1;}
 #num{
   width:120px;
   text-align: center;
+}
+
+
+    /* 展開收合效果 */
+    .slide_toggle {
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+    
+
+   
+    /* 收合提示字串區塊, 還可加入自訂 CSS 效果 */
+    line-height: 170%;
+    background-color: #eed;
+    border-radius: 7px;
+    }
+    .slide_toggle + div {
+    display: none;
+    margin-top: 1%;
+    padding-bottom: 1%;
+    /* 隱藏註解文字區塊, 請加入自訂 CSS 效果 */
+
+
+    }
+
+    .manu {
+    padding: 20px;
+    position: fixed;
+    top: 0; left: 0;
+    background-color: #FEEBD0;
+    z-index: 99;
+    width: 200px; height: 100%;
+    min-width: 180px;
+    cursor:pointer;
+
+}
+
+    .manu li{
+    line-height: 3.5;
+}
+
+
+    .manu li a{
+    color: #00676B;
+    text-decoration: none;
+}
+
+
+   .barline{
+    width:100%;
+    display:block;
+    padding:8px 16px;
+    text-align:left;
+    border:none;
+    white-space:normal;
+    float:none;
+    outline:0;
+    text-align:center;
+    font-size:18px!important
+}
+    .side_button{
+     position: fixed;
+     left: 0; top: 50%;
+     font-size:24px!important
+     
+}
+    .side_button button{
+     position: absolute;top: 40%;
+     height: 30px; width: 30px;
+     color:#B7B7B7!important;
+     background-color:#976D00!important
 }

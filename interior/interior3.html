@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../css/ii.css">
+    <link rel="stylesheet" type="text/css" href="../css/iii.css">
     <link rel="shortcut icon" href="../img/favicon (1).ico" type="image/x-icon">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -97,6 +97,10 @@
         alert("您的留言已送出...審核中");
     }
 
+    function sear(){
+        alert("NOT FOUND !! PLEASE SEARCH AGAIN");
+    }
+
     </script>
 
 <script>
@@ -104,72 +108,6 @@
     $(this).next().slideToggle();
      });
 </script>
-
-<style>
-    /* 展開收合效果 */
-    .slide_toggle {
-    text-align: center;
-    cursor: pointer;
-    font-weight: bold;
-   
-    /* 收合提示字串區塊, 還可加入自訂 CSS 效果 */
-    line-height: 170%;
-    background-color: #eed;
-    border-radius: 7px;
-    }
-    .slide_toggle + div {
-    display: none;
-    margin-top: 1%;
-    padding-bottom: 1%;
-    /* 隱藏註解文字區塊, 請加入自訂 CSS 效果 */
-
-
-    }
-
-    .manu {
-    padding: 20px;
-    position: fixed;
-    top: 0; left: 0;
-    background-color: #FEEBD0;
-    z-index: 99;
-    width: 200px; height: 100%;
-    min-width: 180px;
-}
-
-    .manu li{
-    line-height: 3.5;
-}
-
-    .manu li a{
-    color: #00676B;
-    text-decoration: none;
-}
-
-
-   .barline{
-    width:100%;
-    display:block;
-    padding:8px 16px;
-    text-align:left;
-    border:none;
-    white-space:normal;
-    float:none;
-    outline:0;
-    text-align:center;
-    font-size:18px!important
-}
-    .side_button{
-     position: fixed;
-     left: 0; top: 50%;
-     font-size:24px!important
-  }
-    .side_button button{
-     position: absolute;top: 40%;
-     height: 30px; width: 30px;
-     color:#B7B7B7!important;
-     background-color:#976D00!important
-}
-</style>
 
     <title>《室內interior》 3月號</title>
 </head>
@@ -212,33 +150,32 @@
     </ul>
   </div>
   </section>
-<header>
+
+ 
+  <header>
     <hr>
     <div class="icon">
         <a href="../index.html"><img src="../img/shop.png" width="150px"></a>
     </div>
 
-    <div class="wishlist">
-        <a href="../index.html"><img src="../img/wishlist-12.png" width="100px"></a>
+    <div class="wishlist" style="z-index: 100000000;">
+        <a href="../member/wish_list.html"><img src="../img/wishlist-12.png" width="100px"></a>
     </div>
     
-    <div class="cartt">
-        <a href="../cart.html"><img src="../img/carttt.png" width="100px"></a>
+    <div class="cartt" style="z-index: 200000000;">
+        <a href="../member/cart.html"><img src="../img/carttt.png" width="100px"></a>
     </div>
+
 
 
     <div class="topnav">
         <div class="search-container">
-            <form action="/action_page.php">
               <input type="text" placeholder="Search for a book..." name="search" autocomplete="off" autocorrect="off" ata-component-tracked-focused="">
-              <button type="submit" style="background-color: #374663;"><img src="../img/search.png" width="55px"><i class="fa fa-search"></i></button>
-            </form>
+              <button type="submit" style="background-color: #374663;" onclick="sear()"><img src="../img/search.png" width="55px"><i class="fa fa-search"></i></button>
           </div>
     </div>
 
     
-
-        
 
     <div class="login">
         <div class="w3-container">
@@ -256,8 +193,6 @@
      </div>
     <hr>
 </header>
-
-
 <section>
     <div class="s1">
          <div>
@@ -335,11 +270,13 @@
 </section>
 
 
- <section>
-        <div class="s4">
-           <div class="left1">          
-            <div class="description"> <hr>
-                <h3>Description</h3>
+
+<section class="ooxx">
+    <div style="margin-right: 100px;">
+            <div class="s2">
+               <div class="left1">          
+                <div class="description"> <hr>
+                    <h3>Description</h3>
                  <p>
                     <span style="background-color:rgb(218, 186, 226); font-size: 28px;">NO.628 MAY 2021</span>
                     <div class="texttt">
@@ -426,12 +363,13 @@
                         122街頭躍動的琴鍵 MAXPLAN AZABU 10租賃大廈
                     </div>
                  <BR>
-
-               </div>   
-            </div>
-        </div>
-    </div> 
-</div>           
+                 </div>   
+                </div>
+             </div>
+          </div> 
+      </div>        
+ </div>  
+<div>          
 <div class="terms"> <hr>         
     <h3>Delivery & Returns</h3>
     <p>To see our available delivery options please <a href="../store_detail/question.html">Click here</a></p>

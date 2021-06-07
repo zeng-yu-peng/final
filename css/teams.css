@@ -79,9 +79,7 @@
 
   }
 
- .flip-box-back4 {
-
-  
+ .flip-box-back4 { 
   transform: rotateY(180deg);
     color: white;
     width: 600px;
@@ -125,15 +123,26 @@
    position: relative;
    left: 65px;
   }
-
+  .newbook_wrap{
+    position: relative;
+  }
+  .name h2,.name a{
+    width: 200px;
+  }
+  .name{
+    position: absolute;
+    top:0;
+    right: -30px;
+  }
+  .name a img{
+    position: absolute;
+    top:250px;
+    right: -60px;
+  }
   .newbook_contant{
     position: relative;
     top:5%;
   }
-  
-
-  
-
 .form-container {
   width: 40%;
   padding: 10px;
