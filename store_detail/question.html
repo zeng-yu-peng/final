@@ -9,6 +9,8 @@
   <link rel="stylesheet" type="text/css" href="../css/index_css.css">
   <link rel="stylesheet" type="text/css" href="../css/barside.css">
   <link rel="stylesheet" type="text/css" href="../css/product_manu.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
   <style>
   .question_wrap{
     position: relative;
@@ -32,11 +34,11 @@
     padding: 35px;
     text-align: center;
     font-size: 28px;
-    height: 300px;
+    height: 400px;
     width: 800px;
     background-color: rgba(105, 136, 209, 0.75);
     color: #ffffff;
-    position: relative;  top: 70px; left: -60px;
+    position: relative;  top: 80px; left: -60px;
   }
   .question_contant p{
     text-align: left;
@@ -79,19 +81,37 @@
   
   <header>
     <div class="head">
-      <div class="head_icon"> <img src="../img/shop-removebg-preview.png" alt="icon"> </div>
-      <div class="head_slogn">博客來</div>
+      <div class="head_icon"> <a href="../index.html"><img src="../img/shop-removebg-preview.png" alt="icon"></a> </div>
+
+
+      <div class="head_slogn">BK.</div>
       <div class="head_search">
         <input id="myInput" value="Search" />
-        <button id="myBtn" >搜尋</button>
+        <button id="myBtn">搜尋</button>
       </div>
       <div class="head_decoration">
-        <div> <a href="../login .html"><img src="../img/login.jpg" alt="login"> </a></div>
-        <div> <a href="../member/wish_list.html"><img src="../img/wishlist.png" alt="My wishlist"></a> </div>
-        <div> <a href="../member/cart.html"><img src="../img/cart.jpg" alt="My Cart"></a> </div>
+
+        <div class="login">
+          <div class="w3-container">
+            <div class="w3-dropdown-hover">
+              <button class="button">
+                <a href=""> <img id="profile" src="../img/profile.png" width="55px"> </a>
+              </button>
+              <div class="w3-dropdown-content w3-bar-block w3-border">
+                <a href="../login.html" class="w3-bar-item w3-button">Login</a>
+                <a href="../register.html" class="w3-bar-item w3-button">Register</a>
+                <a href="../member.html" class="w3-bar-item w3-button">My Info.</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div> <a href="../member/wish_list.html"><img src="../img/wishlist-12.png" alt="My wishlist"></a> </div>
+        <div> <a href="../member/cart.html"><img src="../img/carttt.png" alt="My Cart"></a> </div>
       </div>
     </div>
   </header>
+
   <!-- 伸縮manu -->
 <section>
   <div class="side_button">
