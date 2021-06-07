@@ -134,9 +134,14 @@
     top:0;
     right: -30px;
   }
+  .name1{
+    position: absolute;
+    top:0;
+    right: -30px;
+  }
   .name a img{
     position: absolute;
-    top:250px;
+    top:230px;
     right: -60px;
   }
   .newbook_contant{
