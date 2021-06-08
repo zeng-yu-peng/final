@@ -1,11 +1,12 @@
-﻿.wish_list_wrap{
+﻿/* 框架設定 */
+.wish_list_wrap{
   min-height: 500px;
   max-width: 1100px;
   margin: auto;
   margin-top: 30px;
   margin-bottom: 30px;
   padding: 20px 50px;
-  background-color: #B7B7B7;
+  background-color: #E6F1D8;
   position: relative;
 }
 .wish_list_wrap h1 {
@@ -21,4 +22,103 @@
 }
 .wish_list_contant{
   min-height: 400px;
+  position: relative;
+}
+
+/* 內容設定 */
+table {
+  border: 2px solid #99D1D3;
+  width: 1000px;
+  text-align: center;
+    border-collapse: collapse;
+
+}
+
+table img {
+  width: 80px;
+  height: 100px;
+}
+
+
+table input {
+  width: 40px;
+  background-color: #367517;
+  color: #99D1D3;
+}
+
+.wish_special input{
+  width: 80px;
+  background-color: #367517;
+  color: #99D1D3;
+}
+
+.totalprice {
+  width: 60px;
+}
+
+ td {
+  border: 2px solid #99D1D3;
+  width: 160px;
+}
+
+.wish_special th,td{
+  border: 2px solid #99D1D3;
+  width: 200px;
+}
+#finish{
+  position: absolute;
+  right: 50px; bottom: 20px;
+  width: 150px; height: 40px;
+  font-size: 25px;
+  background-color: #00676B;
+  color: #CAE5E8;
+}
+
+
+/* 結帳網頁的內容設定 */
+.finish_contant{
+  min-width: 200px;
+  height: 500px;
+  background-color: beige;
+  display: flex;
+
+
+}
+.pro_detail{
+  max-width: 500px;
+  width: 500px;
+  height: 500px;
+  background-color: #ffffff;
+  
+}
+.finish_contant table{
+  border-collapse: collapse;
+  border: none;
+  border-bottom: 2px solid #99D1D3;
+  width: 450px;
+  margin-left: 25px;
+  margin-top: 30px;
+}
+.finish_contant td {
+  border: none;
+  border-top: 2px solid #99D1D3;
+  width: 150px;
+}
+
+
+.pro_count{
+  max-width: 500px;
+  width: 500px;
+  height: 500px;
+  background-color: #ffffff;
+  padding: 25px;
+  line-height: 1.5;
+}
+.howtopay_title{
+  margin: 50px 0 20px;
+  background-color: #333333;
+  color: #ffffff;
+}
+.howtopay_contant div{
+  margin: 20px 5px;
 }

@@ -5,7 +5,7 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>博客來|購物車</title>
+<title>博客來|結帳</title>
 <link rel="stylesheet" type="text/css" href="../css/index_css.css">
 <link rel="stylesheet" type="text/css" href="../css/barside.css">
 <link rel="shortcut icon" href="../../img/favicon (1).ico" type="image/x-icon">
@@ -97,91 +97,67 @@
 <!-- 購物車 -->
 <section>
   <div class="wish_list_wrap">
-    <h1>購物車</h1>
-    <hr>
-    <div class="wish_list_contant">
-      <table>
-        <!-- 標題 -->
-        <tr>
-          <th></th>
-          <th>商品信息</th>
-          <th>數量</th>
-          <th>單價(元)</th>
-          <th>金額(元)</th>
-          <th>刪除</th>
-        </tr>
-        <!-- first product -->
-        <tr>
-          <td><input type="checkbox"> <img src="../img/books/beauty/beauty1.png" alt=""> </td>
-          <td>《漂亮家居》 1月號/2021 第239期(電子雜誌)</td>
-          <td>
-            <!-- <input class="previous" onclick="previous()" type="button" value=" - ">
-            <input class="contant" type="text" value="1">
-            <input class="next" onclick="nextImage()" type="button" value=" + "> -->
-              1
-          </td>
-          <td>
-            <!-- $<input class="price" type="text" value="139"> -->
-            $139
-          </td>
-          <td>
-            <!-- <input class="totalprice" type="text" value="$139"> -->
-            $139
-          </td>
-          <td><input type="button" value="刪除"></td>
-        </tr>
-        
-       <!-- 第二個 -->
-        <tr>
-          <td><input type="checkbox"> <img src="../img/books/core/coreinterio13 .jpg" alt=""> </td>
-          <td>《CORE INTERIOR》1月號/2019第13期 (電子雜誌)</td>
-          <td>
-            <!-- <input class="previous" onclick="previous()" type="button" value=" - ">
-            <input class="contant" type="text" value="1">
-            <input class="next" onclick="nextImage()" type="button" value=" + "> -->
-            1
-          </td>
-          <td>
-            <!-- $<input class="price" type="text" value="139"> -->
-            $69
-          </td>
-          <td>
-            <!-- <input class="totalprice" type="text" value="$139"> -->
-            $69
-          </td>
-          <td><input type="button" value="刪除"></td>
-        </tr>
-      </table>
+    <h1>結帳</h1>
+    
+    <p style="margin: 20px; width: 100px;  background-color: #333333;  color: #ffffff;">您的商品:</p>
+    <div class="finish_contant">
+      <!-- 左邊商品內容 -->
+      <div class="pro_detail">
+        <table>
+          <!-- 標題 -->
+          <tr>
+            <th>名稱</th>
+            <th>數量</th>
+            <th>金額(元)</th>
+          </tr>
+          <!-- first product -->
+          <tr>
+            <td>《漂亮家居》 1月號/2021 第239期(電子雜誌)</td>
+            <td>1</td>
+            <td>$139</td>
+          </tr>
 
-
-      <a href="finish.html"><button id="finish" >結帳</button></a>
+          <!-- 第二個 -->
+          <tr>
+            <td>《CORE INTERIOR》1月號/2019第13期 (電子雜誌)</td>
+            <td>1</td>
+            <td>$69</td>
+          </tr>
+        </table>
+      </div>
+      <!-- 右邊小計 -->
+      <div class="pro_count">
+        <p>小計：　　　　　$208</p><br>
+        <p>運費：　　　　　$60</p><br>
+        <hr>
+        <p>合計：　　　　　$268</p>
+        <div class="howtopay_title">
+          <p>貨運及付款方式</p>
+        </div>
+        <div class="howtopay_contant">
+          <div>地址： <input type="text" value="請輸入您的地址"></div>
+          <div>運送方式：
+            <select name="deliver" id="">
+              <option aria-checked="true">7-11取貨付款(貨到付款)</option>
+              <option>全家取貨付款(貨到付款)</option>
+              <option>黑貓宅急便(預設地址)</option>
+            </select>
+          </div>
+          <div>付款方式：
+            <select name="pay" id="">
+              <option aria-checked="true">貨到付款</option>
+              <option>轉帳</option>
+              <option>信用卡</option>
+            </select>
+          </div>
+          <input id="finish" type="button" value="立即購買">
+        </div>
+      </div>
     </div>
     <hr>
   </div>
 </section>
 
-<!-- 加減的程式 -->
-<!-- <script>
-   function previous() {
-      index-- ;
-      if(index<1){
-        alert("不能為0!!!")
-        index = 1;
-      }
-    document.getElementsByClassName("contant").value = index ;
-    var price = document.getElementsByClassName("price").value ;
-    document.getElementsByClassName("totalprice").value = "$" + (price*index) ;
-    
-    }
-
-    function nextImage() {
-      index++ ;
-      document.getElementsByClassName("contant").value = index ;     
-      var price = document.getElementsByClassName("price").value;
-      document.getElementsByClassName("totalprice").value = "$"+(index*price) ;
-    }
-    var index = 1 ;
-</script> -->
 
 <div class="sup"></div>
 
