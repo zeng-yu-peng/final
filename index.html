@@ -13,9 +13,51 @@
   <link rel="shortcut icon" href="../img/favicon (1).ico" type="image/x-icon">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <style>
+  .ad {
+    height: 450px;
+    max-width: 1100px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 20px 50px;
+    background-color: #f5f5f5;
+    position: relative;
+  }
 
+  .slider_container {
+    width: 440px;
+    height: 350px;
+    position: relative;
+    left: 205px;
+    border: 20px solid #fff;
+    border-bottom-width: 100px;
+    background-color: #f5f5f5;
+  }
 
-  </style>
+  .slider_container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 300px;
+    width: 400px;
+  }
+
+  .button_box {
+    margin-top: 400px;
+    margin-left: 445px;
+    background-color: silver;
+    display: flex;
+    justify-content: space-evenly;
+    width: 75px;
+  }
+
+  .button_box button {
+    height: 30px;
+    width: 70px;
+    background-color: #F9CC76;
+  }
+</style>
+  
 
   <script>
     // 彈跳式清單
@@ -141,11 +183,14 @@
         <section>
 
           <!-- 轉燈片1 -->
+          
           <div class="slider_container">
+            
             <div>
               <img src="img/books/core/coreinterio13 .jpg" alt="" />
               <span class="info">《CORE INTERIOR空間》</span>
-            </div>
+            </div>  
+            
             <div>
               <img src="img/books/ilook/ilook1.png" alt="" />
               <span class="info">《iLook電影》</span>
@@ -163,6 +208,7 @@
               <span class="info">《世界電影》</span>
             </div>
           </div>
+          
           <!-- 轉燈片2 -->
           <div class="slider_container">
             <div>
@@ -186,6 +232,7 @@
               <span class="info">《室內interior》</span>
             </div>
           </div>
+          
         </section>
       </div>
       <div id="process" class="button_content">
@@ -210,6 +257,50 @@
     } // Get the element with id="defaultOpen" and click on it
     document.getElementById("firstopen").click();
   </script>
+
+
+<!-- adv -->
+<div class="ad">
+  <div class="slider_container">
+    <a id="contant" href="core/core1.html"><img id="img" src="img/books/core/coreinterio13 .jpg" alt=""></a>
+  </div>
+  <div class="button_box">
+    <button id="auto" onclick="auto()">Auto</button>
+  </div>
+
+</div>
+
+
+
+<script>
+  function auto() {
+
+    if (isstop === 1) {
+      index++;
+      if (index == imageList.length)
+        index = 0;
+      document.getElementById("img").src = imageList[index];
+
+      document.getElementById("contant").href = webList[index];
+      setTimeout("auto()", 3000);
+    } else {
+      isstop = 1;
+    }
+  }
+
+
+  var index = 0;
+  var isstop = 1;
+  var imageList = new Array("img/books/core/coreinterio13 .jpg", "img/books/beauty/beauty1.png",
+    "img/books/beauty/beauty2.png",
+    "img/books/ilook/ilook1.png", "img/books/ilook/ilook3.png");
+  var webList = new Array("core/core1.html", "beauty/beauty1.html", "beauty/beauty2.html", "ilook/ilook1.html",
+    "ilook/ilook3.html");
+</script>
+
+
+
+
 
 
 
