@@ -80,12 +80,40 @@
       alert("您的留言已送出...審核中");
     }
 
-  </script>
-
-  <script>
+ 
     $(".slide_toggle").click(function () {
       $(this).next().slideToggle();
     });
+
+
+       function openPage(pageName, elmnt, color) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("m");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablink");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].style.backgroundColor = "";
+          }
+          document.getElementById(pageName).style.display = "block";
+          elmnt.style.backgroundColor = color;
+        }
+
+        function openSearch() {
+          document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function closeSearch() {
+          document.getElementById("myOverlay").style.display = "none";
+        }
+        function closeForm() {
+          document.getElementById("myOverlay").style.display = "none";
+        }
+
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+
   </script>
 
   <style>
@@ -106,6 +134,17 @@
     .ch {
       margin-left: 8%;
     }
+
+    .openBtn {
+     border: none;
+     outline: none;
+     background-color: inherit;
+     align-items: left;
+    color: #7e8686 ;  
+    position: absolute;
+    left:9%;
+    top:60%;
+} 
   </style>
 
   <title>登入</title>
@@ -118,24 +157,40 @@
     <div class="side_button">
       <button onclick="button_open()">☰</button>
     </div>
-<div class="manu" style="display:none" id="sidebar">
-  <button onclick="button_close()" class="barline">Close &times;</button>
-  <ul>
-    <li><a href="index.html">商店介紹</a></li>
-    <li><a href="../manu/newbook.html">全部商品</a>
+    <div id="myOverlay" class="overlay"
+      style="background: url(img/back.jpeg); background-repeat: no-repeat; background-size: cover; z-index: 1300000000000000000;">
+      <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+      <div class="overlay-content">
+        <form class="form-container" action="">
+          <h2 style="text-decoration: black;"><b>想跟 BK. 說的話:</b></h2>
+          <textarea placeholder=" 喝咖啡聊是非 快留下想對我們說的話吧:" name="msg" required></textarea>
+          <div class="btnbtw">
+            <button type="submit" class="btn">Send</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  
+    <div class="manu" style="display:none" id="sidebar">
+      <button onclick="button_close()" class="barline" style="color: black;">Close &times;</button>
       <ul>
-        <li><a href="../manu/top.html">熱銷排行</a></li>
-        <li><a href="../manu/magazine.html">Magazine</a></li>
-        <li><a href="../manu/ebook.html">電子書</a></li>
+        <li><a href="index.html">商店介紹</a></li>
+        <li><a href="manu/newbook.html">全部商品</a>
+          <ul>
+            <li><a href="manu/top.html">熱銷排行</a></li>
+            <li><a href="manu/magazine.html">Magazine</a></li>
+            <li><a href="manu/ebook.html">電子書</a></li>
+          </ul>
+        </li>
+        <li><a href="store_detail/aboutus.html">認識我們</a></li>
+        <li><a href="store_detail/question.html">購物須知</a></li>
+        <li><a href="teams.html">BK.成員介紹</a></li>
+        <li><button class="openBtn" onclick="openSearch()">留言板</button></li>
       </ul>
-    </li>
-    <li><a href="../store_detail/aboutus.html">認識我們</a></li>
-    <li><a href="../store_detail/question.html">購物須知</a></li>
-    <li><a href="../teams.html">BK.成員介紹</a></li>
-    <li><button class="openBtn" onclick="openSearch()">留言板</button></li>
-  </ul>
-</div>
+    </div>
   </section>
+
 
 
   <header>

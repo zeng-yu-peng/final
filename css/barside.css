@@ -18,7 +18,17 @@
       text-decoration: none;
     }
 
-
+.openBtn {
+  border: none;
+  outline: none;
+  background-color: inherit;
+  align-items: left;
+  color: #00676B;
+  
+  position: absolute;
+  left:10%;
+  top:66%;
+} 
     .barline{
       width:100%;
       display:block;

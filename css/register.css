@@ -1,10 +1,19 @@
-
-
-
 * {
     box-sizing: border-box;
 
   }
+
+  /*body {
+      background-image: url(../FINAL/img/background-5.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+
+    }*/
+
+   header {
+      width: 80%;
+      margin-left: 12%;
+    }
 
 
   .button{
@@ -41,15 +50,7 @@
     height: 15%;
     width:20%;
   }
-  
-  body {
-     background-image:url(../FINAL/img/background-5.jpg);
-     background-repeat: no-repeat;
-     background-position: center;
-     
-   
-  }
-  
+
   #regForm {
     background-color: #fdfdff6b;
     margin: 50px auto;
@@ -169,9 +170,15 @@
       justify-content: space-evenly;
 }
 .openBtn {
-    border: none;
-    outline: none;
-    background-color: inherit;
+     border: none;
+  outline: none;
+  background-color: inherit;
+  align-items: left;
+  color: #00676B;
+  
+  position: absolute;
+  left:9%;
+  top:60%;
 } 
 .overlay {
     height: 100%;
@@ -206,7 +213,7 @@
 }
 
 
-#myBtn11 {
+#myBtn {
 
   position: fixed;
   top: 2000px;
@@ -222,6 +229,8 @@
   border-radius: 4px;
 }
 
-#myBtn11:hover {
+#myBtn:hover {
   background-color: #a5a6dae3;
 }
+
+

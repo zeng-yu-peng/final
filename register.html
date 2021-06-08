@@ -9,6 +9,9 @@
   <link rel="stylesheet" type="text/css" href="css/barside.css">
   <link rel="stylesheet" type="text/css" href="css/index_css.css">
   <link rel="stylesheet" type="text/css" href="css/register.css">
+    <link rel="stylesheet" type="text/css" href="css/teams.css">
+  <link rel="stylesheet" href="css/MEMBERS.css">
+
   <link rel="stylesheet" type="text/css" href="css/ii.css">
 
   <link rel="shortcut icon" href="img/favicon (1).ico" type="image/x-icon">
@@ -21,13 +24,7 @@
   <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js'></script>
 
   <style>
-    body {
-      background-image: url(../FINAL/img/background-5.jpg);
-      background-repeat: no-repeat;
-      background-position: center;
-
-    }
-
+   
     header {
       width: 80%;
       margin-left: 12%;
@@ -85,6 +82,48 @@
       color: #B7B7B7 !important;
       background-color: #4e0097a9 !important
     }
+
+    .openBtn {
+     border: none;
+     outline: none;
+     background-color: inherit;
+     align-items: left;
+    color: #2a076b ;  
+    position: absolute;
+    left:1%;
+    top:65%;
+} 
+
+  .forgot {
+      position: relative;
+      top:0;
+      margin-top: 5%;
+      margin-bottom: 5%;
+      margin-left:20%;
+      height: 850px;
+    }
+
+    #myBtn {
+
+  position: fixed;
+  top: 2000px;
+  right: -30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color:#44a2bea4;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #a5a6dae3;
+}
+
+
   </style>
 
   <script>
@@ -116,6 +155,11 @@
     function closeForm() {
       document.getElementById("myOverlay").style.display = "none";
     }
+
+     function sear() {
+        alert("NOT FOUND !! PLEASE SEARCH AGAIN");
+      }
+
   </script>
 
 
@@ -124,17 +168,30 @@
 
 <body>
   <header>
-    <div class="head">
+    <div class="head"  style="background-color: #94A7AE;">
       <div class="head_icon"><a href="index.html"> <img src="img/shop-removebg-preview.png" alt="icon"> </a></div>
       <div class="head_slogn">Register</div>
       <div class="head_search">
-        <input id="myInput" value="Search" />
-        <button class="bb" id="mInput" onclick="javascript:alert('NOT FOUND')"></button>
+        <input id="myInput" placeholder="search" >
+        <button  id="mInput" onclick="sear()" style="border: none; background-color: #94A7AE; position: absolute; left:180px; top:-10px"> <img src="img/search.png" width="30px"></button>
       </div>
       <div class="head_decoration">
-        <div> <a href="login.html"><img src="img/profile.png" alt="login"> </a></div>
-        <div> <a href="member/wish_list.html"><img src="img/wishlist-12.png" alt="My wishlist"></a> </div>
-        <div> <a href="member/cart.html"><img src="img/carttt.png" alt="My Cart"></a> </div>
+        <div class="login" style="position: absolute; top:25px; left:-50px;">
+          <div class="w3-container">
+            <div class="w3-dropdown-hover">
+              <button class="button" style="background-color: #94A7AE; border: none;">
+                <a href=""> <img id="profile" src="img/profile.png" width="50px"> </a>
+              </button>
+              <div class="w3-dropdown-content w3-bar-block w3-border">
+                <a href="login.html" class="w3-bar-item w3-button">Login</a>
+                <a href="register.html" class="w3-bar-item w3-button">Register</a>
+                <a href="member.html" class="w3-bar-item w3-button">My Info.</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div> <a href="member/wish_list.html" style="position: absolute; top:25px; left:90px;"><img src="img/wishlist-12.png" alt="My wishlist"></a> </div>
+        <div> <a href="member/cart.html"  style="position: absolute; top:25px; left:210px;"><img src="img/carttt.png" alt="My Cart"></a> </div>
       </div>
     </div>
   </header>
@@ -181,9 +238,14 @@
   <section>
 
 
-    <br><br><br><br><br><br><br><br>
-    <form id="regForm" action="member.html">
-      <h1>Register:</h1>
+    <!--<br><br><br><br><br><br><br><br>-->
+
+    <section class="forgot">
+      <div id="invoice" class="tabcontent" style="width: 800px; height: 830px; padding-top: 40px; display:inline-block">
+        <h2>&nbsp;&nbsp;會員註冊</h2>
+        <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BK. X BRING BACK to YOU</h3>
+           <form id="regForm" action="member.html" style="width: 600PX; margin-bottom: 15%;">
+           <h1>Register:</h1>
       <div class="tab">Name:
         <p><input placeholder="First name..." oninput="this.className = ''" name="fname"></p><br>
         <p><input placeholder="Last name..." oninput="this.className = ''" name="lname"></p>
@@ -199,7 +261,7 @@
       </div>
       <div class="tab">Login Info:
         <p><input placeholder="Username..." oninput="this.className = ''" name="uname"></p><br>
-        <p><input placeholder="Password..." oninput="this.className = ''" name="pword" type="password"></p>
+        <p><input placeholder="Password..." oninput="this.className = ''" name="pword" ></p>
       </div>
       <br>
       <div style="overflow:auto;">
@@ -215,6 +277,7 @@
         <span class="step"></span>
       </div>
     </form>
+    <br><br><br>
     <script>
       var x = document.getElementById("demo");
       function getLocation() {
@@ -326,13 +389,15 @@
     </script>
 
     <br>
+      </div>
+    </section>
 
     <div class="sup"></div>
 
     <!-- footer -->
-    <section>
-      <div class="footer">
-        <div class="footer_wrap">
+    <section >
+      <div class="footer" >
+        <div class="footer_wrap" >
           <div>
             <h4>關於我們</h4>
 
@@ -343,28 +408,31 @@
               <li><a href="">No. 200, Zhongbei Road, Zhongli District, Taoyuan City 320</a></li>
             </ul>
           </div>
+
+    
         </div>
 
-        <button onclick="topFunction()" id="myBtn11"> Top </button>
+            <button onclick="topFunction()" id="myBtn">Top</button>
 
-        <script>
-          var mybutton = document.getElementById("myBtn11");
+            <script>
+            
+              var mybutton = document.getElementById("myBtn");
 
-          window.onscroll = function () { scrollFunction() };
+              window.onscroll = function () { scrollFunction() };
 
-          function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-              mybutton.style.display = "block";
-            } else {
-              mybutton.style.display = "none";
-            }
-          }
+              function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                  mybutton.style.display = "block";
+                } else {
+                  mybutton.style.display = "none";
+                }
+              }
 
-          function topFunction() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-          }
-        </script>
+              function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+              }
+            </script>
 
         <div class="footer_copyright">
           <p>※若消費者為限制行為能力人或無行為能力人，應於消費者之法定代理人閱讀、瞭解並同意本契約之所有內容後，方得使用本網站下單。<br>

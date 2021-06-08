@@ -36,10 +36,19 @@ header{
     text-decoration: cornsilk;
 
 }
+
+.button11{
+    border: white;
+    background-color: #374663;    
+    text-decoration: cornsilk;
+
+}
+
+
 .login{
     position: absolute;
     right:10%;
-    top:8%;
+    top:25%;
     align-items: right;
     height: 15%;
     width:20%;
@@ -106,7 +115,7 @@ header{
 }
 
 .bookimg{
-    margin:150px 0 0 200px;
+    margin:150px 0 0 80px;
     
 }
 
@@ -115,6 +124,16 @@ header{
     width:500px;
 
 }  
+
+
+.oooxxx{
+  margin: auto;
+  margin-top: 100px;
+  display: flex;
+  width:80%;
+  height: auto;  
+}
+
 .ooxx{
   margin: auto;
   margin-top: 100px;
@@ -173,15 +192,16 @@ header{
 }
 
 
+
 .date{
     background-color: rgb(233, 232, 232);
 }
 
 .bookcontent{
-    position: absolute;
-    left:52%;
-    top:48%;
+   margin:-480px 0 0 580px;
 }
+
+
 
 button.buy1{
 	height:40px;
@@ -625,6 +645,7 @@ to {opacity: 1;}
   margin-top: 5%;
   
 }
+
 .footer h4{
   font-size: 25px;
   font-weight: 900;

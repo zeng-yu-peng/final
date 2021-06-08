@@ -11,8 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=ZCOOL+KuaiLe&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
     <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js'></script>
     <script>
 
@@ -157,28 +156,30 @@
     </section>
 
 
-    <header>
+    <header style="position: relative; top:0; left:0;">
         <hr>
         <div class="icon">
             <a href="../index.html"><img src="../img/shop.png" width="150px"></a>
         </div>
 
         <div class="wishlist" style="z-index: 100000000;">
-            <a href="../member/wish_list.html"><img src="../img/wishlist-12.png" width="100px"></a>
+            <a href="../member/wish_list.html" title="願望清單"><img src="../img/wishlist-12.png" width="100px"></a>
         </div>
 
         <div class="cartt" style="z-index: 200000000;">
-            <a href="../member/cart.html"><img src="../img/carttt.png" width="100px"></a>
+            <a href="../member/cart.html" title="購物車"><img src="../img/carttt.png" width="100px"></a>
         </div>
 
 
 
         <div class="topnav">
             <div class="search-container">
-                <input type="text" placeholder="Search for a book..." name="search" autocomplete="off" autocorrect="off"
-                    ata-component-tracked-focused="">
-                <button type="submit" style="background-color: #374663;" onclick="sear()"><img src="../img/search.png"
-                        width="55px"><i class="fa fa-search"></i></button>
+                <form action="/action_page.php">
+                    <input type="text" placeholder="Search for a book..." name="search" autocomplete="off"
+                        autocorrect="off" ata-component-tracked-focused="">
+                    <button type="submit" style="background-color: #374663;"><img src="../img/search.png"
+                            width="55px"><i class="fa fa-search"></i></button>
+                </form>
             </div>
         </div>
 
@@ -200,13 +201,14 @@
         </div>
         <hr>
     </header>
-    <section>
+
+    <section class="oooxxx">
         <div class="s1">
-            <div>
+            <div class="ad1" style="margin: -80px -140px 0;">
                 <a href="../manu/top_magazine.html"><img src="../img/ad1.gif" width="1380px"></a>
             </div>
             <div class="path">
-                <h6>
+                <h6 style="margin: 20px -140px 0;">
                     <a href="../index.html">Home</a> > <a href="../manu/newbook.html">Magazine</a> > <a
                         href="../manu/magazine.html">實體雜誌</a> > 室內設計</a> > 《室內interior》 2月號/2021 第329期
                 </h6>
@@ -215,7 +217,7 @@
 
             <div class="left">
 
-                <div class="bookimg">
+                <div class="bookimg" style="margin:150px 0 0 40px;">
                     <img src="../img/books/interior/interior2.png">
                 </div>
 
@@ -223,8 +225,8 @@
                     <h2>《室內interior》 2月號/2021 第329期</h2>
                     <h4>FREE DELIVERY OVER NT$ 1,500</h4>
 
-                    <button type="submit" class="buy1" onclick="heart()"><img src="../img/wishlist.png"
-                            width="40px"></button>
+                    <button type="submit" class="buy1" onclick="heart()" style="margin: 35px 0 0 580px;">
+                        <img src="../img/wishlist.png" width="40px"></button>
 
                     <div class="price">
                         定價：200元</div>
@@ -503,7 +505,7 @@
                             <h4>內容太有趣了!!</h4>
                             <p>電子書真的好方便~</p>
                         </div>
-                        p class="time">2021/06/05</p>
+                        <p class="time">2021/06/05</p>
                         <br><br>
                     </div>
                     <br>
