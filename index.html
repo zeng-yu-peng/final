@@ -14,47 +14,32 @@
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <style>
   .ad {
-    height: 450px;
-    max-width: 1100px;
+    height: 400px;
+    max-width: 600px;
     margin: auto;
     margin-top: 30px;
     margin-bottom: 30px;
-    padding: 20px 50px;
+    padding: 20px 20px;
     background-color: #f5f5f5;
     position: relative;
   }
 
-  .slider_container {
+  .ad_slider_container {
     width: 440px;
     height: 350px;
     position: relative;
-    left: 205px;
+    left: 60px;
     border: 20px solid #fff;
     border-bottom-width: 100px;
     background-color: #f5f5f5;
   }
 
-  .slider_container img {
+  .ad_slider_container img {
     position: absolute;
     top: 0;
     left: 0;
     height: 300px;
     width: 400px;
-  }
-
-  .button_box {
-    margin-top: 400px;
-    margin-left: 445px;
-    background-color: silver;
-    display: flex;
-    justify-content: space-evenly;
-    width: 75px;
-  }
-
-  .button_box button {
-    height: 30px;
-    width: 70px;
-    background-color: #F9CC76;
   }
 </style>
   
@@ -80,7 +65,7 @@
   </script>
 </head>
 
-<body>
+<body onload="auto()">
   <header>
     <div class="head">
       <div class="head_icon"> <a href="index.html"><img src="img/shop-removebg-preview.png" alt="icon"></a> </div>
@@ -260,19 +245,8 @@
 
 
 <!-- adv -->
-<div class="ad">
-  <div class="slider_container">
-    <a id="contant" href="core/core1.html"><img id="img" src="img/books/core/coreinterio13 .jpg" alt=""></a>
-  </div>
-  <div class="button_box">
-    <button id="auto" onclick="auto()">Auto</button>
-  </div>
-
-</div>
-
-
-
 <script>
+
   function auto() {
 
     if (isstop === 1) {
@@ -297,6 +271,16 @@
   var webList = new Array("core/core1.html", "beauty/beauty1.html", "beauty/beauty2.html", "ilook/ilook1.html",
     "ilook/ilook3.html");
 </script>
+
+<div class="ad">
+  <div class="ad_slider_container">
+    <a id="contant" href="core/core1.html"><img id="img" src="img/books/core/coreinterio13 .jpg" alt=""></a>
+  </div>
+ 
+
+</div>
+
+
 
 
 
