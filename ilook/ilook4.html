@@ -14,6 +14,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=ZCOOL+KuaiLe&display=swap"
         rel="stylesheet">
     <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js'></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     <script>
 
         // 彈跳式清單
@@ -118,24 +120,24 @@
 <body>
 
     <!-- 彈跳清單 -->
-<section>
-    <div class="side_button">
-        <button onclick="button_open()">☰</button>
-    </div>
-    <div id="myOverlay" class="overlay"
-        style="background: url(../img/back.jpeg); background-repeat: no-repeat; background-size: cover; z-index: 100000000000000000000000000000;">
-        <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
-        <div class="overlay-content">
-            <form class="form-container" action="">
-                <h2 style="text-decoration: black;"><b>想跟 BK. 說的話:</b></h2>
-                <textarea placeholder=" 喝咖啡聊是非 快留下想對我們說的話吧:" name="msg" required></textarea>
-                <div class="btnbtw">
-                    <button type="submit" class="btn">Send</button>
-                    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-                </div>
-            </form>
+    <section>
+        <div class="side_button">
+            <button onclick="button_open()">☰</button>
         </div>
-    </div>
+        <div id="myOverlay" class="overlay"
+            style="background: url(../img/back.jpeg); background-repeat: no-repeat; background-size: cover; z-index: 100000000000000000000000000000;">
+            <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+            <div class="overlay-content">
+                <form class="form-container" action="">
+                    <h2 style="text-decoration: black;"><b>想跟 BK. 說的話:</b></h2>
+                    <textarea placeholder=" 喝咖啡聊是非 快留下想對我們說的話吧:" name="msg" required></textarea>
+                    <div class="btnbtw">
+                        <button type="submit" class="btn">Send</button>
+                        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                    </div>
+                </form>
+            </div>
+        </div>
 
         <div class="manu" style="display:none" id="sidebar">
             <button onclick="button_close()" class="barline">Close &times;</button>

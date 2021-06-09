@@ -5,12 +5,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BK.|愛心</title>
+  <title>BK.|全部商品</title>
   <link rel="stylesheet" type="text/css" href="../css/index_css.css">
   <link rel="stylesheet" type="text/css" href="../css/barside.css">
-  <link rel="shortcut icon" href="../img/favicon (1).ico" type="image/x-icon">
-  <link rel="stylesheet" type="text/css" href="../css/member.css">
+  <link rel="stylesheet" type="text/css" href="../css/index_contant.css">
+  <link rel="stylesheet" type="text/css" href="../css/product_manu.css">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="shortcut icon" href="../img/favicon (1).ico" type="image/x-icon">
+
   <style>
 
 
@@ -49,10 +51,6 @@
     // Get the element with id="defaultOpen" and click on it
     document.getElementById("defaultOpen").click();
 
-    function shopping() {
-      alert("已成功加入購物車清單");
-    }
-
 
 
   </script>
@@ -65,7 +63,7 @@
       <div class="head_icon"> <a href="../index.html"><img src="../img/shop-removebg-preview.png" alt="icon"></a> </div>
 
 
-      <div class="head_slogn">願望清單</div>
+      <div class="head_slogn">BK.</div>
       <div class="head_search">
         <input id="myInput" value="Search" />
         <button id="myBtn">搜尋</button>
@@ -87,26 +85,42 @@
           </div>
         </div>
 
-        <div> <a href="wish_list.html"><img src="../img/wishlist-12.png" alt="My wishlist"></a> </div>
-        <div> <a href="cart.html"><img src="../img/carttt.png" alt="My Cart"></a> </div>
+        <div> <a href="../member/wish_list.html"><img src="../img/wishlist-12.png" alt="My wishlist"></a> </div>
+        <div> <a href="../member/cart.html"><img src="../img/carttt.png" alt="My Cart"></a> </div>
       </div>
     </div>
   </header>
-  <!-- 彈跳清單 -->
+
+  <!-- 伸縮manu -->
   <section>
     <div class="side_button">
       <button onclick="button_open()">☰</button>
+    </div>
+    <!-- 留言板 -->
+    <div id="myOverlay" class="overlay"
+      style="background: url(../img/back.jpeg); background-repeat: no-repeat; background-size: cover; z-index: 100000000000000000000000000000;">
+      <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+      <div class="overlay-content">
+        <form class="form-container" action="">
+          <h2 style="text-decoration: black;"><b>想跟 BK. 說的話:</b></h2>
+          <textarea placeholder=" 喝咖啡聊是非 快留下想對我們說的話吧:" name="msg" required></textarea>
+          <div class="btnbtw">
+            <button type="submit" class="btn">Send</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+          </div>
+        </form>
+      </div>
     </div>
 
     <div class="manu" style="display:none" id="sidebar">
       <button onclick="button_close()" class="barline">Close &times;</button>
       <ul>
         <li><a href="../index.html">商店介紹</a></li>
-        <li><a href="../manu/newbook.html">全部商品</a>
+        <li><a href="newbook.html">全部商品</a>
           <ul>
-            <li><a href="../manu/top.html">熱銷排行</a></li>
-            <li><a href="../manu/magazine.html">Magazine</a></li>
-            <li><a href="../manu/ebook.html">電子書</a></li>
+            <li><a href="top.html">熱銷排行</a></li>
+            <li><a href="magazine.html">Magazine</a></li>
+            <li><a href="ebook.html">電子書</a></li>
           </ul>
         </li>
         <li><a href="../store_detail/aboutus.html">認識我們</a></li>
@@ -117,77 +131,19 @@
     </div>
   </section>
 
-
-  <section>
-    <div class="wish_list_wrap">
-      <h1>您的最愛</h1>
-      <hr>
-      <div class="wish_list_contant">
-        <table class="wish_special">
-          <!-- 標題 -->
-          <tr>
-            <th></th>
-            <th>商品信息</th>
-            <th>數量</th>
-            <th>單價(元)</th>
-            <th>金額(元)</th>
-            <th>加到購物車</th>
-          </tr>
-          <!-- first product -->
-          <tr>
-            <td><input type="checkbox"> <img src="../img/books/beauty/beauty1.png" alt=""> </td>
-            <td>《漂亮家居》 1月號/2021 第239期(電子雜誌)</td>
-            <td>
-              <!-- <input class="previous" onclick="previous()" type="button" value=" - ">
-            <input class="contant" type="text" value="1">
-            <input class="next" onclick="nextImage()" type="button" value=" + "> -->
-              1
-            </td>
-            <td>
-              <!-- $<input class="price" type="text" value="139"> -->
-              $139
-            </td>
-            <td>
-              <!-- <input class="totalprice" type="text" value="$139"> -->
-              $139
-            </td>
-            <td><input type="button" value="加到購物車" onclick="shopping()"></td>
-          </tr>
-          <!-- 第二個 -->
-          <tr>
-            <td><input type="checkbox"> <img src="../img/books/core/coreinterio13 .jpg" alt=""> </td>
-            <td>《CORE INTERIOR》1月號/2019第13期 (電子雜誌)</td>
-            <td>
-              <!-- <input class="previous" onclick="previous()" type="button" value=" - ">
-            <input class="contant" type="text" value="1">
-            <input class="next" onclick="nextImage()" type="button" value=" + "> -->
-              1
-            </td>
-            <td>
-              <!-- $<input class="price" type="text" value="139"> -->
-              $69
-            </td>
-            <td>
-              <!-- <input class="totalprice" type="text" value="$139"> -->
-              $69
-            </td>
-            <td><input type="button" value="加到購物車" onclick="shopping()"></td>
-          </tr>
-        </table>
-      </div>
-      <hr>
+  <!-- 選單 -->
+  <div class="newbook_wrap">
+    <div class="newbook_contant">
+      <a href="../manu/magazine.html"><img src="../img/manu/manu_magazine.jpg" alt=""></a>
+      <h2>Magazine</h2>
     </div>
-  </section>
-
-
-
-
-
-
-
-
-
-  <div class="sup"></div>
+  </div>
+  <div class="newbook_wrap">
+    <div class="newbook_contant">
+      <a href="../manu/ebook.html"><img src="../img/manu/manu_ebook.jpg" alt=""></a>
+      <h2>Ebook</h2>
+    </div>
+  </div>
 
   <!-- footer -->
   <section>

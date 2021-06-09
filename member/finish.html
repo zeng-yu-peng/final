@@ -5,10 +5,10 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BK.|結帳</title>
+<title>BK.結帳</title>
 <link rel="stylesheet" type="text/css" href="../css/index_css.css">
 <link rel="stylesheet" type="text/css" href="../css/barside.css">
-<link rel="shortcut icon" href="../../img/favicon (1).ico" type="image/x-icon">
+<link rel="shortcut icon" href="../img/favicon (1).ico" type="image/x-icon">
   <link rel="stylesheet" type="text/css" href="../css/member.css">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
@@ -49,6 +49,10 @@
      // Get the element with id="defaultOpen" and click on it
      document.getElementById("defaultOpen").click();
 
+       function bbuy() {
+          alert("交易失敗.....請確認資料是否完整!");
+        }
+
 
 
   </script>
@@ -61,7 +65,7 @@
      <div class="head_icon"> <a href="../index.html"><img src="../img/shop-removebg-preview.png" alt="icon"></a> </div>
 
 
-     <div class="head_slogn">BK.</div>
+     <div class="head_slogn">結帳</div>
      <div class="head_search">
        <input id="myInput" value="Search" />
        <button id="myBtn">搜尋</button>
@@ -153,7 +157,7 @@
           <p>貨運及付款方式</p>
         </div>
         <div class="howtopay_contant">
-          <div>地址： <input type="text" value="請輸入您的地址"></div>
+          <div>地址： <input type="text" placeholder="請輸入您的地址"></div>
           <div>運送方式：
             <select name="deliver" id="">
               <option aria-checked="true">7-11取貨付款(貨到付款)</option>
@@ -168,7 +172,7 @@
               <option>信用卡</option>
             </select>
           </div>
-          <input id="finish" type="button" value="立即購買">
+          <input id="finish" type="button" value="立即購買" onclick="bbuy()">
         </div>
       </div>
     </div>
