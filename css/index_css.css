@@ -122,4 +122,10 @@
   height: 80px;
   width: 80px;
   background-color: #374663;
+  border: none;
+}
+.button{
+  
+  background-color: #94A7AE; 
+  border: none;;
 }
