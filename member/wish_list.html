@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>博客來|愛心</title>
+  <title>BK.|愛心</title>
   <link rel="stylesheet" type="text/css" href="../css/index_css.css">
   <link rel="stylesheet" type="text/css" href="../css/barside.css">
   <link rel="shortcut icon" href="../../img/favicon (1).ico" type="image/x-icon">
@@ -17,24 +17,41 @@
   </style>
 
 <script>
-  // 彈跳式清單
-  function button_open() {
-    document.getElementById("sidebar").style.display = "block";
-  }
+    // 彈跳式清單
+    function button_open() {
+      document.getElementById("sidebar").style.display = "block";
+    }
 
-  function button_close() {
-    document.getElementById("sidebar").style.display = "none";
-  }
+    function button_close() {
+      document.getElementById("sidebar").style.display = "none";
+    }
 
-  //搜尋欄位
-  var input = document.getElementById("myInput");
-  input.addEventListener("keyup", function(event) {
-  if (event.keyCode === 13) {
-  event.preventDefault();
-  document.getElementById("myBtn").click();
-  }
-  });
-</script>
+    //搜尋欄位
+    var input = document.getElementById("myInput");
+    input.addEventListener("keyup", function (event) {
+      if (event.keyCode === 13) {
+        event.preventDefault();
+        document.getElementById("myBtn").click();
+      }
+    });
+    //留言板
+     function openSearch() {
+     document.getElementById("myOverlay").style.display = "block";
+     }
+
+     function closeSearch() {
+     document.getElementById("myOverlay").style.display = "none";
+     }
+     function closeForm() {
+     document.getElementById("myOverlay").style.display = "none";
+     }
+
+     // Get the element with id="defaultOpen" and click on it
+     document.getElementById("defaultOpen").click();
+
+
+
+  </script>
 
 </head>
 
@@ -90,7 +107,8 @@
     </li>
     <li><a href="../store_detail/aboutus.html">認識我們</a></li>
     <li><a href="../store_detail/question.html">購物須知</a></li>
-    <li><a href="#">留言板</a></li>
+    <li><a href="../teams.html">BK.成員介紹</a></li>
+        <li><button class="openBtn" onclick="openSearch()">留言板</button></li>
   </ul>
 </div>
 </section>
