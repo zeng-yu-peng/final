@@ -49,6 +49,10 @@
      // Get the element with id="defaultOpen" and click on it
      document.getElementById("defaultOpen").click();
 
+       function bbuy() {
+          alert("交易失敗.....請確認資料是否完整!");
+        }
+
 
 
   </script>
@@ -153,7 +157,7 @@
           <p>貨運及付款方式</p>
         </div>
         <div class="howtopay_contant">
-          <div>地址： <input type="text" value="請輸入您的地址"></div>
+          <div>地址： <input type="text" placeholder="請輸入您的地址"></div>
           <div>運送方式：
             <select name="deliver" id="">
               <option aria-checked="true">7-11取貨付款(貨到付款)</option>
@@ -168,7 +172,7 @@
               <option>信用卡</option>
             </select>
           </div>
-          <input id="finish" type="button" value="立即購買">
+          <input id="finish" type="button" value="立即購買" onclick="bbuy()">
         </div>
       </div>
     </div>
