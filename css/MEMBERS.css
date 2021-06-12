@@ -217,14 +217,14 @@ label{vertical-align:middle}
       width: 100%;
 }
   #BK {background-color:#c791d870;}
-  #shop {background-color: #DDB7AB;}
-  #send {background-color: #a19f89;}
-  #invoice {background-color:#729598;}
+  #ADR {background-color: #DDB7AB;}
+  #TT {background-color: #a19f89;}
+  #PSW{background-color:#49686b;}
 
   /*結束*/
 
 
-  /*Serene shop開始*/
+
   .log {
     border: 3px solid #f1f1f1;
     padding: 70px 30px; 
@@ -318,9 +318,7 @@ label{vertical-align:middle}
     margin-bottom: 5%;
    }
    
-/*shop結束*/
 
-  /*版權*/
   .co{
     text-align: center;
     background-color: #ded2c2;

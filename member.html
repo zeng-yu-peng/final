@@ -61,19 +61,22 @@
       }
     });
 
-    function openPage(pageName, elmnt, color) {
-      var i, tabcontent, tablinks;
-      tabcontent = document.getElementsByClassName("m");
-      for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-      }
-      tablinks = document.getElementsByClassName("tablink");
-      for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].style.backgroundColor = "";
-      }
-      document.getElementById(pageName).style.display = "block";
-      elmnt.style.backgroundColor = color;
+  function openPage(pageName, elmnt, color) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
     }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].style.backgroundColor = "";
+    }
+    document.getElementById(pageName).style.display = "block";
+    elmnt.style.backgroundColor = color;
+  }
+
+  // Get the element with id="defaultOpen" and click on it
+  document.getElementById("defaultOpen").click();
 
     function openSearch() {
       document.getElementById("myOverlay").style.display = "block";
@@ -85,10 +88,6 @@
     function closeForm() {
       document.getElementById("myOverlay").style.display = "none";
     }
-
-    // Get the element with id="defaultOpen" and click on it
-    document.getElementById("defaultOpen").click();
-
   </script>
 
 </head>
@@ -168,10 +167,10 @@
   <section>
     <div class="all">
       <div class="right-tab">
-        <button class="tablink" onclick="openPage('BK.',this,'#819582')" id="defaultOpen">基本資料</button>
-        <button class="tablink" onclick="openPage('ADR',this,'#DDB7AB')">領貨地址</button>
-        <button class="tablink" onclick="openPage('TT',this,'#a19f89')">購買清單</button>
-        <button class="tablink" onclick="openPage('PSW', this,'#729598')">更改密碼</button>
+        <button class="tablink" onclick="openPage('BK',this,'#ded2c2')" id="defaultOpen">基本資料</button>
+        <button class="tablink" onclick="openPage('ADR',this,'#ded2c2')">領貨地址</button>
+        <button class="tablink" onclick="openPage('TT',this,'#ded2c2')">購買清單</button>
+        <button class="tablink" onclick="openPage('PSW', this,'#ded2c2')">更改密碼</button>
       </div>
 
       <div class="left-tab">
@@ -234,7 +233,7 @@
 
         </div>
 
-        <div id="shop" class="tabcontent">
+        <div id="ADR" class="tabcontent">
           <h2>領貨地址</h2>
           <h3>BK. X BRING BACK to YOU</h3>
           <form method="post" action="" class="log">
@@ -298,7 +297,7 @@
           </form>
         </div>
 
-        <div id="send" class="tabcontent">
+        <div id="TT" class="tabcontent">
           <h2>購買清單</h2>
           <h3>BK. X BRING BACK to YOU</h3>
 
@@ -323,7 +322,7 @@
           </table>
         </div>
 
-        <div id="invoice" class="tabcontent">
+        <div id="PSW" class="tabcontent">
           <h2>更改密碼</h2>
           <h3>BK. X BRING BACK to YOU</h3>
           <form method="post" action="" class="log">
