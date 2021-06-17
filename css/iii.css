@@ -1129,4 +1129,20 @@ button.buy1{
   cursor: pointer;
   display: none;
 }
+
+    .side_button{
+     position: fixed;
+     left: 0; top: 50%;
+     z-index:1000000;
+     font-size:24px!important
+     
+     
+}
+    .side_button button{
+     position: absolute;top: 40%;
+     height: 30px; width: 30px;
+     color:#B7B7B7!important;
+     background-color:#976D00!important
+}
+
 }
