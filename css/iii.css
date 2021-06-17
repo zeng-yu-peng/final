@@ -815,7 +815,7 @@ to {opacity: 1;}
 
   header{
      position: relative;
-   width: 110%;
+   width: 114%;
     margin-left: -7%;
   }
 
@@ -836,9 +836,9 @@ to {opacity: 1;}
   .bookimg img{
     
     padding: 10px;
-    margin-left: -20%;
+    margin-left: -28%;
     margin-right: 5%;
-    margin-top: -6%;
+    margin-top: -30%;
     
     
   }
@@ -903,19 +903,19 @@ to {opacity: 1;}
 
     height: 10%;
     width: 10%;
-    padding-left: 3%;
+    padding-left: 31%;
 }
 
 .button{
     border: white;
-    background-color: #374663;    
+    background-color: #ffffff;    
     text-decoration: cornsilk;
 
 }
 
 .button11{
     border: white;
-    background-color: #374663;    
+    background-color: #ffffff;    
     text-decoration: cornsilk;
 
 }
@@ -923,38 +923,38 @@ to {opacity: 1;}
 
 .login{
      position: absolute;
-    right: -3%;
-    top: 71%;
+   right: -3%;
+    top: 160%;
     align-items: right;
     height: 15%;
     width: 20%;
 }
 
 .login img{
-  width:50%；
+  width:50%;
 }
 
 .wishlist{
     position: absolute;
-    right: -16%;
-    top: 157%;
+        right: -9%;
+    top: 185%;
     align-items: right;
     height: 15%;
     width: 20%;
 }
 .wishlist img{
-  width:80%；
+  width:45%;
 }
 .cartt{
     position: absolute;
-    right: -16%;
-    top: 199%;
+    right: -9%;
+    top: 216%;
     align-items: right;
     height: 15%;
     width: 20%;
 }
 .cartt img{
-  width:80%；
+  width:50%;
 }
 .topnav{
     align-items: center;
@@ -1038,8 +1038,11 @@ to {opacity: 1;}
 }
 
 .description {
+  position: relative;
     width: 343px;
     margin-left: -10%;
+    margin-top: 250%;
+    
 } 
  /* 展開收合效果 */
     .slide_toggle {
@@ -1072,9 +1075,9 @@ to {opacity: 1;}
 }
 
 .aaaa {
-    width: 50%;
+    max-width: 414px;
     margin-left: -180%;
-    margin-top: 391%;
+    margin-top: -25%;
 }
 
 
@@ -1094,5 +1097,28 @@ button.buy1{
 	outline:none;
   transition:0.3s;
   cursor: pointer;
+}
+
+.reviews{
+   
+    width:450px;
+    
+}
+
+.reviwe{
+  display:inline;
+  float:right;
+  height:50px;
+  width:100px;
+  margin-right:80px;
+  margin-top:-30px;
+  font-size:22px;
+  background-color:#d49a89;
+  border:0;
+  box-shadow: 0 6px #FFFFFF;
+  border-radius:10px;
+  color:#FFFFFF;
+  cursor: pointer;
+  display: none;
 }
 }
