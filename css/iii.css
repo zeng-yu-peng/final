@@ -119,6 +119,14 @@ header{
     
 }
 
+.bookimg img:hover{
+    transform:scale(1.1,1.1);
+  transition: .5s;
+  filter:brightness(0.8);
+}
+
+
+
 .description{
  
     width:500px;
@@ -798,21 +806,71 @@ to {opacity: 1;}
 @media screen and (max-width:414px) {
 
   body{
-    width:100%;
+    max-width: 100%;
   }
-  
-  .product_contant h2,.product_contant p{
-    display: none;
-  } 
+
+  body p{
+    font-size: 8px;
+  }
 
   header{
-    width: 1100px;
-    margin-left:35%;
+     position: relative;
+   width: 110%;
+    margin-left: -7%;
   }
 
+  
+  .icon{
+    width:50%;
+  }
+  .ooxx{
+    max-width: 100%;
+  }
+  .bookimg{
+    position: relative;
+    width:60%;
+    left:-12%;
+    top:-12%;
+    
+  }
+  .bookimg img{
+    
+    padding: 10px;
+    margin-left: -20%;
+    margin-right: 5%;
+    margin-top: -6%;
+    
+    
+  }
+
+  .bookcontent{
+    width:100%;
+    font-size: 8px;
+    margin-left: -3%;
+    margin-top: 10%;
+  }
+
+  .bookcontent h2{
+    font-size: 15px;
+  }
+
+  .bookcontent h4{
+    font-size: 12px;
+  }
+
+  .payment{
+    width:80%;
+  }
   .ad1 img{
-    width: 1300px;
-    margin-left: 10%;
+    width: 71%;
+    margin-left: 2%;
+  }
+
+  .path h6{
+    width:79%;
+    font-size: 14px;
+    position: absolute;
+    right:50%;
   }
   .head_search {
   position: absolute;
@@ -821,14 +879,220 @@ to {opacity: 1;}
   }
 
   .footer{
-     position: relative;
-     width: 1500px;
-     margin-left: 40%;
-     bottom:0;
+     max-width: 100%;
   }
   .openBtn{
     position: relative;
     top:60%;
     left: 1%;
   }
+
+   .manu li{
+    line-height: 3.5;
+}
+
+
+    .manu li a{
+    color: #00676B;
+    text-decoration: none;
+    font-size: large;
+}
+
+  .icon{
+    align-items: left;
+
+    height: 10%;
+    width: 10%;
+    padding-left: 3%;
+}
+
+.button{
+    border: white;
+    background-color: #374663;    
+    text-decoration: cornsilk;
+
+}
+
+.button11{
+    border: white;
+    background-color: #374663;    
+    text-decoration: cornsilk;
+
+}
+
+
+.login{
+     position: absolute;
+    right: -3%;
+    top: 71%;
+    align-items: right;
+    height: 15%;
+    width: 20%;
+}
+
+.login img{
+  width:50%；
+}
+
+.wishlist{
+    position: absolute;
+    right: -16%;
+    top: 157%;
+    align-items: right;
+    height: 15%;
+    width: 20%;
+}
+.wishlist img{
+  width:80%；
+}
+.cartt{
+    position: absolute;
+    right: -16%;
+    top: 199%;
+    align-items: right;
+    height: 15%;
+    width: 20%;
+}
+.cartt img{
+  width:80%；
+}
+.topnav{
+    align-items: center;
+    position: absolute;
+    left: 40%;
+    top:5%;
+
+   
+}
+
+  .topnav .search-container {
+    align-items: center;
+    left: 40%;
+    height: 10%;
+    display: none;
+  }
+  
+  .topnav input[type=text] {
+    padding: 8px;
+    margin-top: 8px;
+    font-size: 2px;
+    border: 1px solid black;
+  }
+  
+  .topnav .search-container button {
+    float: center;
+    padding: 4px 10px;
+    margin-top:7%;
+    background-color: #374663;
+    font-size: 2px;
+    border: none;
+    cursor: pointer;
+    display:none;
+  }
+  
+  .topnav .search-container button:hover {
+    background-color: #576a91;
+  }
+.footer {
+      width: 112%;
+    height: 348px;
+    max-width: 1100px;
+    margin: auto;
+    padding: 12px 0px;
+    background-color: #4e9647bb;
+    position: relative;
+    bottom: 0;
+    margin-top: 5%;
+    margin-left: -6%;
+  
+}
+
+.footer h4{
+  font-size: 24px;
+  font-weight: 900;
+  color: #fff;
+}
+.footer a {
+  font-size: 10 px;
+  font-weight: 500;
+  color: #fff;
+}
+/* 
+.footer_wrap {
+  
+  line-height: 2;
+} */
+
+.footer_wrap{
+  display: flex;
+  justify-content: start;
+  margin-left: 10%;
+  line-height: 2;
+}
+.footer_copyright {
+    position: absolute;
+    bottom: 0;
+    left: -3px;
+    color: #fff;
+    background-color: #000000;
+}
+
+.description {
+    width: 343px;
+    margin-left: -10%;
+} 
+ /* 展開收合效果 */
+    .slide_toggle {
+      text-align: center;
+      cursor: pointer;
+      font-weight: bold;
+      width: 62%;
+    margin-left: 5%;
+     
+      /* 收合提示字串區塊, 還可加入自訂 CSS 效果 */
+      line-height: 170%;
+      background-color: #eed;
+      border-radius: 7px;
+     
+      
+      }
+      .slide_toggle + div {
+      display: none;
+      margin-top: 1%;
+      padding-bottom: 1%;
+}
+
+.watch{
+    font-family: ZCOOL KuaiLe;
+    font-size: 42px;
+    align-items: left;
+    padding-top: 3%;
+    margin-left: -14%;
+   
+}
+
+.aaaa {
+    width: 50%;
+    margin-left: -180%;
+    margin-top: 391%;
+}
+
+
+button.buy1{
+	height:40px;
+	width: 40px;
+  position: absolute;
+  left:-100%;
+	margin-bottom:20px;
+	margin-top:35px;
+	margin-left:1%;
+	background-color:#ff000070;
+	border:none;
+	border-radius:0.5rem;
+	padding: 0px;
+	font-size:15px;
+	outline:none;
+  transition:0.3s;
+  cursor: pointer;
+}
 }
