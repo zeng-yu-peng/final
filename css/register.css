@@ -825,3 +825,10 @@ label{vertical-align:middle}
   border: none;
   margin-top: 3px;
 }
+
+
+@media screen and (max-width:414px) {
+  body{
+    max-width: 414px;
+  }
+}
