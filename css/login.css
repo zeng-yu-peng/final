@@ -604,14 +604,14 @@
     
     
       .footer1 {
-      height: 387px;
-      max-width: 414px;
-      margin:auto;
-      padding: 15px 41px;
-      background-color: #3b3b3bbb;
-      position: relative ;
-      bottom: 0;
-      margin-top: 5%;
+   height: 334px;
+    max-width: 1100px;
+    margin: auto;
+    padding: 15px 41px;
+    background-color: #3b3b3bbb;
+    position: relative;
+    bottom: 0;
+    margin-top: 5%;
       
     }
     .footer1 h4{
