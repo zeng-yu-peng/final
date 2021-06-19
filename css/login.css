@@ -486,6 +486,7 @@
     }
     #strange{
     left: -50px;
+    display: none;
     top: 166px;
     }
     .input_button{
