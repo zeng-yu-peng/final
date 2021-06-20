@@ -797,8 +797,8 @@ animation: myfirst 0.5s infinite;    /*無限次跳動   infinite*/
     width: 70px;
     font-size: 10px;
     font-size: 10px;
-    margin-left: 92px;
-    margin-top: 77px;
+    margin-left: 108px;
+    margin-top: 110px;
 }
   
   .name{
@@ -810,8 +810,8 @@ animation: myfirst 0.5s infinite;    /*無限次跳動   infinite*/
 
   .name a img{
     position: absolute;
-    top:140px;
-    right: -130px;
+    top:185px;
+    right: -146px;
     
   }
 
@@ -822,14 +822,14 @@ animation: myfirst 0.5s infinite;    /*無限次跳動   infinite*/
   }
  .name1 h2,.name1 a{
         width: 70px;
-    margin-left: 81px;
-    margin-top: 23px;
+    margin-left: 97px;
+    margin-top: 67px;
   }
 
    .name1 a img{
     position: absolute;
-    top:90px;
-    right: -125px;
+    top:136px;
+    right: -140px;
   }
   
   .newbook_contant{
@@ -881,9 +881,10 @@ animation: myfirst 0.5s infinite;    /*無限次跳動   infinite*/
     background-color: #000000;
 }
 .bbbb{
-  position: absolute;
+  position: relative;
   top:-50px;
   right:-140px;
+  display: none;
 
 }
 
