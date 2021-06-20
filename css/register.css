@@ -866,7 +866,7 @@ label{vertical-align:middle}
     padding: 40px;
     width: 40%;
     max-width: 390px;
-    margin-left: 12px;
+    margin-left: 6px;
     margin-top: 50px;
   }
   
@@ -1282,7 +1282,7 @@ label{vertical-align:middle}
   #BK {background-color:#c791d870;}
   #shop {background-color: #DDB7AB;}
   #send {background-color: #a19f89;}
-  #invoice {background-color:#729598; margin-left: -300px; max-width: 414px;}
+  #invoice {background-color:#729598; margin-left: -325px; max-width: 420px;}
 
   /*結束*/
 
