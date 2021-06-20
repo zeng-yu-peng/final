@@ -1050,7 +1050,7 @@ label{vertical-align:middle}
   margin: auto;
   background-color: #374663;
   position: relative;
-  margin-left: -195px;
+  margin-left: -160px;
 }
 
 .head_icon img {
@@ -1282,7 +1282,7 @@ label{vertical-align:middle}
   #BK {background-color:#c791d870;}
   #shop {background-color: #DDB7AB;}
   #send {background-color: #a19f89;}
-  #invoice {background-color:#729598; margin-left: -300px; max-width: 414px;}
+  #invoice {background-color:#729598; margin-left: -280px; max-width: 414px;}
 
   /*結束*/
 
