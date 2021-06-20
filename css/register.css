@@ -865,7 +865,7 @@ label{vertical-align:middle}
     font-family: Raleway;
     padding: 40px;
     width: 40%;
-    max-width: 390px;
+    max-width: 350px;
     margin-left: 6px;
     margin-top: 50px;
   }
@@ -1050,7 +1050,7 @@ label{vertical-align:middle}
   margin: auto;
   background-color: #374663;
   position: relative;
-  margin-left: -150px;
+  margin-left: -183px;
 }
 
 .head_icon img {
