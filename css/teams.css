@@ -847,6 +847,7 @@ animation: myfirst 0.5s infinite;    /*無限次跳動   infinite*/
     bottom: 0;
     margin-top: 5%;
     margin-left: -6%;
+    display: none;
   
 }
 
