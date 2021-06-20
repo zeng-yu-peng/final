@@ -887,5 +887,30 @@ animation: myfirst 0.5s infinite;    /*無限次跳動   infinite*/
   display: none;
 
 }
+    .barline{
+      width:100%;
+      display:block;
+      padding:8px 16px;
+      text-align:left;
+      border:none;
+      white-space:normal;
+      float:none;
+      outline:0;
+      text-align:center;
+      font-size:18px!important
+    }
+    .side_button{
+      position: fixed;
+      left: 0; top: 50%;
+            z-index:10000000000000000;
+
+      font-size:24px!important
+      }
+    .side_button button{
+      position: absolute;top: 40%;
+      height: 30px; width: 30px;
+      color:#B7B7B7!important;
+      background-color:#976D00!important
+    }
 
 }

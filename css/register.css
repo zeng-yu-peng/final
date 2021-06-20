@@ -865,7 +865,7 @@ label{vertical-align:middle}
     font-family: Raleway;
     padding: 40px;
     width: 40%;
-    max-width: 370px;
+    max-width: 393px;
     margin-left: 12px;
     margin-top: 50px;
   }
@@ -1282,7 +1282,7 @@ label{vertical-align:middle}
   #BK {background-color:#c791d870;}
   #shop {background-color: #DDB7AB;}
   #send {background-color: #a19f89;}
-  #invoice {background-color:#729598; margin-left: -280px; max-width: 414px;}
+  #invoice {background-color:#729598; margin-left: -300px; max-width: 445px;}
 
   /*結束*/
 
