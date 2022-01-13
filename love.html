@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<script>
+  function slideLine(box, stf, delay, speed, h) {
+    var slideBox = document.getElementById(box);
+    var delay = delay || 1000,
+      speed || 20, h = h || 20;
+    var tid = null,
+      pause = false;
+    var s = function () {
+      tid = setInterval(slide, speed);
+    }
+    var slide = function () {
+      if (pause) return;
+      slideBox.scrollTop += 1;
+      if (slideBox.scrollTop % h == 0) {
+        clearInterval(tid);
+        slideBox.appendChild(slideBox.getElementsByTagName(stf)[0]);
+        slideBox.scrollTop = 0;
+        setTimeout(s, delay);
+      }
+    }
+    slideBox.onmouseover = function () {
+      pause = true;
+    }
+    setTimeout(s, delay);
+  }
+  slideLine('ann_box', 'div', 2000, 25, 20);
+</script>
+<style>
+  .ann {
+    overflow: hidden;
+    height: 20px;
+  }
+</style>
+
+<body>
+  <div id="ann_box" class="ann" style="widows: 100px;">
+    <div id="al" class="ann"><a href="image/3.jpg"> </a></div>
+    <div id="al" class="ann"><a href="image/3.jpg"> </a></div>
+    <div id="al" class="ann"><a href="image/3.jpg"> </a></div>
+    <div id="al" class="ann"><a href="image/3.jpg"> </a></div>
+    <div id="al" class="ann"><a href="image/3.jpg"> </a></div>
+  </div>
+</body>
+
+</html>
